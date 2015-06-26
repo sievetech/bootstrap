@@ -2,10 +2,27 @@
 
 ## Instalação
 
+### Node.js (via nvm)
+
+O nodejs é necessário para rodar o grunt (automatizar processos)
 ```
-npm install
-gem install compass
-gem install hologram
+$ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.1/install.sh | zsh
+$ nvm install 0.10 # Alguns pacotes dão problema se não for com essa versão do node
+$ nvm alias default stable
+$ npm install grunt-cli -g
+$ npm install
+```
+
+### Compass (via rvm)
+
+O compass é utilizado para transformar os estilos em css
+```
+$ gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
+$ curl -sSL https://get.rvm.io | zsh
+$ echo 'source ~/.rvm/bin/rvm > /dev/null' >> ~/.zshrc
+$ source ~/.rvm/bin/rvm
+$ gem install compass
+$ gem install hologram
 ```
 
 ## Workflow
