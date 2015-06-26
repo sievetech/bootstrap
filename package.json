@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap",
+  "version": "0.0.1",
+  "description": "Bootstrap Oficial da Sieve",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-sass": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-hologram": "0.0.7",
+    "grunt-open": "^0.2.3",
+    "load-grunt-tasks": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/sievetech/bootstrap2.git"
+  },
+  "author": "Sieve",
+  "license": "BSD"
+}

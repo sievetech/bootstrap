@@ -1,0 +1,76 @@
+@import "compass";
+
+/*doc
+---
+title: Formulários
+name: forms
+category: basics
+---
+
+### Texto
+
+```html_example
+<input type="text" value="Texto" />
+<input type="password" value="Password" />
+```
+
+### Select
+
+```html_example
+<select>
+  <option>Opção 1</option>
+  <option>Opção 2</option>
+  <option>Opção 3</option>
+</select>
+```
+
+### Textarea
+
+```html_example
+<textarea>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+unknown printer took a galley of type and scrambled it to make a type specimen
+book.
+</textarea>
+```
+*/
+
+input {
+  padding: 1.2rem;
+  background-color: #f4f4f4;
+  border: .1rem solid #ccc;
+  outline: none;
+  @include border-radius(.4rem);
+  @include transition(box-shadow .2s ease-in-out);
+
+  &:not([type="checkbox"]):not([type="radio"]):focus {
+    @include box-shadow(0 0 .5rem rgba(0, 150, 0, 0.8))
+  }
+}
+
+select {
+  padding: 1.2rem;
+  background-color: #f4f4f4;
+  border: .1rem solid #ccc;
+  outline: none;
+  @include border-radius(.4rem);
+  @include transition(box-shadow .2s ease-in-out);
+
+  &:not([type="checkbox"]):not([type="radio"]):focus {
+    @include box-shadow(0 0 .5rem rgba(0, 150, 0, 0.8))
+  }
+}
+
+textarea {
+  padding: 1.2rem;
+  background-color: #f4f4f4;
+  border: .1rem solid #ccc;
+  outline: none;
+  @include border-radius(.4rem);
+  @include transition(box-shadow .2s ease-in-out);
+
+  &:not([type="checkbox"]):not([type="radio"]):focus {
+    @include box-shadow(0 0 .5rem rgba(0, 150, 0, 0.8))
+  }
+}

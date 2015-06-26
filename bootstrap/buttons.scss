@@ -1,0 +1,110 @@
+@import "compass";
+
+/*doc
+---
+title: Botões
+name: buttons
+category: basics
+---
+
+Use classes de botão em tags `<a>`, `<button>` e `<input>`.
+
+#### Padrão
+
+```html_example
+<button class="btn btn-default">Button</button>
+<a href="#" class="btn btn-default">Link</a>
+<input type="button" class="btn btn-default" value="Input" />
+```
+
+#### Desabilitado
+
+O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
+
+```html_example
+<button class="btn btn-default" disabled>Button</button>
+<a href="#" class="btn btn-default" disabled>Link</a>
+<input type="button" class="btn btn-default" value="Input" disabled />
+```
+
+#### Cancelar
+
+```html_example
+<button class="btn btn-cancel">Button</button>
+<a href="#" class="btn btn-cancel">Link</a>
+<input type="button" class="btn btn-cancel" value="Input" />
+```
+*/
+
+.btn {
+  display: inline-block;
+  width: 14rem;
+  height: 3.5rem;
+  border: none;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  vertical-align: middle;
+  outline: none;
+  @include border-radius(.4rem);
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.btn:disabled, .btn[disabled] {
+  background-color: #f4f4f4;
+  color: #c6c6c6 !important;
+  cursor: default;
+}
+
+.btn:not(:disabled):not([disabled]) {
+  color: #fff !important;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #f4f4f4;
+    color: #c6c6c6;
+  }
+
+  &:hover {
+    @include box-shadow(0 .2rem .2rem #ccc);
+  }
+
+  &:active {
+    @include box-shadow(inset 0 .2rem .2rem #999);
+  }
+
+  &.btn-cancel {
+    background-color: #f4f4f4;
+    border: .1rem solid #ccc;
+    color: #000 !important;
+
+    &:active {
+      background-color: #b8b8b8;
+    }
+
+    &:hover {
+      background-color: #f4f4f4;
+      border-color: #666;
+    }
+  }
+
+  &.btn-default {
+    background-color: #7AB317;
+
+    &:active {
+      background-color: #5a908c;
+    }
+
+    &:hover {
+      background-color: #9ace22;
+    }
+  }
+}
+
+a.btn {
+  line-height: 3.5rem;
+}
