@@ -1,8 +1,29 @@
 module.exports = function(grunt) {
-    var sheets = ['apps/**/*.scss', 'components/**/*.scss', 'jasmine/**/*.scss', 'style/**/*.scss'];
-
+  var livereload = {
+    port: 1338
+  };
     // Project configuration.
     grunt.initConfig({
+        connect: {
+          server: {
+            options: {
+              port: 8000,
+              hostname: '*',
+              base: 'docs/',
+              useAvailablePort: true,
+              keepalive: true,
+              livereload: livereload.port
+            }
+          }
+        },
+
+        concurrent: {
+          options:{
+            logConcurrentOutput: true
+          },
+          work: ['server', 'open', 'watch']
+        },
+
         /**
          * Doc
          */
@@ -37,18 +58,18 @@ module.exports = function(grunt) {
          */
         open: {
             dist: {
-                path: './docs/index.html'
+                path: 'http://localhost:8000/'
             }
         },
 
         watch: {
             options: {
                 atBegin: true,
-                livereload: 1338
+                livereload: livereload.port
             },
 
             dist: {
-                files: sheets,
+                files: 'bootstrap/**/*.scss',
                 tasks: ['build']
             }
         }
@@ -57,9 +78,10 @@ module.exports = function(grunt) {
     /**
      * Definindo aliases
      */
+    grunt.registerTask('work', ['concurrent:work']);
     grunt.registerTask('default', ['build']);
     grunt.registerTask('build', ['sass', 'hologram']);
-    grunt.registerTask('work', ['open', 'watch']);
+    grunt.registerTask('server', ['connect']);
 
     /**
      * Carregando tasks
