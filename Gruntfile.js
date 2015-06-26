@@ -21,7 +21,7 @@ module.exports = function(grunt) {
           options:{
             logConcurrentOutput: true
           },
-          work: ['server', 'open', 'watch']
+          work: ['server', 'open:local', 'watch']
         },
 
         /**
@@ -57,8 +57,16 @@ module.exports = function(grunt) {
          * Automação
          */
         open: {
-            dist: {
+            file: {
+                path: './build/index.html'
+            },
+
+            local: {
                 path: 'http://localhost:8000/'
+            },
+
+            ci: {
+                path: 'http://ci.sieve.com.br/job/bootstrap2/ws/build/index.html'
             }
         },
 

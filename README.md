@@ -28,7 +28,9 @@ $ gem install hologram
 ## Workflow
 
 * grunt server: levanta o servidor
-* grunt open: abre o bootstrap no navegador padrão
+* grunt open:file: abre bootstrap do arquivo index.html no navegador padrão
+* grunt open:local: abre o bootstrap do localhost no navegador padrão
+* grunt open:ci: abre o bootstrap do ci no navegador padrão
 * grunt build: builda o projeto (gera os stylesheets e a documentação)
 * grunt watch: observa alterações nos docs ou nos scss e builda o projeto
 * grunt work: server + open + build + watch
