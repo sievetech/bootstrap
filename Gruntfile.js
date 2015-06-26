@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 
             dist: {
                 files: sheets,
-                tasks: ['ci']
+                tasks: ['build']
             }
         }
     });
@@ -57,8 +57,8 @@ module.exports = function(grunt) {
     /**
      * Definindo aliases
      */
-    grunt.registerTask('default', ['ci']);
-    grunt.registerTask('ci', ['sass', 'hologram']);
+    grunt.registerTask('default', ['build']);
+    grunt.registerTask('build', ['sass', 'hologram']);
     grunt.registerTask('work', ['open', 'watch']);
 
     /**
