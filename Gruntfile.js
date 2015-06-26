@@ -59,7 +59,7 @@ module.exports = function(grunt) {
         
         open: {
             dist: {
-                path: '.docs/index.html'
+                path: './docs/index.html'
             }
         },
 
