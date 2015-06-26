@@ -1,17 +1,5 @@
 module.exports = function(grunt) {
-    var baseDir = './portal/static';
-    var scripts = ['apps/**/*.js', 'components/**/*.js', 'jasmine/**/*.js', 'Gruntfile.js'];
     var sheets = ['apps/**/*.scss', 'components/**/*.scss', 'jasmine/**/*.scss', 'style/**/*.scss'];
-    var readJSON = function (filePath) {
-        // Lê o arquivo JSON como um arquivo comum
-        var str = grunt.file.read(filePath);
-
-        // Remove comentarios
-        str = str.replace(/\/\/.*/mg, '');
-
-        // Retorna como um JSON válido (sem comentários)
-        return JSON.parse(str);
-    };
 
     // Project configuration.
     grunt.initConfig({
@@ -47,16 +35,6 @@ module.exports = function(grunt) {
         /**
          * Automação
          */
-        githooks: {
-            options: {
-                dest: '../../.git/hooks'
-            },
-
-            all: {
-                'pre-push': 'default'
-            }
-        },
-        
         open: {
             dist: {
                 path: './docs/index.html'
@@ -66,31 +44,25 @@ module.exports = function(grunt) {
         watch: {
             options: {
                 atBegin: true,
-                livereload: true
+                livereload: 1338
             },
 
-            sass: {
-                files: sheets,
-                tasks: ['sass']
-            },
-
-            hologram: {
+            dist: {
                 files: sheets,
                 tasks: ['ci']
             }
         }
     });
 
-
     /**
      * Definindo aliases
      */
+    grunt.registerTask('default', ['ci']);
     grunt.registerTask('ci', ['sass', 'hologram']);
+    grunt.registerTask('work', ['open', 'watch']);
 
     /**
      * Carregando tasks
      */
     require('load-grunt-tasks')(grunt);
-
-    //grunt.file.setBase(baseDir);
 };
