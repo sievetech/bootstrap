@@ -9,7 +9,7 @@ module.exports = function(grunt) {
             options: {
               port: 8000,
               hostname: '*',
-              base: 'docs/',
+              base: 'build/',
               useAvailablePort: true,
               keepalive: true,
               livereload: livereload.port

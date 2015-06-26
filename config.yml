@@ -5,7 +5,7 @@
 source: ./bootstrap
 
 # The directory that hologram will build to
-destination: ./docs
+destination: ./build
 
 # The assets needed to build the docs (includes header.html,
 # footer.html, etc)
