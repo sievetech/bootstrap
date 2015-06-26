@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         hologram: {
             generate: {
                 options: {
-                    config: 'hologram_config.yml'
+                    config: 'config.yml'
                 }
             }
         },
