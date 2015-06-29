@@ -45,7 +45,8 @@ input {
   @include transition(box-shadow .2s ease-in-out);
 
   &:not([type="checkbox"]):not([type="radio"]):focus {
-    @include box-shadow(0 0 .5rem rgba(0, 150, 0, 0.8))
+    @include box-shadow(0 0 .1rem #7fb93a);
+    border: .1rem solid #7fb93a;
   }
 }
 
@@ -58,7 +59,8 @@ select {
   @include transition(box-shadow .2s ease-in-out);
 
   &:not([type="checkbox"]):not([type="radio"]):focus {
-    @include box-shadow(0 0 .5rem rgba(0, 150, 0, 0.8))
+    @include box-shadow(0 0 .1rem #7fb93a);
+    border: .1rem solid #7fb93a;
   }
 }
 
@@ -71,6 +73,7 @@ textarea {
   @include transition(box-shadow .2s ease-in-out);
 
   &:not([type="checkbox"]):not([type="radio"]):focus {
-    @include box-shadow(0 0 .5rem rgba(0, 150, 0, 0.8))
+    @include box-shadow(0 0 .1rem #7fb93a);
+    border: .1rem solid #7fb93a;
   }
 }
