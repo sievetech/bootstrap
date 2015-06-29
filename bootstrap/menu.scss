@@ -9,10 +9,10 @@ category: css
 
 Barra de navegação para ser utilizada como menu
 
-#### Navegação vertical
+#### Menu vertical
 
 ```html_example
-<ul class="nav nav-vertical">
+<ul class="menu menu-vertical">
   <li>
     <a href="#">Home</a>
   </li>
@@ -26,10 +26,10 @@ Barra de navegação para ser utilizada como menu
 </header>
 ```
 
-#### Navegação Horizontal
+#### Menu Horizontal
 
 ```html_example
-<ul class="nav nav-horizontal">
+<ul class="menu menu-horizontal">
   <li>
     <a href="#">Home</a>
   </li>
@@ -44,7 +44,7 @@ Barra de navegação para ser utilizada como menu
 
 */
 
-.nav {
+.menu {
   z-index: 800;
   background-color: #262626;
   font-family: "Roboto",sans-serif;
@@ -92,7 +92,7 @@ Barra de navegação para ser utilizada como menu
   }
 }
 
-.nav-vertical {
+.menu-vertical {
   width: 20rem;
   bottom: 0;
   top: 0;
@@ -102,7 +102,7 @@ Barra de navegação para ser utilizada como menu
   }
 }
 
-.nav-horizontal {
+.menu-horizontal {
   left: 0;
   right: 0;
   
