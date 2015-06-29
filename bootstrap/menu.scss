@@ -7,149 +7,110 @@ name: menu
 category: css
 ---
 
-Use a classe `menu` para adicionar o componente a aplicação
+Barra de navegação para ser utilizada como menu
 
-#### Padrão
+#### Navegação vertical
 
 ```html_example
-<main>
-  <header class="menu">
-    <header>
-      <a href="#"></a>
-    </header>
-    <div class="content">
-      <ul>
-        <li>
-          <a href="#">
-              <i class="icon-gauge"></i>
-              <span class="name">Raiz 1</span>
-          </a>
-          <ul class="js_anchor_dashboards">
-            <li>
-              <a href="#">Página 1</a>
-            </li>
-            <li>
-              <a href="#">Página 2</a>
-            </li>
-          </ul>
-        </li>
-        <li class="active">
-          <a href="#">
-              <i class="icon-chart-line"></i>
-              <span class="name">Raiz 1</span>
-          </a>
-          <ul class="js_anchor_dashboards">
-            <li class="active">
-              <a href="#">Página 1</a>
-            </li>
-            <li>
-              <a href="#">Página 2</a>
-            </li>
-            <li>
-              <a href="#">Página 3</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <footer></footer>
-  </header>
-</main>
-</html>
-</body>
+<ul class="nav nav-vertical">
+  <li>
+    <a href="#">Home</a>
+  </li>
+  <li class="active">
+    <a href="#">Profile</a>
+  </li>
+  <li>
+    <a href="#">About</a>
+  </li>
+</ul>
+</header>
 ```
+
+#### Navegação Horizontal
+
+```html_example
+<ul class="nav nav-horizontal">
+  <li>
+    <a href="#">Home</a>
+  </li>
+  <li class="active">
+    <a href="#">Profile</a>
+  </li>
+  <li>
+    <a href="#">About</a>
+  </li>
+</ul>
+```
+
 */
 
-.menu {
-  width: 20rem;
-  bottom: 0;
-  top: 0;
+.nav {
   z-index: 800;
   background-color: #262626;
+  font-family: "Roboto",sans-serif;
+  font-weight: 100;
+  font-size: 1.4rem;
+  width: 100%;
+  list-style: none;
 
-  i[class^="icon-"]:before {
-    font-size: 2rem;
-    line-height: 1rem !important;
-    vertical-align: middle;
+  .badge {
+    margin: 0 1em 0 0;
+    background-color: #fff;
+    color: #000;
+    float: right;
+    @include border-radius(.8rem);
+    font-size: 0.85em;
+    padding: .1rem .5rem;
   }
 
-  > header {
-    a {
-      background: url('images/logo.png') no-repeat center center;
-      display: block;
-      height: 5.7rem;
-      font-size: 3rem;
-      text-align: center;
-      text-decoration: none;
-      text-transform: none;
-      vertical-align: middle;
-      outline: none;
-    }
+  li {
+    position: relative;
   }
 
-  > div.content {
-    font-family: "Roboto",sans-serif;
-    font-weight: 100;
-    font-size: 1.4rem;
-    width: 100%;
-
-    .badge {
-      margin: 0 1em 0 0;
-      background-color: #fff;
-      color: #000;
-      float: right;
-      @include border-radius(.8rem);
-      font-size: 0.85em;
-      padding: .1rem .5rem;
-    }
-
-    ul {
-      li {
-        position: relative;
-      }
-      ul {
-        display: none;
-        position: absolute;
-        left: 100%;
-        top: 0;
-        background-color: #262626;
-        width: 20rem;
-      }
-    }
-
-    a {
+  a {
+    display: block;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    &:link, &:visited, &:active {
       display: block;
       padding: 1rem 2rem;
       color: #fff;
-      &:link, &:visited, &:active {
-        display: block;
-        padding: 1rem 2rem;
-        color: #fff;
-      }
-
-      span.name {
-        padding-left: 2rem;
-      }
-    }
-
-    li:hover {
-      background-color: #373737;
-      ul {
-        display: block;
-      }
-    }
-    li.active {
-      background-color: #000;
-      > a {
-        color: #75c048 !important;
-        font-weight: 400;
-      }
+      text-decoration: none;
     }
   }
 
-  > footer {
-    position: absolute;
-    bottom: 2rem;
-    right: 0;
+  li:hover {
+    background-color: #373737;
+  }
+
+  li.active {
+    background-color: #000;
+    > a {
+      color: #75c048 !important;
+    }
+  }
+}
+
+.nav-vertical {
+  width: 20rem;
+  bottom: 0;
+  top: 0;
+
+  li.active {
+    border-left: .4rem solid #75c048;
+  }
+}
+
+.nav-horizontal {
+  left: 0;
+  right: 0;
+  
+  li {
+    display: inline-block;
+
+    .active {
+      border-top: .4rem solid #75c048;
+    }
   }
 }
