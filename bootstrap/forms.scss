@@ -60,7 +60,6 @@ select {
 
   &:not([type="checkbox"]):not([type="radio"]):focus {
     @include box-shadow(0 0 .1rem #7fb93a);
-    border: .1rem solid #7fb93a;
   }
 }
 
