@@ -33,13 +33,13 @@ Use a classe `menu` para adicionar o componente a aplicação
             </li>
           </ul>
         </li>
-        <li>
+        <li class="active">
           <a href="#">
               <i class="icon-chart-line"></i>
               <span class="name">Raiz 1</span>
           </a>
           <ul class="js_anchor_dashboards">
-            <li>
+            <li class="active">
               <a href="#">Página 1</a>
             </li>
             <li>
@@ -114,9 +114,6 @@ Use a classe `menu` para adicionar o componente a aplicação
         top: 0;
         background-color: #262626;
         width: 20rem;
-        a {
-          color: #ccc !important;
-        }
       }
     }
 
@@ -136,28 +133,17 @@ Use a classe `menu` para adicionar o componente a aplicação
     }
 
     li:hover {
-      background-color:#373737;
-      > .marker-current {
-        display: none;
-      }
+      background-color: #373737;
       ul {
         display: block;
       }
     }
-    li .marker-current {
-      width: 0;
-      height: 0;
-      border-top: 0.7em solid transparent;
-      border-bottom: 0.7em solid transparent;
-      border-right: 0.7em solid transparent;
-      position: absolute;
-      top: 1.4rem;
-      right: 0;
-    }
-    .active {
-      background-color:#000;
-      color:#75c048 !important;
-      font-weight:400;
+    li.active {
+      background-color: #000;
+      > a {
+        color: #75c048 !important;
+        font-weight: 400;
+      }
     }
   }
 
