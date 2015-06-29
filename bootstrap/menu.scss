@@ -23,7 +23,6 @@ Barra de navegação para ser utilizada como menu
     <a href="#">About</a>
   </li>
 </ul>
-</header>
 ```
 
 #### Menu Horizontal
@@ -52,16 +51,6 @@ Barra de navegação para ser utilizada como menu
   font-size: 1.4rem;
   width: 100%;
   list-style: none;
-
-  .badge {
-    margin: 0 1em 0 0;
-    background-color: #fff;
-    color: #000;
-    float: right;
-    @include border-radius(.8rem);
-    font-size: 0.85em;
-    padding: .1rem .5rem;
-  }
 
   li {
     position: relative;

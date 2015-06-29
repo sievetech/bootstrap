@@ -55,6 +55,7 @@ css_include:
   - './bootstrap/buttons.css'
   - './bootstrap/forms.css'
   - './bootstrap/menu.css'
+  - './bootstrap/badges.css'
   - './bootstrap/fontello/css/sieve-icon-font.css'
 
   - './bootstrap/utils.css'

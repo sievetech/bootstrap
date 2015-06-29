@@ -1,0 +1,31 @@
+@import "compass";
+
+/*doc
+---
+title: Badges
+name: badges
+category: css
+---
+
+Contador que pode ser aplicado em diversos lugares.
+
+```html_example
+<ul class="menu menu-vertical">
+  <li>
+    <a href="#">
+      Home
+      <span class="badge">42</span>
+    </a>
+  </li>
+</ul>
+```
+*/
+
+.badge {
+  background-color: #fff;
+  color: #000;
+  float: right;
+  @include border-radius(.8rem);
+  font-size: 1rem;
+  padding: .1rem .5rem;
+}
