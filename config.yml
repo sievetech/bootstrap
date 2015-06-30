@@ -57,6 +57,7 @@ css_include:
   - './bootstrap/list.css'
   - './bootstrap/badges.css'
   - './bootstrap/tables.css'
+  - './bootstrap/pager.css'
   - './bootstrap/fontello/css/sieve-icon-font.css'
 
   - './bootstrap/utils.css'
