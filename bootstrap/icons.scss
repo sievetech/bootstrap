@@ -10,28 +10,7 @@ category: css
 Ícones disponíveis
 
 ```html_example
-<style>
-  li {
-    display: inline-block;
-    list-type: none;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid #ccc;
-    word-wrap: break-word;
-    width: 7rem;
-    height: 7rem;
-    margin-bottom: .5rem;
-    padding: 1rem;
-  }
-  li i {
-    font-size: 2rem;
-  }
-  li span {
-    display:block;
-    font-size: 1rem;
-  }
-</style>
-<ul>
+<ul class="boxes">
   <li><i class="icon-angle-circled-down"></i> <span class="i-name">icon-angle-circled-down</span></li>
   <li><i class="icon-angle-circled-up"></i> <span class="i-name">icon-angle-circled-up</span></li>
   <li><i class="icon-zoom-in"></i> <span class="i-name">icon-zoom-in</span></li>

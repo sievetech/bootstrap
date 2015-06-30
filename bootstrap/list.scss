@@ -1,0 +1,105 @@
+@import "compass";
+
+/*doc
+---
+title: Lista
+name: lista
+category: css
+---
+
+Barra de navegação para ser utilizada como list
+
+#### Lista vertical
+
+```html_example
+<ul class="list list-vertical">
+  <li>
+    <a href="#">Home</a>
+  </li>
+  <li class="active">
+    <a href="#">Profile</a>
+  </li>
+  <li>
+    <a href="#">About</a>
+  </li>
+</ul>
+```
+
+#### Lista Horizontal
+
+```html_example
+<ul class="list list-horizontal">
+  <li>
+    <a href="#">Home</a>
+  </li>
+  <li class="active">
+    <a href="#">Profile</a>
+  </li>
+  <li>
+    <a href="#">About</a>
+  </li>
+</ul>
+```
+
+*/
+
+.list {
+  z-index: 800;
+  background-color: #262626;
+  font-family: "Roboto",sans-serif;
+  font-weight: 100;
+  font-size: 1.4rem;
+  width: 100%;
+  list-style: none;
+
+  li {
+    position: relative;
+  }
+
+  a {
+    display: block;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    &:link, &:visited, &:active {
+      display: block;
+      padding: 1rem 2rem;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  li:hover {
+    background-color: #373737;
+  }
+
+  li.active {
+    background-color: #000;
+    > a {
+      color: #75c048 !important;
+    }
+  }
+}
+
+.list-vertical {
+  width: 20rem;
+  bottom: 0;
+  top: 0;
+
+  li.active {
+    border-left: .4rem solid #75c048;
+  }
+}
+
+.list-horizontal {
+  left: 0;
+  right: 0;
+  
+  li {
+    display: inline-block;
+
+    .active {
+      border-top: .4rem solid #75c048;
+    }
+  }
+}
