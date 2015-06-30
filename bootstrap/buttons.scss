@@ -27,12 +27,20 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
 <input type="button" class="btn btn-default" value="Input" disabled />
 ```
 
-#### Cancelar
+#### Sucesso
 
 ```html_example
-<button class="btn btn-cancel">Button</button>
-<a href="#" class="btn btn-cancel">Link</a>
-<input type="button" class="btn btn-cancel" value="Input" />
+<button class="btn btn-success">Button</button>
+<a href="#" class="btn btn-success">Link</a>
+<input type="button" class="btn btn-success" value="Input" />
+```
+
+#### Excluir
+
+```html_example
+<button class="btn btn-remove">Button</button>
+<a href="#" class="btn btn-remove">Link</a>
+<input type="button" class="btn btn-remove" value="Input" />
 ```
 */
 
@@ -77,7 +85,7 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
     @include box-shadow(inset 0 .2rem .2rem #999);
   }
 
-  &.btn-cancel {
+  &.btn-default {
     background-color: #f4f4f4;
     border: .1rem solid #ccc;
     color: #000 !important;
@@ -92,7 +100,7 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
     }
   }
 
-  &.btn-default {
+  &.btn-success {
     background-color: #7AB317;
 
     &:active {
@@ -101,6 +109,18 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
 
     &:hover {
       background-color: #9ace22;
+    }
+  }
+
+  &.btn-remove {
+    background-color: #b71c1c;
+
+    &:active {
+      background-color: #bf4343;
+    }
+
+    &:hover {
+      background-color: #941313;
     }
   }
 }
