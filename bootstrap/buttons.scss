@@ -38,9 +38,9 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
 #### Excluir
 
 ```html_example
-<button class="btn btn-remove">Button</button>
-<a href="#" class="btn btn-remove">Link</a>
-<input type="button" class="btn btn-remove" value="Input" />
+<button class="btn btn-danger">Button</button>
+<a href="#" class="btn btn-danger">Link</a>
+<input type="button" class="btn btn-danger" value="Input" />
 ```
 */
 
@@ -112,7 +112,7 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
     }
   }
 
-  &.btn-remove {
+  &.btn-danger {
     background-color: #b71c1c;
 
     &:active {
