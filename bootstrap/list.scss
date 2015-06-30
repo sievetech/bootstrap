@@ -2,17 +2,17 @@
 
 /*doc
 ---
-title: Menu
-name: menu
+title: Lista
+name: lista
 category: css
 ---
 
-Barra de navegação para ser utilizada como menu
+Barra de navegação para ser utilizada como list
 
-#### Menu vertical
+#### Lista vertical
 
 ```html_example
-<ul class="menu menu-vertical">
+<ul class="list list-vertical">
   <li>
     <a href="#">Home</a>
   </li>
@@ -25,10 +25,10 @@ Barra de navegação para ser utilizada como menu
 </ul>
 ```
 
-#### Menu Horizontal
+#### Lista Horizontal
 
 ```html_example
-<ul class="menu menu-horizontal">
+<ul class="list list-horizontal">
   <li>
     <a href="#">Home</a>
   </li>
@@ -43,7 +43,7 @@ Barra de navegação para ser utilizada como menu
 
 */
 
-.menu {
+.list {
   z-index: 800;
   background-color: #262626;
   font-family: "Roboto",sans-serif;
@@ -81,7 +81,7 @@ Barra de navegação para ser utilizada como menu
   }
 }
 
-.menu-vertical {
+.list-vertical {
   width: 20rem;
   bottom: 0;
   top: 0;
@@ -91,7 +91,7 @@ Barra de navegação para ser utilizada como menu
   }
 }
 
-.menu-horizontal {
+.list-horizontal {
   left: 0;
   right: 0;
   
