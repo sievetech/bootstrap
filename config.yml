@@ -52,6 +52,7 @@ exit_on_warnings: false
 # The CSS files to be included in the styleguide
 css_include:
   - './bootstrap/reset.css'
+  - './bootstrap/widget.css'
   - './bootstrap/buttons.css'
   - './bootstrap/forms.css'
   - './bootstrap/list.css'
