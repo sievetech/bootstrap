@@ -59,6 +59,7 @@ css_include:
   - './bootstrap/badges.css'
   - './bootstrap/fontello/css/sieve-icon-font.css'
 
+  - './bootstrap/fonts.css'
   - './bootstrap/utils.css'
 
 # The JavaScript files to included in the styleguide
