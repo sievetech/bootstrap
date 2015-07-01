@@ -38,9 +38,6 @@ Use a classe `.table` para estilizar um elemento `<table>`.
 ### Listrada
 Use a classe `.table-striped` para adicionar listras a qualquer linha dentro de um `<tbody>`.
 
-##### Compatibilidade
-Tabelas listradas são estilizadas com a propriedade `:nth-child` do CSS, que não está disponível no Internet Explorer 8.
-
 <table class="table table-striped">
   <thead>
     <th>Nome</th>
