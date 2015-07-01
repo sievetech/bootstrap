@@ -55,6 +55,7 @@ css_include:
   - './bootstrap/buttons.css'
   - './bootstrap/forms.css'
   - './bootstrap/list.css'
+  - './bootstrap/notifications.css'
   - './bootstrap/badges.css'
   - './bootstrap/tables.css'
   - './bootstrap/pager.css'
