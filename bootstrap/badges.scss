@@ -9,14 +9,31 @@ category: css
 
 O Badge pode ser aplicado em diversos contextos
 
-#### Lista
+#### Padrão
+
+```html_example
+<ul>
+  <li><span class="badge badge-green">Verde</span></li>
+  <li><span class="badge badge-red">Vermelho</span></li>
+  <li><span class="badge badge-yellow">Amarelo</span></li>
+  <li><span class="badge badge-grey">Cinza</span></li>
+  <li><span class="badge badge-purple">Roxo</span></li>
+  <li><span class="badge badge-pink">Rosa</span></li>
+  <li><span class="badge badge-blue">Azul</span></li>
+</ul>
+```
+
+#### Navegação
 
 ```html_example
 <ul class="list list-vertical">
   <li>
+    <a href="#">Home</a>
+  </li>
+  <li>
     <a href="#">
-      Home
-      <span class="badge">42</span>
+      Notificações
+      <span class="badge badge-list">42</span>
     </a>
   </li>
 </ul>
@@ -24,10 +41,37 @@ O Badge pode ser aplicado em diversos contextos
 */
 
 .badge {
-  background-color: #fff;
-  color: #000;
-  float: right;
-  @include border-radius(.8rem);
-  font-size: 1rem;
-  padding: .1rem .5rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  padding: .4rem 1rem;
+  @include border-radius(.4rem);
+
+  &.badge-list {
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+    padding: .1rem .5rem;
+  }
+  &.badge-green {
+    background-color: #7AB317;
+  }
+  &.badge-red {
+    background-color: #b71c1c;
+  }
+  &.badge-yellow {
+    background-color: #F5C221;
+  }
+  &.badge-grey {
+    background-color: #666666;
+  }
+  &.badge-purple {
+    background-color: #776B9E;
+  }
+  &.badge-pink {
+    background-color: #D651A1;
+  }
+  &.badge-blue {
+    background-color: #177eb3;
+  }
 }
