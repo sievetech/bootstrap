@@ -98,7 +98,7 @@ Barra de navegação para ser utilizada como list
   li {
     display: inline-block;
 
-    .active {
+    &.active {
       border-top: .4rem solid #75c048;
     }
   }
