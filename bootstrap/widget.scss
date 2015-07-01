@@ -98,71 +98,6 @@ category: css
         overflow-x: hidden;
         overflow-y: auto;
       }
-
-      .highcharts-container {
-        margin:0 .1rem;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-
-        &.sortable {
-          th:hover {
-            background-color: #e5e5e5;
-            cursor: pointer;
-          }
-        }
-
-        /* Pode estar no thead ou tbody */
-        th {
-          border-bottom: .1rem solid #e5e5e5;
-          font-size: 1.2rem;
-          font-weight: normal;
-          color: #797979;
-          padding:.7rem 1.2rem;
-          white-space: nowrap;
-        }
-
-        thead tr {
-          background-color: #f1f1f1;
-        }
-
-        tbody tr {
-          background-color: #fff;
-
-          td {
-            padding: 1em;
-            border-bottom: .1rem solid #e5e5e5;
-          }
-
-          &:nth-child(odd) {
-            background-color: #fbfbfb;
-          }
-
-          &:last-child td {
-            border: none;
-          }
-
-          &:hover .prod-favorite, &:hover .tooltip {
-            display: block;
-          }
-
-          &.row-selected .tooltip {
-            display: block;
-          }
-
-          &.row-selected {
-            background: #f0f2f6 !important;
-            &:hover {
-              background: #f0f2f6 !important;
-            }
-            > td {
-              border-bottom: .1rem solid #ebedf1;
-            }
-          }
-        }
-      }
     }
 
     > footer {
@@ -184,54 +119,6 @@ category: css
         cursor: pointer;
         &:hover {
           background-color: #eee;
-        }
-      }
-
-      .question {
-        position: relative;
-
-        a {
-          position: absolute;
-          font-size: 1.5rem;
-          bottom: 0.5rem;
-          left: 0.5rem;
-          color: #6d6d6d;
-        }
-      }
-
-      .help {
-        background-color: #fff;
-        position: absolute;
-        overflow-y: hidden;
-        top: 100%;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        padding: 2.5rem 2rem 0;
-        z-index: 1000;
-        @include transition(top .4s ease-out);
-
-        h3 {
-          margin-bottom: .7rem;
-          font-family: Arial, sans-serif;
-          color: #333;
-        }
-
-        .close {
-          position: absolute;
-          margin: 2rem;
-          top: 0;
-          right: 0;
-          background: image-url("sprite.png") -9.6rem -15.4rem no-repeat;
-          cursor: pointer;
-          width: 1rem;
-          height: 1.1rem;
-        }
-
-        p {
-          margin-bottom: 1.6rem;
-          padding: 0;
-          font-size: 1.2rem;
         }
       }
     }
