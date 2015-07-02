@@ -52,6 +52,7 @@ exit_on_warnings: false
 # The CSS files to be included in the styleguide
 css_include:
   - './bootstrap/reset.css'
+  - './bootstrap/widget.css'
   - './bootstrap/buttons.css'
   - './bootstrap/forms.css'
   - './bootstrap/list.css'
@@ -61,6 +62,7 @@ css_include:
   - './bootstrap/pager.css'
   - './bootstrap/fontello/css/sieve-icon-font.css'
 
+  - './bootstrap/fonts.css'
   - './bootstrap/utils.css'
 
 # The JavaScript files to included in the styleguide
