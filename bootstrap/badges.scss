@@ -10,15 +10,13 @@ category: css
 O Badge pode ser aplicado em diversos contextos
 
 ```html_example
-<ul>
-  <li><span class="badge badge-green">Verde</span></li>
-  <li><span class="badge badge-red">Vermelho</span></li>
-  <li><span class="badge badge-yellow">Amarelo</span></li>
-  <li><span class="badge badge-grey">Cinza</span></li>
-  <li><span class="badge badge-purple">Roxo</span></li>
-  <li><span class="badge badge-pink">Rosa</span></li>
-  <li><span class="badge badge-blue">Azul</span></li>
-</ul>
+<span class="badge badge-green">Verde</span>
+<span class="badge badge-red">Vermelho</span>
+<span class="badge badge-yellow">Amarelo</span>
+<span class="badge badge-grey">Cinza</span>
+<span class="badge badge-purple">Roxo</span>
+<span class="badge badge-pink">Rosa</span>
+<span class="badge badge-blue">Azul</span>
 ```
 
 */
