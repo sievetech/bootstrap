@@ -12,7 +12,7 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 #### Sucesso
 
 ```html_example
-<div class="notification-success notification">
+<div class="notification notification-success">
   <div class="content">
     <ul>
       <li class="message">Hey</li>
@@ -25,7 +25,7 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 #### Erro
 
 ```html_example
-<div class="notification-error notification">
+<div class="notification notification-error">
   <div class="content">
     <ul>
       <li class="message">Hey</li>
@@ -38,14 +38,15 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 
 .notification {
   z-index: 900;
-  color: #FFFFFF;
+  color: #fff;
   display: inline-block;
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   min-width: 20rem;
   line-height: 1.2rem;
+	overflow: hidden;
   @include border-radius(.4rem);
-  @include box-shadow(0 .2rem .3rem #666666);
+  @include box-shadow(0 .2rem .3rem #666);
   .content {
     ul {
       position:relative;
