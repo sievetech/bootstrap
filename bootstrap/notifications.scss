@@ -63,14 +63,14 @@ Notificações podem ser usadas para dar feedbacks ao usuário
     }
   &.notification-success .content {
     background: #7ab317;
-  }
-  &.notification-success .content .close {
-    background: #5a980c;
+    .close {
+      background: #5a980c;
+    }
   }
   &.notification-error .content {
     background: #bf4343;
-  }
-  &.notification-error .content .close {
-    background: #941313;
+    .close {
+      background: #941313;
+    }
   }
 }
