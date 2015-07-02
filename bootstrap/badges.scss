@@ -9,8 +9,6 @@ category: css
 
 O Badge pode ser aplicado em diversos contextos
 
-#### Padrão
-
 ```html_example
 <ul>
   <li><span class="badge badge-green">Verde</span></li>
@@ -23,21 +21,6 @@ O Badge pode ser aplicado em diversos contextos
 </ul>
 ```
 
-#### Navegação
-
-```html_example
-<ul class="list list-vertical">
-  <li>
-    <a href="#">Home</a>
-  </li>
-  <li>
-    <a href="#">
-      Notificações
-      <span class="badge badge-list">42</span>
-    </a>
-  </li>
-</ul>
-```
 */
 
 .badge {
@@ -47,12 +30,6 @@ O Badge pode ser aplicado em diversos contextos
   padding: .4rem 1rem;
   @include border-radius(.4rem);
 
-  &.badge-list {
-    background-color: #fff;
-    color: #000;
-    font-size: 1rem;
-    padding: .1rem .5rem;
-  }
   &.badge-green {
     background-color: #7AB317;
   }
