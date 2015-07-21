@@ -1,1 +1,1 @@
-ul.boxes li{display:inline-block;list-type:none;text-align:center;vertical-align:middle;border:1px solid #ccc;word-wrap:break-word;width:7rem;height:7rem;margin-bottom:.5rem;padding:1rem}ul.boxes li i{font-size:2rem}ul.boxes li span{display:block;font-size:1rem}
+ul.boxes li{display:inline-block;list-type:none;text-align:center;vertical-align:middle;word-wrap:break-word;width:6rem;height:6rem;margin-bottom:.5rem;padding:1rem}ul.boxes li i{font-size:2rem}ul.boxes li span{display:block;font-size:1rem}
