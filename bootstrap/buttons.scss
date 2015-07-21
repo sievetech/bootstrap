@@ -13,7 +13,7 @@ Use classes de botão em tags `<a>`, `<button>` e `<input>`.
 
 ```html_example
 <button class="btn btn-default">Button</button>
-<a href="#" class="btn btn-default">Link</a>
+<a href="javascript:void(0);" class="btn btn-default">Link</a>
 <input type="button" class="btn btn-default" value="Input" />
 ```
 
@@ -23,7 +23,7 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
 
 ```html_example
 <button class="btn btn-default" disabled>Button</button>
-<a href="#" class="btn btn-default" disabled>Link</a>
+<a href="javascript:void(0);" class="btn btn-default" disabled>Link</a>
 <input type="button" class="btn btn-default" value="Input" disabled />
 ```
 
@@ -31,7 +31,7 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
 
 ```html_example
 <button class="btn btn-success">Button</button>
-<a href="#" class="btn btn-success">Link</a>
+<a href="javascript:void(0);" class="btn btn-success">Link</a>
 <input type="button" class="btn btn-success" value="Input" />
 ```
 
@@ -39,13 +39,14 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
 
 ```html_example
 <button class="btn btn-danger">Button</button>
-<a href="#" class="btn btn-danger">Link</a>
+<a href="javascript:void(0);" class="btn btn-danger">Link</a>
 <input type="button" class="btn btn-danger" value="Input" />
 ```
 */
 
 .btn {
   display: inline-block;
+  padding: 0;
   width: 14rem;
   height: 3.5rem;
   border: none;
