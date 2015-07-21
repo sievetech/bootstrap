@@ -77,7 +77,7 @@ module.exports = function(grunt) {
             },
 
             dist: {
-                files: 'bootstrap/**/*.scss',
+                files: 'src/**/*.scss',
                 tasks: ['build']
             }
         }
