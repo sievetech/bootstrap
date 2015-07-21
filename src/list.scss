@@ -14,13 +14,13 @@ Barra de navegação para ser utilizada como list
 ```html_example
 <ul class="list list-vertical">
   <li>
-    <a href="#">Home</a>
+    <a href="javascript:void(0);">Home</a>
   </li>
   <li class="active">
-    <a href="#">Profile</a>
+    <a href="javascript:void(0);">Profile</a>
   </li>
   <li>
-    <a href="#">About</a>
+    <a href="javascript:void(0);">About</a>
   </li>
 </ul>
 ```
@@ -30,13 +30,13 @@ Barra de navegação para ser utilizada como list
 ```html_example
 <ul class="list list-horizontal">
   <li>
-    <a href="#">Home</a>
+    <a href="javascript:void(0);">Home</a>
   </li>
   <li class="active">
-    <a href="#">Profile</a>
+    <a href="javascript:void(0);">Profile</a>
   </li>
   <li>
-    <a href="#">About</a>
+    <a href="javascript:void(0);">About</a>
   </li>
 </ul>
 ```
@@ -94,7 +94,7 @@ Barra de navegação para ser utilizada como list
 .list-horizontal {
   left: 0;
   right: 0;
-  
+
   li {
     display: inline-block;
 
