@@ -2,7 +2,7 @@
 # All paths should be relative to there
 
 # The directory containing the source files to parse recursively
-source: ./bootstrap
+source: ./src
 
 # The directory that hologram will build to
 destination: ./build
@@ -27,7 +27,7 @@ code_example_renderers: ./hologram/code_example_renderers
 # folder. Typically this will include the css that you are trying to
 # document. May also include additional folders as needed.
 dependencies:
-  - ./bootstrap
+  - ./src
 
 # Mark which category should be the index page
 # Alternatively, you may have an index.md in the documentation assets
@@ -51,19 +51,19 @@ exit_on_warnings: false
 
 # The CSS files to be included in the styleguide
 css_include:
-  - './bootstrap/reset.css'
-  - './bootstrap/widget.css'
-  - './bootstrap/buttons.css'
-  - './bootstrap/forms.css'
-  - './bootstrap/list.css'
-  - './bootstrap/notifications.css'
-  - './bootstrap/badges.css'
-  - './bootstrap/tables.css'
-  - './bootstrap/pager.css'
-  - './bootstrap/fontello/css/sieve-icon-font.css'
+  - './src/reset.css'
+  - './src/widget.css'
+  - './src/buttons.css'
+  - './src/forms.css'
+  - './src/list.css'
+  - './src/notifications.css'
+  - './src/badges.css'
+  - './src/tables.css'
+  - './src/pager.css'
+  - './src/fontello/css/sieve-icon-font.css'
 
-  - './bootstrap/fonts.css'
-  - './bootstrap/utils.css'
+  - './src/fonts.css'
+  - './src/utils.css'
 
 # The JavaScript files to included in the styleguide
 #js_include:
