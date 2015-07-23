@@ -7,9 +7,11 @@ name: tables
 category: css
 ---
 
-#### Básico
+## Básico
+
 Use a classe `.tbl` para estilizar um elemento `<table>`.
 
+```html_example
 <table class="tbl">
   <thead>
     <th>Nome</th>
@@ -34,94 +36,13 @@ Use a classe `.tbl` para estilizar um elemento `<table>`.
     </tr>
   </tbody>
 </table>
+```
 
-### Listrada
-Use a classe `.tbl-striped` para adicionar listras a qualquer linha dentro de um `<tbody>`.
+## Ordenável
 
-<table class="tbl tbl-striped">
-  <thead>
-    <th>Nome</th>
-    <th>Sobrenome</th>
-    <th>Usuário</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Victor</td>
-      <td>Novais</td>
-      <td>victornovais</td>
-    </tr>
-    <tr>
-      <td>Leonardo</td>
-      <td>Quixadá</td>
-      <td>lquixada</td>
-    </tr>
-    <tr>
-      <td>Gabriela</td>
-      <td>Cardoso</td>
-      <td>gabyoncé</td>
-    </tr>
-  </tbody>
-</table>
-
-### Borda
-Use a classe `.tbl-bordered` para adicionar borda à tabela e suas células
-
-<table class="tbl tbl-bordered">
-  <thead>
-    <th>Nome</th>
-    <th>Sobrenome</th>
-    <th>Usuário</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Victor</td>
-      <td>Novais</td>
-      <td>victornovais</td>
-    </tr>
-    <tr>
-      <td>Leonardo</td>
-      <td>Quixadá</td>
-      <td>lquixada</td>
-    </tr>
-    <tr>
-      <td>Gabriela</td>
-      <td>Cardoso</td>
-      <td>gabyoncé</td>
-    </tr>
-  </tbody>
-</table>
-
-### Condensada
-Use a classe `.tbl-condensed` para fazer tabelas mais compactas, cortando o `padding` das células pela metade.
-
-<table class="tbl tbl-condensed">
-  <thead>
-    <th>Nome</th>
-    <th>Sobrenome</th>
-    <th>Usuário</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Victor</td>
-      <td>Novais</td>
-      <td>victornovais</td>
-    </tr>
-    <tr>
-      <td>Leonardo</td>
-      <td>Quixadá</td>
-      <td>lquixada</td>
-    </tr>
-    <tr>
-      <td>Gabriela</td>
-      <td>Cardoso</td>
-      <td>gabyoncé</td>
-    </tr>
-  </tbody>
-</table>
-
-### Ordenável
 Use a classe `.tbl-sortable` para fazer tabelas que permitam ordenação.
 
+```html_example
 <table class="tbl tbl-sortable">
   <thead>
     <th>Nome</th>
@@ -146,19 +67,23 @@ Use a classe `.tbl-sortable` para fazer tabelas que permitam ordenação.
     </tr>
   </tbody>
 </table>
+```
 
 */
 
 .tbl {
   width: 100%;
   border-collapse: collapse;
+  border: .1rem solid #ddd;
 
+  /* Pode estar dentro de um tbody ou thead */
   th {
     border-bottom: .1rem solid #e5e5e5;
     font-size: 1.2rem;
     font-weight: normal;
     color: #797979;
     padding: .7rem 1.2rem;
+    text-align: left;
     white-space: nowrap;
   }
 
@@ -174,6 +99,10 @@ Use a classe `.tbl-sortable` para fazer tabelas que permitam ordenação.
       border-bottom: .1rem solid #e5e5e5;
     }
 
+    &:nth-child(odd) {
+      background-color: #fbfbfb;
+    }
+
     &:last-child td {
       border: none;
     }
@@ -183,26 +112,6 @@ Use a classe `.tbl-sortable` para fazer tabelas que permitam ordenação.
       &:hover {
         background: #f0f2f6 !important;
       }
-    }
-  }
-}
-
-.tbl-striped {
-  tbody tr {
-    &:nth-child(odd) {
-      background-color: #fbfbfb;
-    }
-  }
-}
-
-.tbl-bordered {
-  border: 1px solid #ddd;
-}
-
-.tbl-condensed {
-  tbody tr {
-    td {
-      padding: .5rem;
     }
   }
 }
