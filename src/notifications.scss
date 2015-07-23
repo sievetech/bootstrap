@@ -16,7 +16,7 @@ Notificações podem ser usadas para dar feedbacks ao usuário
   <div class="content">
     <ul>
       <li class="message">Hey</li>
-      <li class="close">×</li>
+      <li class="close"><i class="icon-cancel"></i></li>
     </ul>
   </div>
 </div>
@@ -29,7 +29,7 @@ Notificações podem ser usadas para dar feedbacks ao usuário
   <div class="content">
     <ul>
       <li class="message">Hey</li>
-      <li class="close">×</li>
+      <li class="close"><i class="icon-cancel"></i></li>
     </ul>
   </div>
 </div>
@@ -55,13 +55,14 @@ Notificações podem ser usadas para dar feedbacks ao usuário
         padding: 3rem;
 
         &.close {
+          font-size: 1.1rem;
           cursor: pointer;
           position: absolute;
           right: 0;
-          }
         }
       }
     }
+  }
   &.ntn-success .content {
     background: #7ab317;
     .close {
