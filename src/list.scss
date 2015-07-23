@@ -7,12 +7,12 @@ name: lista
 category: css
 ---
 
-Barra de navegação para ser utilizada como list
+Barra de navegação para ser utilizada como lista.
 
-# Lista vertical
+## Vertical
 
 ```html_example
-<ul class="list list-vertical">
+<ul class="lst lst-vertical">
   <li>
     <a href="javascript:void(0);">Home</a>
   </li>
@@ -25,10 +25,10 @@ Barra de navegação para ser utilizada como list
 </ul>
 ```
 
-# Lista Horizontal
+## Horizontal
 
 ```html_example
-<ul class="list list-horizontal">
+<ul class="lst lst-horizontal">
   <li>
     <a href="javascript:void(0);">Home</a>
   </li>
@@ -43,7 +43,7 @@ Barra de navegação para ser utilizada como list
 
 */
 
-.list {
+.lst {
   z-index: 800;
   background-color: #262626;
   font-family: "Roboto",sans-serif;
@@ -82,7 +82,7 @@ Barra de navegação para ser utilizada como list
   }
 }
 
-.list-vertical {
+.lst-vertical {
   flex-flow: column wrap;
   width: 20rem;
 
@@ -91,7 +91,7 @@ Barra de navegação para ser utilizada como list
   }
 }
 
-.list-horizontal {
+.lst-horizontal {
   flex-flow: row nowrap;
 
   li {

@@ -9,66 +9,58 @@ category: css
 
 Notificações podem ser usadas para dar feedbacks ao usuário
 
-# Sucesso
+## Sucesso
 
 ```html_example
-<div class="notification notification-success">
-  <div class="content">
-    <ul>
-      <li class="message">Hey</li>
-      <li class="close">×</li>
-    </ul>
-  </div>
+<div class="ntn ntn-success">
+  <span class="message">Só sucesso!</span>
+  <span class="close"><i class="icon-cancel"></i></span>
 </div>
 ```
 
-# Erro
+## Erro
 
 ```html_example
-<div class="notification notification-error">
-  <div class="content">
-    <ul>
-      <li class="message">Hey</li>
-      <li class="close">×</li>
-    </ul>
-  </div>
+<div class="ntn ntn-error">
+  <span class="message">Deu erro!</span>
+  <span class="close"><i class="icon-cancel"></i></span>
 </div>
 ```
 */
 
-.notification {
+.ntn {
   z-index: 900;
   color: #fff;
-  display: inline-block;
+  display: flex;
   font-size: 1.6rem;
   font-family: Roboto, sans-serif;
-  min-width: 20rem;
+  width: 25rem;
   line-height: 1.2rem;
 	overflow: hidden;
   @include border-radius(.4rem);
   @include box-shadow(0 .2rem .3rem #666);
-  .content {
-    ul {
-      position:relative;
-      li {
-        display: inline-block;
-        padding: 3rem;
 
-        &.close {
-          cursor: pointer;
-          position: absolute;
-          right: 0;
-          }
-        }
-      }
+  span {
+    display: inline-block;
+    padding: 3rem;
+
+    &.message {
+      flex: 1 0;
     }
-  &.notification-success .content {
+
+    &.close {
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+  }
+
+  &.ntn-success {
     background: #7ab317;
     .close {
       background: #5a980c;
     }
   }
-  &.notification-error .content {
+  &.ntn-error {
     background: #bf4343;
     .close {
       background: #941313;
