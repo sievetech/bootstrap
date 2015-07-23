@@ -49,8 +49,9 @@ Barra de navegação para ser utilizada como list
   font-family: "Roboto",sans-serif;
   font-weight: 100;
   font-size: 1.4rem;
-  width: 100%;
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
 
   li {
     position: relative;
@@ -82,9 +83,8 @@ Barra de navegação para ser utilizada como list
 }
 
 .list-vertical {
+  flex-flow: column wrap;
   width: 20rem;
-  bottom: 0;
-  top: 0;
 
   li.active {
     border-left: .4rem solid #75c048;
@@ -92,8 +92,7 @@ Barra de navegação para ser utilizada como list
 }
 
 .list-horizontal {
-  left: 0;
-  right: 0;
+  flex-flow: row nowrap;
 
   li {
     display: inline-block;
