@@ -13,12 +13,8 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 
 ```html_example
 <div class="ntn ntn-success">
-  <div class="content">
-    <ul>
-      <li class="message">Hey</li>
-      <li class="close"><i class="icon-cancel"></i></li>
-    </ul>
-  </div>
+  <span class="message">Só sucesso!</span>
+  <span class="close"><i class="icon-cancel"></i></span>
 </div>
 ```
 
@@ -26,12 +22,8 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 
 ```html_example
 <div class="ntn ntn-error">
-  <div class="content">
-    <ul>
-      <li class="message">Hey</li>
-      <li class="close"><i class="icon-cancel"></i></li>
-    </ul>
-  </div>
+  <span class="message">Deu erro!</span>
+  <span class="close"><i class="icon-cancel"></i></span>
 </div>
 ```
 */
@@ -39,37 +31,36 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 .ntn {
   z-index: 900;
   color: #fff;
-  display: inline-block;
+  display: flex;
   font-size: 1.6rem;
   font-family: Roboto, sans-serif;
-  min-width: 20rem;
+  width: 25rem;
   line-height: 1.2rem;
 	overflow: hidden;
   @include border-radius(.4rem);
   @include box-shadow(0 .2rem .3rem #666);
-  .content {
-    ul {
-      position:relative;
-      li {
-        display: inline-block;
-        padding: 3rem;
 
-        &.close {
-          font-size: 1.1rem;
-          cursor: pointer;
-          position: absolute;
-          right: 0;
-        }
-      }
+  span {
+    display: inline-block;
+    padding: 3rem;
+
+    &.message {
+      flex: 1 0;
+    }
+
+    &.close {
+      font-size: 1.1rem;
+      cursor: pointer;
     }
   }
-  &.ntn-success .content {
+
+  &.ntn-success {
     background: #7ab317;
     .close {
       background: #5a980c;
     }
   }
-  &.ntn-error .content {
+  &.ntn-error {
     background: #bf4343;
     .close {
       background: #941313;
