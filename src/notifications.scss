@@ -3,7 +3,7 @@
 /*doc
 ---
 title: Notificações
-name: notifications
+name: ntns
 category: css
 ---
 
@@ -12,7 +12,7 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 #### Sucesso
 
 ```html_example
-<div class="notification notification-success">
+<div class="ntn ntn-success">
   <div class="content">
     <ul>
       <li class="message">Hey</li>
@@ -25,7 +25,7 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 #### Erro
 
 ```html_example
-<div class="notification notification-error">
+<div class="ntn ntn-error">
   <div class="content">
     <ul>
       <li class="message">Hey</li>
@@ -36,7 +36,7 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 ```
 */
 
-.notification {
+.ntn {
   z-index: 900;
   color: #fff;
   display: inline-block;
@@ -62,13 +62,13 @@ Notificações podem ser usadas para dar feedbacks ao usuário
         }
       }
     }
-  &.notification-success .content {
+  &.ntn-success .content {
     background: #7ab317;
     .close {
       background: #5a980c;
     }
   }
-  &.notification-error .content {
+  &.ntn-error .content {
     background: #bf4343;
     .close {
       background: #941313;

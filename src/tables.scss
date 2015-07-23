@@ -8,9 +8,9 @@ category: css
 ---
 
 #### Básico
-Use a classe `.table` para estilizar um elemento `<table>`.
+Use a classe `.tbl` para estilizar um elemento `<table>`.
 
-<table class="table">
+<table class="tbl">
   <thead>
     <th>Nome</th>
     <th>Sobrenome</th>
@@ -36,9 +36,9 @@ Use a classe `.table` para estilizar um elemento `<table>`.
 </table>
 
 ### Listrada
-Use a classe `.table-striped` para adicionar listras a qualquer linha dentro de um `<tbody>`.
+Use a classe `.tbl-striped` para adicionar listras a qualquer linha dentro de um `<tbody>`.
 
-<table class="table table-striped">
+<table class="tbl tbl-striped">
   <thead>
     <th>Nome</th>
     <th>Sobrenome</th>
@@ -64,9 +64,9 @@ Use a classe `.table-striped` para adicionar listras a qualquer linha dentro de 
 </table>
 
 ### Borda
-Use a classe `.table-bordered` para adicionar borda à tabela e suas células
+Use a classe `.tbl-bordered` para adicionar borda à tabela e suas células
 
-<table class="table table-bordered">
+<table class="tbl tbl-bordered">
   <thead>
     <th>Nome</th>
     <th>Sobrenome</th>
@@ -92,9 +92,9 @@ Use a classe `.table-bordered` para adicionar borda à tabela e suas células
 </table>
 
 ### Condensada
-Use a classe `.table-condensed` para fazer tabelas mais compactas, cortando o `padding` das células pela metade.
+Use a classe `.tbl-condensed` para fazer tabelas mais compactas, cortando o `padding` das células pela metade.
 
-<table class="table table-condensed">
+<table class="tbl tbl-condensed">
   <thead>
     <th>Nome</th>
     <th>Sobrenome</th>
@@ -120,9 +120,9 @@ Use a classe `.table-condensed` para fazer tabelas mais compactas, cortando o `p
 </table>
 
 ### Ordenável
-Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
+Use a classe `.tbl-sortable` para fazer tabelas que permitam ordenação.
 
-<table class="table table-sortable">
+<table class="tbl tbl-sortable">
   <thead>
     <th>Nome</th>
     <th>Sobrenome</th>
@@ -149,7 +149,7 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
 
 */
 
-.table {
+.tbl {
   width: 100%;
   border-collapse: collapse;
 
@@ -187,7 +187,7 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
   }
 }
 
-.table-striped {
+.tbl-striped {
   tbody tr {
     &:nth-child(odd) {
       background-color: #fbfbfb;
@@ -195,11 +195,11 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
   }
 }
 
-.table-bordered {
+.tbl-bordered {
   border: 1px solid #ddd;
 }
 
-.table-condensed {
+.tbl-condensed {
   tbody tr {
     td {
       padding: .5rem;
@@ -207,7 +207,7 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
   }
 }
 
-.table-sortable {
+.tbl-sortable {
   th:hover {
     background-color: #e5e5e5;
     cursor: pointer;
