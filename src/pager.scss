@@ -44,11 +44,14 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
     }
     &.active {
       background: #7AB317 !important;
+      cursor: default !important;
       a {
         color: #f5f5f5 !important;
+        cursor: default !important;
       }
     }
     &.disabled {
+      cursor: not-allowed !important;
       a {
         color: #ccc !important;
         cursor: not-allowed !important;

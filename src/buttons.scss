@@ -9,7 +9,7 @@ category: css
 
 Use classes de botão em tags `<a>`, `<button>` e `<input>`.
 
-#### Padrão
+# Padrão
 
 ```html_example
 <button class="btn btn-default">Button</button>
@@ -17,7 +17,7 @@ Use classes de botão em tags `<a>`, `<button>` e `<input>`.
 <input type="button" class="btn btn-default" value="Input" />
 ```
 
-#### Desabilitado
+# Desabilitado
 
 O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
 
@@ -27,7 +27,7 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
 <input type="button" class="btn btn-default" value="Input" disabled />
 ```
 
-#### Sucesso
+# Sucesso
 
 ```html_example
 <button class="btn btn-success">Button</button>
@@ -35,7 +35,7 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
 <input type="button" class="btn btn-success" value="Input" />
 ```
 
-#### Excluir
+# Excluir
 
 ```html_example
 <button class="btn btn-danger">Button</button>
