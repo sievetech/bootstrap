@@ -44,7 +44,7 @@ input {
   @include border-radius(.4rem);
   @include transition(box-shadow .2s ease-in-out);
 
-  &:not([type="checkbox"]):not([type="radio"]):not(.btn):focus {
+  &:not([type="checkbox"]):not([type="radio"]):not(.button):focus {
     @include box-shadow(0 0 .1rem #7fb93a);
     border: .1rem solid #7fb93a;
   }

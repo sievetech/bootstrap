@@ -12,7 +12,7 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 ## Sucesso
 
 ```html_example
-<div class="ntn ntn-success">
+<div class="notification notification-success">
   <span class="message">Só sucesso!</span>
   <span class="close"><i class="icon-cancel"></i></span>
 </div>
@@ -21,14 +21,14 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 ## Erro
 
 ```html_example
-<div class="ntn ntn-error">
+<div class="notification notification-error">
   <span class="message">Deu erro!</span>
   <span class="close"><i class="icon-cancel"></i></span>
 </div>
 ```
 */
 
-.ntn {
+.notification {
   z-index: 900;
   color: #fff;
   display: flex;
@@ -54,13 +54,13 @@ Notificações podem ser usadas para dar feedbacks ao usuário
     }
   }
 
-  &.ntn-success {
+  &.notification-success {
     background: #7ab317;
     .close {
       background: #5a980c;
     }
   }
-  &.ntn-error {
+  &.notification-error {
     background: #bf4343;
     .close {
       background: #941313;
