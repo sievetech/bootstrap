@@ -15,9 +15,11 @@ Utilize a classe `.table-no-border` para remover as bordas.
 ```html_example
 <table class="table">
   <thead>
-    <th>Nome</th>
-    <th>Sobrenome</th>
-    <th>Usuário</th>
+    <tr>
+      <th>Nome</th>
+      <th>Sobrenome</th>
+      <th>Usuário</th>
+    </tr>
   </thead>
   <tbody>
     <tr>
@@ -46,9 +48,11 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
 ```html_example
 <table class="table table-sortable">
   <thead>
-    <th>Nome</th>
-    <th>Sobrenome</th>
-    <th>Usuário</th>
+    <tr>
+      <th>Nome</th>
+      <th>Sobrenome</th>
+      <th>Usuário</th>
+    </tr>
   </thead>
   <tbody>
     <tr>
