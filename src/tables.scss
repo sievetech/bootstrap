@@ -10,6 +10,7 @@ category: css
 ## Básico
 
 Use a classe `.table` para estilizar um elemento `<table>`.
+Utilize a classe `.table-no-border` para remover as bordas.
 
 ```html_example
 <table class="table">
@@ -114,11 +115,15 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
       }
     }
   }
-}
 
-.table-sortable {
-  th:hover {
-    background-color: #e5e5e5;
-    cursor: pointer;
+  &.table-no-border {
+    border: none;
+  }
+
+  &.table-sortable {
+    th:hover {
+      background-color: #e5e5e5;
+      cursor: pointer;
+    }
   }
 }

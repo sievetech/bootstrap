@@ -1,0 +1,136 @@
+@import "compass";
+
+/*doc
+---
+title: Box
+name: box
+category: composições
+---
+
+O box é um grid comum para se implementar funcionalidades autosuficientes.
+
+## Estrutura
+
+```
+<article class="box">
+  <header></header>
+
+  <div class="content"></div>
+
+  <footer></footer>
+</article>
+```
+
+## Exemplo
+```html_example
+<article class="box">
+  <header>
+    <h3>Título do Box</h3>
+
+    <ul class="actions">
+      <li><a href="javascript:void(0);"><i class="icon-plus"></i></a></li>
+      <li><a href="javascript:void(0);"><i class="icon-pencil"></i></a></li>
+    </ul>
+  </header>
+
+  <div class="content">
+    <table class="table table-no-border">
+      <thead>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Usuário</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Victor</td>
+          <td>Novais</td>
+          <td>victornovais</td>
+        </tr>
+        <tr>
+          <td>Leonardo</td>
+          <td>Quixadá</td>
+          <td>lquixada</td>
+        </tr>
+        <tr>
+          <td>Gabriela</td>
+          <td>Cardoso</td>
+          <td>gabyoncé</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>construído com <a href="javascript:void(0);">Sieve Bootstrap</a>.</p>
+  </footer>
+</article>
+```
+*/
+
+.box {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    overflow: hidden;
+    @include border-radius(.4rem);
+
+    header {
+        display: flex;
+        background-color: #f1f1f1;
+        border-bottom: .1rem solid #e5e5e5;
+
+        h3 {
+            margin: 0;
+            padding: 0;
+            flex: 1 0;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 1.3rem 1.2rem;
+            color: #6d6d6d;
+            font-size: 2rem;
+            font-family: "Roboto", sans-serif;
+        }
+
+        > .actions {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            border-left: .1rem solid #e5e5e5;
+
+            li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                a {
+                  display: block;
+                  color: #6d6d6d;
+                  font-size: 1.6rem;
+                  padding: 1.6rem;
+                }
+
+                &:hover {
+                  a  {
+                    background-color: #ccc !important;
+                  }
+                }
+            }
+        }
+    }
+
+    .content {
+        flex: 1 0;
+        background-color: #fff;
+    }
+
+    footer {
+        max-height: 10rem;
+        background-color: #f1f1f1;
+
+        p {
+          margin: 1rem;
+          font-size: 1rem;
+        }
+    }
+}
