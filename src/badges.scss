@@ -10,18 +10,18 @@ category: css
 O Badge pode ser aplicado em diversos contextos
 
 ```html_example
-<span class="bdg bdg-green">Verde</span>
-<span class="bdg bdg-red">Vermelho</span>
-<span class="bdg bdg-yellow">Amarelo</span>
-<span class="bdg bdg-grey">Cinza</span>
-<span class="bdg bdg-purple">Roxo</span>
-<span class="bdg bdg-pink">Rosa</span>
-<span class="bdg bdg-blue">Azul</span>
+<span class="badge badge-green">Verde</span>
+<span class="badge badge-red">Vermelho</span>
+<span class="badge badge-yellow">Amarelo</span>
+<span class="badge badge-grey">Cinza</span>
+<span class="badge badge-purple">Roxo</span>
+<span class="badge badge-pink">Rosa</span>
+<span class="badge badge-blue">Azul</span>
 ```
 
 */
 
-.bdg {
+.badge {
   color: #fff;
   font-size: 1rem;
   text-align: center;
@@ -30,25 +30,25 @@ O Badge pode ser aplicado em diversos contextos
   padding: .4rem 1rem;
   @include border-radius(.4rem);
 
-  &.bdg-green {
+  &.badge-green {
     background-color: #7AB317;
   }
-  &.bdg-red {
+  &.badge-red {
     background-color: #b71c1c;
   }
-  &.bdg-yellow {
+  &.badge-yellow {
     background-color: #F5C221;
   }
-  &.bdg-grey {
+  &.badge-grey {
     background-color: #666666;
   }
-  &.bdg-purple {
+  &.badge-purple {
     background-color: #776B9E;
   }
-  &.bdg-pink {
+  &.badge-pink {
     background-color: #D651A1;
   }
-  &.bdg-blue {
+  &.badge-blue {
     background-color: #177eb3;
   }
 }

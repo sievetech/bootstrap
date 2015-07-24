@@ -12,9 +12,9 @@ Use classes de botão em tags `<a>`, `<button>` e `<input>`.
 ## Padrão
 
 ```html_example
-<button class="btn btn-default">Button</button>
-<a href="javascript:void(0);" class="btn btn-default">Link</a>
-<input type="button" class="btn btn-default" value="Input" />
+<button class="button button-default">Button</button>
+<a href="javascript:void(0);" class="button button-default">Link</a>
+<input type="button" class="button button-default" value="Input" />
 ```
 
 ## Desabilitado
@@ -22,29 +22,29 @@ Use classes de botão em tags `<a>`, `<button>` e `<input>`.
 O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
 
 ```html_example
-<button class="btn btn-default" disabled>Button</button>
-<a href="javascript:void(0);" class="btn btn-default" disabled>Link</a>
-<input type="button" class="btn btn-default" value="Input" disabled />
+<button class="button button-default" disabled>Button</button>
+<a href="javascript:void(0);" class="button button-default" disabled>Link</a>
+<input type="button" class="button button-default" value="Input" disabled />
 ```
 
 ## Sucesso
 
 ```html_example
-<button class="btn btn-success">Button</button>
-<a href="javascript:void(0);" class="btn btn-success">Link</a>
-<input type="button" class="btn btn-success" value="Input" />
+<button class="button button-success">Button</button>
+<a href="javascript:void(0);" class="button button-success">Link</a>
+<input type="button" class="button button-success" value="Input" />
 ```
 
 ## Excluir
 
 ```html_example
-<button class="btn btn-danger">Button</button>
-<a href="javascript:void(0);" class="btn btn-danger">Link</a>
-<input type="button" class="btn btn-danger" value="Input" />
+<button class="button button-danger">Button</button>
+<a href="javascript:void(0);" class="button button-danger">Link</a>
+<input type="button" class="button button-danger" value="Input" />
 ```
 */
 
-.btn {
+.button {
   display: inline-block;
   padding: 0;
   width: 14rem;
@@ -63,13 +63,13 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
   }
 }
 
-.btn:disabled, .btn[disabled] {
+.button:disabled, .button[disabled] {
   background-color: #f4f4f4;
   color: #c6c6c6 !important;
   cursor: default;
 }
 
-.btn:not(:disabled):not([disabled]) {
+.button:not(:disabled):not([disabled]) {
   color: #fff !important;
   cursor: pointer;
 
@@ -86,7 +86,7 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
     @include box-shadow(inset 0 .2rem .2rem rgba(0, 0, 0, 0.2));
   }
 
-  &.btn-default {
+  &.button-default {
     background-color: #f4f4f4;
     border: .1rem solid #ccc;
     color: #000 !important;
@@ -101,7 +101,7 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
     }
   }
 
-  &.btn-success {
+  &.button-success {
     background-color: #7AB317;
 
     &:active {
@@ -113,7 +113,7 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
     }
   }
 
-  &.btn-danger {
+  &.button-danger {
     background-color: #b71c1c;
 
     &:active {
@@ -126,6 +126,6 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
   }
 }
 
-a.btn {
+a.button {
   line-height: 3.5rem;
 }

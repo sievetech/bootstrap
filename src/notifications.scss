@@ -12,7 +12,7 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 ## Sucesso
 
 ```html_example
-<div class="ntn ntn-success">
+<div class="notification notification-success">
   <span class="message">Só sucesso!</span>
   <span class="close"><i class="icon-cancel"></i></span>
 </div>
@@ -21,49 +21,66 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 ## Erro
 
 ```html_example
-<div class="ntn ntn-error">
+<div class="notification notification-error">
   <span class="message">Deu erro!</span>
   <span class="close"><i class="icon-cancel"></i></span>
 </div>
 ```
 */
 
-.ntn {
+.notification {
+  display: flex;
+  justify-content: center;
   z-index: 900;
   color: #fff;
-  display: flex;
   font-size: 1.6rem;
   font-family: Roboto, sans-serif;
-  width: 25rem;
-  line-height: 1.2rem;
-	overflow: hidden;
-  @include border-radius(.4rem);
-  @include box-shadow(0 .2rem .3rem #666);
 
   span {
-    display: inline-block;
     padding: 3rem;
 
+    &:first-child {
+      @include border-top-left-radius(.4rem);
+      @include border-bottom-left-radius(.4rem);
+    }
+
+    &:last-child {
+      @include border-top-right-radius(.4rem);
+      @include border-bottom-right-radius(.4rem);
+    }
+
     &.message {
-      flex: 1 0;
+      min-width: 25rem;
+      max-width: 50rem;
     }
 
     &.close {
+      display: flex;
       font-size: 1.1rem;
       cursor: pointer;
+      
+      i {
+        margin: auto;
+      }
     }
   }
 
-  &.ntn-success {
-    background: #7ab317;
-    .close {
-      background: #5a980c;
+  &.notification-success {
+    span {
+      background: #7ab317;
+      &.close {
+        vertical-align: top;
+        background: #5a980c;
+      }
     }
+
   }
-  &.ntn-error {
-    background: #bf4343;
-    .close {
-      background: #941313;
+  &.notification-error {
+    span {
+      background: #bf4343;
+      &.close {
+        background: #941313;
+      }
     }
   }
 }

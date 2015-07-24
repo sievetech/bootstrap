@@ -12,7 +12,7 @@ Barra de navegação para ser utilizada como lista.
 ## Vertical
 
 ```html_example
-<ul class="lst lst-vertical">
+<ul class="list list-vertical">
   <li>
     <a href="javascript:void(0);">Home</a>
   </li>
@@ -28,7 +28,7 @@ Barra de navegação para ser utilizada como lista.
 ## Horizontal
 
 ```html_example
-<ul class="lst lst-horizontal">
+<ul class="list list-horizontal">
   <li>
     <a href="javascript:void(0);">Home</a>
   </li>
@@ -43,14 +43,15 @@ Barra de navegação para ser utilizada como lista.
 
 */
 
-.lst {
+.list {
   z-index: 800;
   background-color: #262626;
   font-family: "Roboto",sans-serif;
   font-weight: 100;
   font-size: 1.4rem;
-  width: 100%;
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
 
   li {
     position: relative;
@@ -81,19 +82,17 @@ Barra de navegação para ser utilizada como lista.
   }
 }
 
-.lst-vertical {
+.list-vertical {
+  flex-flow: column wrap;
   width: 20rem;
-  bottom: 0;
-  top: 0;
 
   li.active {
     border-left: .4rem solid #75c048;
   }
 }
 
-.lst-horizontal {
-  left: 0;
-  right: 0;
+.list-horizontal {
+  flex-flow: row nowrap;
 
   li {
     display: inline-block;

@@ -9,10 +9,10 @@ category: css
 
 ## Básico
 
-Use a classe `.tbl` para estilizar um elemento `<table>`.
+Use a classe `.table` para estilizar um elemento `<table>`.
 
 ```html_example
-<table class="tbl">
+<table class="table">
   <thead>
     <th>Nome</th>
     <th>Sobrenome</th>
@@ -40,10 +40,10 @@ Use a classe `.tbl` para estilizar um elemento `<table>`.
 
 ## Ordenável
 
-Use a classe `.tbl-sortable` para fazer tabelas que permitam ordenação.
+Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
 
 ```html_example
-<table class="tbl tbl-sortable">
+<table class="table table-sortable">
   <thead>
     <th>Nome</th>
     <th>Sobrenome</th>
@@ -71,7 +71,7 @@ Use a classe `.tbl-sortable` para fazer tabelas que permitam ordenação.
 
 */
 
-.tbl {
+.table {
   width: 100%;
   border-collapse: collapse;
   border: .1rem solid #ddd;
@@ -116,7 +116,7 @@ Use a classe `.tbl-sortable` para fazer tabelas que permitam ordenação.
   }
 }
 
-.tbl-sortable {
+.table-sortable {
   th:hover {
     background-color: #e5e5e5;
     cursor: pointer;
