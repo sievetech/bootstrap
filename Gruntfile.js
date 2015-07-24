@@ -22,7 +22,7 @@ module.exports = function(grunt) {
       options:{
         logConcurrentOutput: true
       },
-      work: ['server', 'open:local', 'watch']
+      work: ['server', 'watch',  'open:local']
     },
 
     /**
@@ -78,7 +78,7 @@ module.exports = function(grunt) {
       },
 
       dist: {
-        files: 'src/**/*.scss',
+        files: ['src/**/*.scss', 'config.yml', 'config.rb', 'Gruntfile.js'],
         tasks: ['build']
       }
     }
