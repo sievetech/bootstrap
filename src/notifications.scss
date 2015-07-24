@@ -13,8 +13,10 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 
 ```html_example
 <div class="notification notification-success">
-  <span class="message">Só sucesso!</span>
-  <span class="close"><i class="icon-cancel"></i></span>
+  <div class="content">
+    <span class="message">Só sucesso!</span>
+    <span class="close"><i class="icon-cancel"></i></span>
+  </div>
 </div>
 ```
 
@@ -22,8 +24,10 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 
 ```html_example
 <div class="notification notification-error">
-  <span class="message">Deu erro!</span>
-  <span class="close"><i class="icon-cancel"></i></span>
+  <div class="content">
+    <span class="message">Deu erro!</span>
+    <span class="close"><i class="icon-cancel"></i></span>
+  </div>
 </div>
 ```
 */
@@ -31,54 +35,50 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 .notification {
   display: flex;
   justify-content: center;
-  z-index: 900;
-  color: #fff;
-  font-size: 1.6rem;
-  font-family: Roboto, sans-serif;
 
-  span {
-    padding: 3rem;
+  .content {
+    display: flex;
+    overflow: hidden;
+    @include border-radius(.4rem);
 
-    &:first-child {
-      @include border-top-left-radius(.4rem);
-      @include border-bottom-left-radius(.4rem);
-    }
+    span {
+      color: #fff;
+      padding: 3rem;
+      font-size: 1.6rem;
+      font-family: Roboto, sans-serif;
 
-    &:last-child {
-      @include border-top-right-radius(.4rem);
-      @include border-bottom-right-radius(.4rem);
-    }
+      &.message {
+        min-width: 25rem;
+        max-width: 50rem;
+      }
 
-    &.message {
-      min-width: 25rem;
-      max-width: 50rem;
-    }
+      &.close {
+        display: flex;
+        font-size: 1.1rem;
+        cursor: pointer;
 
-    &.close {
-      display: flex;
-      font-size: 1.1rem;
-      cursor: pointer;
-      
-      i {
-        margin: auto;
+        i {
+          margin: auto;
+        }
       }
     }
   }
 
   &.notification-success {
-    span {
+    .content {
       background: #7ab317;
-      &.close {
-        vertical-align: top;
+
+      .close {
         background: #5a980c;
       }
     }
 
   }
   &.notification-error {
-    span {
+    .content {
       background: #bf4343;
-      &.close {
+
+      .close {
         background: #941313;
       }
     }
