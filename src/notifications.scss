@@ -35,13 +35,12 @@ Notificações podem ser usadas para dar feedbacks ao usuário
   font-size: 1.6rem;
   font-family: Roboto, sans-serif;
   width: 25rem;
-  line-height: 1.2rem;
-	overflow: hidden;
+  max-width: 60rem;
+  overflow: hidden;
   @include border-radius(.4rem);
   @include box-shadow(0 .2rem .3rem #666);
 
   span {
-    display: inline-block;
     padding: 3rem;
 
     &.message {
