@@ -13,15 +13,9 @@ Barra de navegação para ser utilizada como lista.
 
 ```html_example
 <ul class="list list-vertical">
-  <li>
-    <a href="javascript:void(0);">Home</a>
-  </li>
-  <li class="active">
-    <a href="javascript:void(0);">Profile</a>
-  </li>
-  <li>
-    <a href="javascript:void(0);">About</a>
-  </li>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</a></li>
 </ul>
 ```
 
@@ -29,76 +23,24 @@ Barra de navegação para ser utilizada como lista.
 
 ```html_example
 <ul class="list list-horizontal">
-  <li>
-    <a href="javascript:void(0);">Home</a>
-  </li>
-  <li class="active">
-    <a href="javascript:void(0);">Profile</a>
-  </li>
-  <li>
-    <a href="javascript:void(0);">About</a>
-  </li>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
 </ul>
 ```
 
 */
 
 .list {
-  z-index: 800;
-  background-color: #262626;
-  font-family: "Roboto",sans-serif;
-  font-weight: 100;
-  font-size: 1.4rem;
-  list-style: none;
   display: flex;
   justify-content: flex-start;
+  list-style: none;
 
-  li {
-    position: relative;
+  &.list-vertical {
+    flex-flow: column wrap;
   }
 
-  a {
-    display: block;
-    padding: 1rem 2rem;
-    color: #fff;
-    text-decoration: none;
-    &:link, &:visited, &:active {
-      display: block;
-      padding: 1rem 2rem;
-      color: #fff;
-      text-decoration: none;
-    }
-  }
-
-  li:hover {
-    background-color: #373737;
-  }
-
-  li.active {
-    background-color: #000;
-    > a {
-      color: #75c048 !important;
-    }
-  }
-}
-
-.list-vertical {
-  flex-flow: column wrap;
-  width: 20rem;
-
-  li.active {
-    border-left: .4rem solid #75c048;
-  }
-}
-
-.list-horizontal {
-  flex-flow: row nowrap;
-
-  li {
-    display: inline-block;
-
-    &.active {
-      border-top: .4rem solid #75c048;
-    }
+  &.list-horizontal {
+    flex-flow: row nowrap;
   }
 }

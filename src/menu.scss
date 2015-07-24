@@ -1,0 +1,91 @@
+@import "compass";
+
+/*doc
+---
+title: Menu
+name: menu
+category: composições
+---
+
+Barra de navegação para ser utilizada como lista.
+
+## Vertical
+
+```html_example
+<nav class="menu">
+  <ul class="list list-vertical">
+    <li><a href="javascript:void(0);">Home</a></li>
+    <li class="active"><a href="javascript:void(0);">Profile</a></li>
+    <li><a href="javascript:void(0);">About</a></li>
+  </ul>
+</nav>
+```
+
+## Horizontal
+
+```html_example
+<nav class="menu">
+  <ul class="list list-horizontal">
+    <li><a href="javascript:void(0);">Home</a></li>
+    <li class="active"><a href="javascript:void(0);">Profile</a></li>
+    <li><a href="javascript:void(0);">About</a></li>
+  </ul>
+</nav>
+```
+
+*/
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.4rem;
+
+  .list {
+    display: flex;
+    background-color: #262626;
+
+    li {
+      &:hover {
+        background-color: #373737;
+      }
+
+      &.active {
+        background-color: #000;
+
+        > a {
+          color: #75c048 !important;
+        }
+      }
+
+      a {
+        display: block;
+        padding: 1rem 2rem;
+        color: #fff;
+        text-decoration: none;
+
+        &:link, &:visited, &:active {
+          display: block;
+          padding: 1rem 2rem;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .list-vertical {
+    width: 20rem;
+
+    li.active {
+      border-left: .4rem solid #75c048;
+    }
+  }
+
+  .list-horizontal {
+    li.active {
+      border-top: .4rem solid #75c048;
+    }
+  }
+}
