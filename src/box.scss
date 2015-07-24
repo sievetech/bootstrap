@@ -27,7 +27,7 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
   <header>
     <h3>Título do Box</h3>
 
-    <ul class="actions">
+    <ul class="list list-horizontal list-actions">
       <li><a href="javascript:void(0);"><i class="icon-plus"></i></a></li>
       <li><a href="javascript:void(0);"><i class="icon-pencil"></i></a></li>
     </ul>
@@ -36,25 +36,31 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
   <div class="content">
     <table class="table table-no-border">
       <thead>
-        <th>Nome</th>
-        <th>Sobrenome</th>
-        <th>Usuário</th>
+        <tr>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>Usuário</th>
+          <th>Status</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
           <td>Victor</td>
           <td>Novais</td>
           <td>victornovais</td>
+          <td><span class="badge badge-yellow">namorando</span></td>
         </tr>
         <tr>
           <td>Leonardo</td>
           <td>Quixadá</td>
           <td>lquixada</td>
+          <td><span class="badge badge-green">solteiro</span></td>
         </tr>
         <tr>
           <td>Gabriela</td>
           <td>Cardoso</td>
           <td>gabyoncé</td>
+          <td><span class="badge badge-red">casada</span></td>
         </tr>
       </tbody>
     </table>
@@ -92,17 +98,10 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
             font-family: "Roboto", sans-serif;
         }
 
-        > .actions {
-            display: flex;
-            margin: 0;
-            padding: 0;
+        > .list-actions {
             border-left: .1rem solid #e5e5e5;
 
             li {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-
                 a {
                   display: block;
                   color: #6d6d6d;
