@@ -34,13 +34,14 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
   </header>
 
   <div class="content">
-    <table class="table table-no-border">
+    <table class="table table-no-border table-sortable">
       <thead>
         <tr>
           <th>Nome</th>
           <th>Sobrenome</th>
           <th>Usuário</th>
           <th>Status</th>
+          <th>Apagar</th>
         </tr>
       </thead>
       <tbody>
@@ -49,18 +50,21 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
           <td>Novais</td>
           <td>victornovais</td>
           <td><span class="badge badge-yellow">namorando</span></td>
+          <td><a href="#"><i class="icon-error"></i></a></td>
         </tr>
         <tr>
           <td>Leonardo</td>
           <td>Quixadá</td>
           <td>lquixada</td>
           <td><span class="badge badge-green">solteiro</span></td>
+          <td><a href="#"><i class="icon-error"></i></a></td>
         </tr>
         <tr>
           <td>Gabriela</td>
           <td>Cardoso</td>
           <td>gabyoncé</td>
           <td><span class="badge badge-red">casada</span></td>
+          <td><a href="#"><i class="icon-error"></i></a></td>
         </tr>
       </tbody>
     </table>
