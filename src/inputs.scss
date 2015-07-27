@@ -10,20 +10,29 @@ category: css
 ## Texto
 ```html_example
 <input type="text" value="Texto" />
-<input type="password" value="password" />
+
+<input type="text" value="Texto" disabled/>
+
+<input type="text" value="Texto" class="error"/>
+
 ```
 
 ## Checkbox
 ```html_example
 <input type="checkbox" /> Checkbox1
-<input type="checkbox" /> Checkbox2
-<input type="checkbox" /> Checkbox3
+
+<input type="checkbox" disabled/> Checkbox 2
+
+<input type="checkbox" class="error"/> Checkbox 3
 ```
 
 ## Radio
 ```html_example
 <input type="radio" name="radio" /> Radio 1
-<input type="radio" name="radio" /> Radio 2
+
+<input type="radio" name="radio" disabled/> Radio 2
+
+<input type="radio" name="radio" class="error"/> Radio 3
 ```
 
 ## Select
@@ -33,16 +42,31 @@ category: css
   <option>Opção 2</option>
   <option>Opção 3</option>
 </select>
+
+<select disabled>
+  <option>Opção 1</option>
+  <option>Opção 2</option>
+  <option>Opção 3</option>
+</select>
+
+<select class="error">
+  <option>Opção 1</option>
+  <option>Opção 2</option>
+  <option>Opção 3</option>
+</select>
 ```
 
 ## Textarea
 
 ```html_example
-<textarea rows="10" cols="80">
+<textarea rows="5" cols="40">
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-unknown printer took a galley of type and scrambled it to make a type specimen
-book.
+Ipsum has been the industry's standard dummy text ever since the 1500.
+</textarea>
+
+<textarea rows="5" cols="40" class="error">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500.
 </textarea>
 ```
 */
@@ -56,12 +80,22 @@ input {
   @include transition(box-shadow .2s ease-in-out);
 
   &:not([type="checkbox"]):not([type="radio"]):not(.button):focus {
-    @include box-shadow(0 0 .3rem #7fb93a);
-    border: .1rem solid #7fb93a;
+    &:not(.error) {
+      @include box-shadow(0 0 .1rem #7fb93a);
+      border: .1rem solid #7fb93a;
+    }
   }
 
   &[type="checkbox"], [type="radio"] {
     cursor: pointer;
+  }
+
+  &.error {
+    &:not([type="checkbox"]):not([type="radio"]) {
+      @include box-shadow(0 0 .3rem #b71c1c);
+      border: .1rem solid #b71c1c;
+    }
+    color: #b71c1c;
   }
 }
 
@@ -73,8 +107,10 @@ select {
   @include border-radius(.4rem);
   @include transition(box-shadow .2s ease-in-out);
 
-  &:not([type="checkbox"]):not([type="radio"]):focus {
-    @include box-shadow(0 0 .1rem #7fb93a);
+  &.error {
+    @include box-shadow(0 0 .3rem #b71c1c);
+    border: .1rem solid #b71c1c;
+    color: #b71c1c;
   }
 }
 
@@ -86,8 +122,22 @@ textarea {
   @include border-radius(.4rem);
   @include transition(box-shadow .2s ease-in-out);
 
-  &:not([type="checkbox"]):not([type="radio"]):focus {
-    @include box-shadow(0 0 .1rem #7fb93a);
-    border: .1rem solid #7fb93a;
+  &:focus {
+    &:not(.error) {
+      @include box-shadow(0 0 .1rem #7fb93a);
+      border: .1rem solid #7fb93a;
+    }
   }
+
+  &.error {
+    @include box-shadow(0 0 .3rem #b71c1c);
+    border: .1rem solid #b71c1c;
+    color: #b71c1c;
+  }
+}
+
+input:disabled, input[disabled], select:disabled, select[disabled], textarea:disabled, textarea[disabled] {
+  background-color: #f4f4f4;
+  color: #c6c6c6 !important;
+  cursor: not-allowed;
 }
