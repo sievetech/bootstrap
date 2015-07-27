@@ -4,75 +4,37 @@
 ---
 title: Formulários
 name: forms
-category: css
+category: composições
 ---
 
-## Texto
+# Campos
 
 ```html_example
+<label>Texto:</label>
 <input type="text" value="Texto" />
-<input type="password" value="Password" />
-```
 
-## Select
+<label>Checkbox:</label>
+<input type="checkbox" /> A
+<input type="checkbox" /> B
+<input type="checkbox" /> C
 
-```html_example
+<label>Radio:</label>
+<input type="radio" name="radio" /> Radio 1
+<input type="radio" name="radio" /> Radio 2
+
+<label>Select:</label>
 <select>
   <option>Opção 1</option>
   <option>Opção 2</option>
   <option>Opção 3</option>
 </select>
 ```
-
-## Textarea
-
-```html_example
-<textarea rows="10" cols="80">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-unknown printer took a galley of type and scrambled it to make a type specimen
-book.
-</textarea>
-```
 */
 
-input {
-  padding: 1.2rem;
-  background-color: #f4f4f4;
-  border: .1rem solid #ccc;
-  outline: none;
-  @include border-radius(.4rem);
-  @include transition(box-shadow .2s ease-in-out);
-
-  &:not([type="checkbox"]):not([type="radio"]):not(.button):focus {
-    @include box-shadow(0 0 .1rem #7fb93a);
-    border: .1rem solid #7fb93a;
-  }
-}
-
-select {
-  padding: 1.2rem;
-  background-color: #f4f4f4;
-  border: .1rem solid #ccc;
-  outline: none;
-  @include border-radius(.4rem);
-  @include transition(box-shadow .2s ease-in-out);
-
-  &:not([type="checkbox"]):not([type="radio"]):focus {
-    @include box-shadow(0 0 .1rem #7fb93a);
-  }
-}
-
-textarea {
-  padding: 1.2rem;
-  background-color: #f4f4f4;
-  border: .1rem solid #ccc;
-  outline: none;
-  @include border-radius(.4rem);
-  @include transition(box-shadow .2s ease-in-out);
-
-  &:not([type="checkbox"]):not([type="radio"]):focus {
-    @include box-shadow(0 0 .1rem #7fb93a);
-    border: .1rem solid #7fb93a;
-  }
+label {
+  display: block;
+  color: #666;
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+  text-align: left;
 }
