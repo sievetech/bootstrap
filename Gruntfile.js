@@ -93,7 +93,7 @@ module.exports = function(grunt) {
       },
 
       dist: {
-        files: ['src/**/*.scss', 'demo/', 'config.yml', 'config.rb', 'Gruntfile.js'],
+        files: ['src/**/*.scss', 'demo/**/*', 'config.yml', 'config.rb', 'Gruntfile.js'],
         tasks: ['build']
       }
     }
