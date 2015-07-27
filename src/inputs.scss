@@ -2,12 +2,14 @@
 
 /*doc
 ---
-title: Inputs
+title: Campos
 name: inputs
 category: css
 ---
 
 ## Texto
+Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
+
 ```html_example
 <input type="text" value="Texto" />
 
@@ -18,24 +20,26 @@ category: css
 ```
 
 ## Checkbox
+Pode ser estilizado aplicando o atributo `disabled`.
+
 ```html_example
 <input type="checkbox" /> Checkbox1
 
 <input type="checkbox" disabled/> Checkbox 2
-
-<input type="checkbox" class="error"/> Checkbox 3
 ```
 
 ## Radio
+Pode ser estilizado aplicando o atributo `disabled`.
+
 ```html_example
 <input type="radio" name="radio" /> Radio 1
 
 <input type="radio" name="radio" disabled/> Radio 2
-
-<input type="radio" name="radio" class="error"/> Radio 3
 ```
 
 ## Select
+Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
+
 ```html_example
 <select>
   <option>Opção 1</option>
@@ -57,9 +61,15 @@ category: css
 ```
 
 ## Textarea
+Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
 
 ```html_example
 <textarea rows="5" cols="40">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500.
+</textarea>
+
+<textarea rows="5" cols="40" disabled>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 Ipsum has been the industry's standard dummy text ever since the 1500.
 </textarea>
