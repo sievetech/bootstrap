@@ -39,6 +39,14 @@ module.exports = function(grunt) {
     /**
      * Pré-compiladores
      */
+    cssmin: {
+      target: {
+        files: {
+          'src/sieve.bootstrap.min.css': 'src/*.css'
+        }
+      }
+    },
+
     sass: {
       dist: {
         options: {
@@ -89,7 +97,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('work', ['concurrent:work']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['sass', 'hologram']);
+  grunt.registerTask('build', ['sass', 'cssmin', 'hologram']);
   grunt.registerTask('server', ['connect']);
 
   /**
