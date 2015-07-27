@@ -3,17 +3,42 @@
 main {
   > header {
     margin-bottom: 3rem;
-    background-color: rgba(38, 38, 38, 1);
+    @include background(linear-gradient(0deg, #232526 10%, #414345 90%));
+    @include box-shadow(0 .2rem .2rem rgba(0,0,0,0.2));
 
-    .col-md-12 {
-      display: flex;
-      align-items: center;
+    .list-options {
+      font-size: 2rem;
+      a {
+        display: inline-block;
+        padding: .6rem .3rem;
+        color: #999;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    .menu {
+      .list {
+        background-color: transparent;
+
+        a:hover {
+          background-color: rgba(255,255,255,0.05);
+        }
+      }
     }
   }
 
-  > .content {
-    .icon-error, .icon-pencil {
-      color: #666;
+  > section {
+    .title {
+      margin-bottom: 3rem;
+    }
+
+    table {
+      .icon-error, .icon-pencil {
+        color: #999;
+      }
     }
   }
 
