@@ -65,6 +65,13 @@ module.exports = function(grunt) {
     /**
      * Automação
      */
+    copy: {
+      dist: {
+        src: 'demo/*',
+        dest: 'build/',
+      },
+    },
+
     open: {
       file: {
         path: './build/index.html'
@@ -86,7 +93,7 @@ module.exports = function(grunt) {
       },
 
       dist: {
-        files: ['src/**/*.scss', 'config.yml', 'config.rb', 'Gruntfile.js'],
+        files: ['src/**/*.scss', 'demo/', 'config.yml', 'config.rb', 'Gruntfile.js'],
         tasks: ['build']
       }
     }
@@ -97,7 +104,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('work', ['concurrent:work']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['sass', 'cssmin', 'hologram']);
+  grunt.registerTask('build', ['sass', 'cssmin', 'copy', 'hologram']);
   grunt.registerTask('server', ['connect']);
 
   /**
