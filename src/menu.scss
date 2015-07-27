@@ -15,7 +15,7 @@ Barra de navegação para ser utilizada como lista.
 <nav class="menu">
   <ul class="list list-vertical">
     <li><a href="javascript:void(0);">home</a></li>
-    <li class="active"><a href="javascript:void(0);">profile</a></li>
+    <li><a href="javascript:void(0);" class="active">profile</a></li>
     <li><a href="javascript:void(0);">about</a></li>
   </ul>
 </nav>
@@ -27,7 +27,7 @@ Barra de navegação para ser utilizada como lista.
 <nav class="menu">
   <ul class="list list-horizontal">
     <li><a href="javascript:void(0);">home</a></li>
-    <li class="active"><a href="javascript:void(0);">profile</a></li>
+    <li><a href="javascript:void(0);" class="active">profile</a></li>
     <li><a href="javascript:void(0);">about</a></li>
   </ul>
 </nav>
@@ -46,31 +46,26 @@ Barra de navegação para ser utilizada como lista.
     display: flex;
     background-color: #262626;
 
-    li {
+    a {
+      display: block;
+      padding: 1rem 2rem;
+      color: #fff;
+      text-decoration: none;
+
+      &.active {
+        color: #75c048 !important;
+        background-color: #000;
+      }
+
       &:hover {
         background-color: #373737;
       }
 
-      &.active {
-        background-color: #000;
-
-        > a {
-          color: #75c048 !important;
-        }
-      }
-
-      a {
+      &:link, &:visited, &:active {
         display: block;
         padding: 1rem 2rem;
         color: #fff;
         text-decoration: none;
-
-        &:link, &:visited, &:active {
-          display: block;
-          padding: 1rem 2rem;
-          color: #fff;
-          text-decoration: none;
-        }
       }
     }
   }
@@ -78,13 +73,15 @@ Barra de navegação para ser utilizada como lista.
   .list-vertical {
     width: 20rem;
 
-    li.active {
+    .active {
+      padding-left: 1.6rem !important;
       border-left: .4rem solid #75c048;
     }
   }
 
   .list-horizontal {
-    li.active {
+    .active {
+      padding-top: .6rem !important;
       border-top: .4rem solid #75c048;
     }
   }
