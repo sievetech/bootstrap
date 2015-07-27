@@ -8,76 +8,132 @@
   <link rel="stylesheet" href="../src/fontello/css/sieve-icon-font.css">
   <link rel="stylesheet" href="../src/grid.css">
   <link rel="stylesheet" href="../src/sieve.bootstrap.min.css">
+  <style>
+  main > header {
+    margin-bottom: 3rem;
+    background-color: rgb(38, 38, 38);
+  }
+
+  main > header .col-md-12 {
+    display: flex;
+    align-items: center;
+  }
+
+  main > header h1 {
+    margin: 0;
+  }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">titulo</div>
-  </div>
-  <div class="row">
-    <div class="col-md-8">
+<main>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1><img src="img/logo.png"></h1>
 
-      <article class="box">
-        <header>
-          <h3>Título do Box</h3>
-
-          <ul class="list list-horizontal list-actions">
-            <li><a href="javascript:void(0);"><i class="icon-plus"></i></a></li>
-            <li><a href="javascript:void(0);"><i class="icon-pencil"></i></a></li>
-          </ul>
-        </header>
-
-        <div class="content">
-          <table class="table table-no-border table-sortable">
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>Sobrenome</th>
-                <th>Usuário</th>
-                <th>Status</th>
-                <th>Apagar</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Victor</td>
-                <td>Novais</td>
-                <td>victornovais</td>
-                <td><span class="badge badge-yellow">namorando</span></td>
-                <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-              </tr>
-              <tr>
-                <td>Leonardo</td>
-                <td>Quixadá</td>
-                <td>lquixada</td>
-                <td><span class="badge badge-green">solteiro</span></td>
-                <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-              </tr>
-              <tr>
-                <td>Gabriela</td>
-                <td>Cardoso</td>
-                <td>gabyoncé</td>
-                <td><span class="badge badge-red">casada</span></td>
-                <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-              </tr>
-            </tbody>
-          </table>
+          <nav class="menu">
+            <ul class="list list-horizontal">
+              <li><a href="javascript:void(0);">home</a></li>
+              <li><a href="javascript:void(0);" class="active">profile</a></li>
+              <li><a href="javascript:void(0);">about</a></li>
+            </ul>
+          </nav>
         </div>
-
-        <footer>
-          <p>construído com <a href="javascript:void(0);">Sieve Bootstrap</a>.</p>
-        </footer>
-      </article>
-
+      </div>
     </div>
-    <div class="col-md-4">.col-md-4</div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">.col-md-12</div>
-  </div>
-</div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+
+          <article class="box">
+            <header>
+              <h3>Título do Box</h3>
+
+              <ul class="list list-horizontal list-actions">
+                <li><a href="javascript:void(0);"><i class="icon-plus"></i></a></li>
+                <li><a href="javascript:void(0);"><i class="icon-pencil"></i></a></li>
+              </ul>
+            </header>
+
+            <div class="content">
+              <table class="table table-no-border table-sortable">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Usuário</th>
+                    <th>Status</th>
+                    <th>Apagar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Victor</td>
+                    <td>Novais</td>
+                    <td>victornovais</td>
+                    <td><span class="badge badge-yellow">namorando</span></td>
+                    <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>Leonardo</td>
+                    <td>Quixadá</td>
+                    <td>lquixada</td>
+                    <td><span class="badge badge-green">solteiro</span></td>
+                    <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>Gabriela</td>
+                    <td>Cardoso</td>
+                    <td>gabyoncé</td>
+                    <td><span class="badge badge-red">casada</span></td>
+                    <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <footer>
+              <p>construído com <a href="javascript:void(0);">Sieve Bootstrap</a>.</p>
+            </footer>
+          </article>
+
+        </div>
+        <div class="col-md-3">
+
+          <article class="box">
+            <header>
+              <h3>Filtros</h3>
+            </header>
+
+            <div class="content">
+              <form>
+                <input type="text" />
+              </form>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</main>
 
 </body>
 
