@@ -105,19 +105,15 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
         > .list-actions {
             border-left: .1rem solid #e5e5e5;
 
-            li {
-                a {
-                  display: block;
-                  color: #6d6d6d;
-                  font-size: 1.6rem;
-                  padding: 1.6rem;
-                }
+            a {
+              display: block;
+              color: #6d6d6d;
+              font-size: 1.6rem;
+              padding: 1.6rem;
 
-                &:hover {
-                  a  {
-                    background-color: #ccc !important;
-                  }
-                }
+              &:hover {
+                  background-color: #ccc !important;
+              }
             }
         }
     }
