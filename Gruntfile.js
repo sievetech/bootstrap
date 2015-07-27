@@ -42,7 +42,7 @@ module.exports = function(grunt) {
     cssmin: {
       target: {
         files: {
-          'src/sieve.bootstrap.min.css': 'src/*.css'
+          'build/src/sieve.bootstrap.min.css': 'build/src/*.css'
         }
       }
     },
@@ -104,7 +104,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('work', ['concurrent:work']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['sass', 'cssmin', 'copy', 'hologram']);
+  grunt.registerTask('build', ['sass', 'hologram', 'cssmin', 'copy']);
   grunt.registerTask('server', ['connect']);
 
   /**
