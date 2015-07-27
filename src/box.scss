@@ -86,6 +86,7 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
 
 .box {
     display: flex;
+    margin-bottom: 3rem;
     flex-flow: column nowrap;
     height: 100%;
     overflow: hidden;
