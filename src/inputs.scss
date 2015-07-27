@@ -16,7 +16,6 @@ Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
 <input type="text" value="Texto" disabled/>
 
 <input type="text" value="Texto" class="error"/>
-
 ```
 
 ## Checkbox
@@ -79,6 +78,22 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 Ipsum has been the industry's standard dummy text ever since the 1500.
 </textarea>
 ```
+
+## Composto (campo + ícone)
+O ícone pode ser posicionado à esquerda ou à direita
+
+```html_example
+<div class="input-group">
+  <span class="input-group-addon"><i class="icon-dollar"></i></span>
+  <input type="text" value="100,00" />
+</div>
+
+<div class="input-group">
+  <input type="text" placeholder="Escolha uma imagem..." readonly />
+  <span class="input-group-addon"><i class="icon-upload-cloud"></i></span>
+</div>
+```
+
 */
 
 input {
@@ -89,7 +104,7 @@ input {
   @include border-radius(.4rem);
   @include transition(box-shadow .2s ease-in-out);
 
-  &:not([type="checkbox"]):not([type="radio"]):not(.button):focus {
+  &:not([type="checkbox"]):not([type="radio"]):not(.button):not([readonly]):focus {
     &:not(.error) {
       @include box-shadow(0 0 .1rem #7fb93a);
       border: .1rem solid #7fb93a;
@@ -106,6 +121,10 @@ input {
       border: .1rem solid #b71c1c;
     }
     color: #b71c1c;
+  }
+  
+  &:read-only {
+    opacity: 1;
   }
 }
 
@@ -150,4 +169,59 @@ input:disabled, input[disabled], select:disabled, select[disabled], textarea:dis
   background-color: #f4f4f4;
   color: #c6c6c6 !important;
   cursor: not-allowed;
+
+  .input-group.input-group-addon {
+    cursor: not-allowed;
+  }
+}
+
+.input-group {
+  display: inline-table;
+
+  .input-group-addon {
+    display: table-cell;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #666666;
+    text-align: center;
+    background-color: #d9d9d9;
+    border: 1px solid #ccc;
+    @include border-radius(.4rem);
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &:hover {
+      @include box-shadow(0 .2rem .2rem #ccc);
+      border-color: #666;
+    }
+
+    &:active {
+      @include box-shadow(inset 0 .2rem .2rem rgba(0, 0, 0, 0.2));
+    }
+  }
+  
+  input {
+    display: table-cell;
+
+    &:first-child {
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      border-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
 }
