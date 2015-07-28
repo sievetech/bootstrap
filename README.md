@@ -44,3 +44,4 @@ Comandos grunt para agilizar o nosso trabalho
 ## Todo
 
 * Layout dos ícones
+* Indicador de campos obrigatórios
