@@ -36,13 +36,13 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
     display: flex;
     flex-flow: row nowrap;
     align-content: center;
-    border: .1rem solid #ededed;
+    background-color: #fff;
+    border: .1rem solid #ccc;
     @include border-radius(.4rem);
 
     li {
       cursor: pointer;
       padding: .8rem 1.6rem;
-      background: #fff;
 
       &:hover {
         a {
@@ -51,11 +51,11 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
       }
 
       &:first-child {
-        border-right: .1rem solid #ededed;
+        border-right: .1rem solid #ccc;
       }
 
       &:last-child {
-        border-left: .1rem solid #ededed;
+        border-left: .1rem solid #ccc;
       }
 
       &.active {

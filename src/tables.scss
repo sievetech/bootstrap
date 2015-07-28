@@ -117,10 +117,6 @@ pode ser aplicada no header da coluna para prevenir o efeito de hover.
     &:nth-child(odd) {
       background-color: #fbfbfb;
     }
-
-    &:last-child td {
-      border: none;
-    }
   }
 
   &.table-no-border {
