@@ -19,12 +19,13 @@ Use classes de botão em tags `<a>`, `<button>` e `<input>`.
 
 ## Desabilitado
 
-O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
+Com a classe `.button-disabled`, links, botões e inputs ganham aparência de desabilitado.
+Recomenda-se acrescentar o atributo `disabled` nos botões e nos inputs.
 
 ```html_example
-<button class="button button-default" disabled>Button</button>
-<a href="javascript:void(0);" class="button button-default" disabled>Link</a>
-<input type="button" class="button button-default" value="Input" disabled />
+<button class="button button-disabled" disabled>Button</button>
+<a href="javascript:void(0);" class="button button-disabled">Link</a>
+<input type="button" class="button button-disabled" value="Input" disabled />
 ```
 
 ## Sucesso
@@ -50,6 +51,8 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
   width: 14rem;
   height: 3.5rem;
   border: none;
+  cursor: pointer;
+  color: #fff !important;
   font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
@@ -60,25 +63,6 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
 
   &:hover {
     text-decoration: none !important;
-  }
-}
-
-.button:disabled, .button[disabled] {
-  background-color: #f4f4f4;
-  color: #c6c6c6 !important;
-  cursor: not-allowed;
-}
-
-.button:not(:disabled):not([disabled]) {
-  color: #fff !important;
-  cursor: pointer;
-
-  &:disabled {
-    background-color: #f4f4f4;
-    color: #c6c6c6;
-  }
-
-  &:hover {
     @include box-shadow(0 .2rem .2rem #ccc);
   }
 
@@ -86,42 +70,56 @@ O atributo `disabled` pode ser aplicado tanto a `<a>`, `<button>` como `<input>`
     @include box-shadow(inset 0 .2rem .2rem rgba(0, 0, 0, 0.2));
   }
 
+  &.button-disabled {
+    background-color: #f4f4f4;
+    color: #c6c6c6 !important;
+    cursor: not-allowed;
+
+    &:hover {
+      @include box-shadow(none);
+    }
+
+    &:active {
+      @include box-shadow(none);
+    }
+  }
+
   &.button-default {
     background-color: #f4f4f4;
     border: .1rem solid #ccc;
     color: #000 !important;
 
-    &:active {
-      background-color: #b8b8b8;
-    }
-
     &:hover {
       background-color: #f4f4f4;
       border-color: #666;
+    }
+
+    &:active {
+      background-color: #b8b8b8;
     }
   }
 
   &.button-success {
     background-color: #7AB317;
 
-    &:active {
-      background-color: #5a980c;
-    }
-
     &:hover {
       background-color: #9ace22;
+    }
+
+    &:active {
+      background-color: #5a980c;
     }
   }
 
   &.button-danger {
     background-color: #b71c1c;
 
-    &:active {
-      background-color: #bf4343;
-    }
-
     &:hover {
       background-color: #941313;
+    }
+
+    &:active {
+      background-color: #bf4343;
     }
   }
 }
