@@ -12,7 +12,7 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
 ```html_example
 <div class="pager">
   <ul>
-    <li class="disabled"><a href="javascript:void(0);"><i class="icon-angle-left"></i></a></li>
+    <li class="disabled"><a href="javascript:void(0);"><i class="icon-left-open"></i></a></li>
     <li class="active"><a href="javascript:void(0);">1</a></li>
     <li><a href="javascript:void(0);">2</a></li>
     <li><a href="javascript:void(0);">3</a></li>
@@ -22,7 +22,7 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
     <li><a href="javascript:void(0);">7</a></li>
     <li><a href="javascript:void(0);">8</a></li>
     <li><a href="javascript:void(0);">9</a></li>
-    <li><a href="javascript:void(0);"><i class="icon-angle-right"></i></a></li>
+    <li><a href="javascript:void(0);"><i class="icon-right-open"></i></a></li>
   </ul>
 </div>
 ```
@@ -51,10 +51,12 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
       }
 
       &:first-child {
+        padding: .8rem;
         border-right: .1rem solid #ccc;
       }
 
       &:last-child {
+        padding: .8rem;
         border-left: .1rem solid #ccc;
       }
 
