@@ -39,3 +39,8 @@ Comandos grunt para agilizar o nosso trabalho
 * grunt build: builda o projeto (gera os stylesheets e a documentação)
 * grunt watch: observa alterações nos docs ou nos scss e builda o projeto
 * grunt work: server + open + build + watch
+
+
+## Todo
+
+* Layout dos ícones
