@@ -176,10 +176,10 @@ input:disabled, input[disabled], select:disabled, select[disabled], textarea:dis
 }
 
 .field {
-  display: inline-table;
+  display: inline-flex;
+  flex-flow: row nowrap;
 
   .field-addon {
-    display: table-cell;
     cursor: pointer;
     padding: 1rem;
     font-size: 1.4rem;
@@ -210,8 +210,6 @@ input:disabled, input[disabled], select:disabled, select[disabled], textarea:dis
   }
   
   input {
-    display: table-cell;
-
     &:first-child {
       border-right: 0;
       border-top-right-radius: 0;
