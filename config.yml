@@ -59,7 +59,7 @@ css_include:
   - './src/fields.css'
   - './src/list.css'
   - './src/notifications.css'
-  - './src/badges.css'
+  - './src/labels.css'
   - './src/tables.css'
   - './src/pager.css'
   - './src/menu.css'
