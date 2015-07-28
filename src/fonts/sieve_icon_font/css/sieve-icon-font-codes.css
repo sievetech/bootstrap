@@ -23,7 +23,7 @@
 .icon-dent:before { content: '\e815'; } /* '' */
 .icon-forward:before { content: '\e816'; } /* '' */
 .icon-pencil:before { content: '\e817'; } /* '' */
-.icon-angle-left:before { content: '\e818'; } /* '' */
+.icon-left-open:before { content: '\e818'; } /* '' */
 .icon-angle-right:before { content: '\e819'; } /* '' */
 .icon-angle-up:before { content: '\e81a'; } /* '' */
 .icon-table:before { content: '\e81b'; } /* '' */
@@ -55,4 +55,5 @@
 .icon-down-dir:before { content: '\e835'; } /* '' */
 .icon-flag:before { content: '\e836'; } /* '' */
 .icon-cancel:before { content: '\e837'; } /* '' */
-.icon-left-open:before { content: '\e838'; } /* '' */
+.icon-angle-left:before { content: '\e838'; } /* '' */
+.icon-help:before { content: '\e83a'; } /* '' */

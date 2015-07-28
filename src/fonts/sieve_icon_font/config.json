@@ -347,7 +347,7 @@
     {
       "uid": "d870630ff8f81e6de3958ecaeac532f2",
       "css": "left-open",
-      "code": 59448,
+      "code": 59416,
       "src": "fontawesome"
     },
     {
@@ -359,7 +359,7 @@
     {
       "uid": "f3f90c8c89795da30f7444634476ea4f",
       "css": "angle-left",
-      "code": 59416,
+      "code": 59448,
       "src": "fontawesome"
     },
     {
@@ -421,6 +421,12 @@
       "css": "dollar",
       "code": 59402,
       "src": "fontawesome"
+    },
+    {
+      "uid": "de9a631a7d18106aea1c89ba51b1990a",
+      "css": "help",
+      "code": 59450,
+      "src": "entypo"
     },
     {
       "uid": "1d2a6c3d9236b88b0f185c7c4530fa52",
