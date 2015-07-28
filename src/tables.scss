@@ -91,7 +91,7 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
     text-align: left;
     white-space: nowrap;
   }
-
+  
   thead tr {
     background-color: #f1f1f1;
   }
@@ -101,6 +101,7 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
 
     td {
       padding: .8rem;
+      font-size: 1.2rem;
       border-bottom: .1rem solid #e5e5e5;
     }
 
