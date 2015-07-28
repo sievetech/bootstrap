@@ -14,7 +14,7 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 ```html_example
 <div class="notification notification-success">
   <div class="content">
-    <span class="message">Só sucesso!</span>
+    <span class="message"><i class="icon-checked"></i> Só sucesso!</span>
     <span class="close"><i class="icon-cancel"></i></span>
   </div>
 </div>
@@ -25,7 +25,7 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 ```html_example
 <div class="notification notification-error">
   <div class="content">
-    <span class="message">Deu erro!</span>
+    <span class="message"><i class="icon-remove"></i> Deu erro!</span>
     <span class="close"><i class="icon-cancel"></i></span>
   </div>
 </div>
@@ -40,21 +40,27 @@ Notificações podem ser usadas para dar feedbacks ao usuário
     display: flex;
     overflow: hidden;
     @include border-radius(.4rem);
+    @include box-shadow(0 .3rem .3rem rgba(0, 0, 0, 0.2));
 
     span {
       color: #fff;
-      padding: 3rem;
+      padding: 2rem;
       font-size: 1.6rem;
       font-family: Roboto, sans-serif;
 
       &.message {
         min-width: 25rem;
         max-width: 50rem;
+
+        .icon-remove, .icon-checked {
+          font-size: 2rem;
+          vertical-align: baseline;
+        }
       }
 
       &.close {
         display: flex;
-        font-size: 1.1rem;
+        font-size: 2rem;
         cursor: pointer;
 
         i {
