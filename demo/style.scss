@@ -28,8 +28,14 @@ main {
       .list {
         background-color: transparent;
 
-        a:hover {
-          background-color: rgba(255,255,255,0.05);
+        a {
+          &:hover {
+            background-color: rgba(255,255,255,0.05);
+          }
+
+          &.active {
+            background-color: rgba(0,0,0,0.2);
+          }
         }
       }
     }
