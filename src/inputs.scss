@@ -83,14 +83,14 @@ Ipsum has been the industry's standard dummy text ever since the 1500.
 O ícone pode ser posicionado à esquerda ou à direita
 
 ```html_example
-<div class="field">
-  <span class="field-addon"><i class="icon-dollar"></i></span>
+<div class="field-group">
+  <span class="field-group-addon"><i class="icon-dollar"></i></span>
   <input type="text" value="100,00" />
 </div>
 
-<div class="field">
+<div class="field-group">
   <input type="text" placeholder="Escolha uma imagem..." readonly />
-  <span class="field-addon"><i class="icon-upload-cloud"></i></span>
+  <span class="field-group-addon"><i class="icon-upload-cloud"></i></span>
 </div>
 ```
 
@@ -165,21 +165,21 @@ textarea {
   }
 }
 
-input:disabled, input[disabled], select:disabled, select[disabled], textarea:disabled, textarea[disabled] {
+input:disabled, select:disabled, textarea:disabled {
   background-color: #f4f4f4;
   color: #c6c6c6 !important;
   cursor: not-allowed;
 
-  .field.field-addon {
+  .field-group.field-group-addon {
     cursor: not-allowed;
   }
 }
 
-.field {
+.field-group {
   display: inline-flex;
   flex-flow: row nowrap;
 
-  .field-addon {
+  .field-group-addon {
     cursor: pointer;
     padding: 1rem;
     font-size: 1.4rem;
