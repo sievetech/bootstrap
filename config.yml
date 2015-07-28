@@ -56,7 +56,7 @@ css_include:
   - './src/box.css'
   - './src/buttons.css'
   - './src/forms.css'
-  - './src/inputs.css'
+  - './src/fields.css'
   - './src/list.css'
   - './src/notifications.css'
   - './src/badges.css'
