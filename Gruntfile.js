@@ -39,6 +39,14 @@ module.exports = function(grunt) {
     /**
      * Pré-compiladores
      */
+    cssmin: {
+      target: {
+        files: {
+          'build/src/sieve.bootstrap.min.css': 'build/src/*.css'
+        }
+      }
+    },
+
     sass: {
       dist: {
         options: {
@@ -57,6 +65,13 @@ module.exports = function(grunt) {
     /**
      * Automação
      */
+    copy: {
+      dist: {
+        // includes files within path and its sub-directories
+        files: [{expand: true, src: ['demo/**'], dest: 'build/'}]
+      },
+    },
+
     open: {
       file: {
         path: './build/index.html'
@@ -78,7 +93,7 @@ module.exports = function(grunt) {
       },
 
       dist: {
-        files: ['src/**/*.scss', 'config.yml', 'config.rb', 'Gruntfile.js'],
+        files: ['src/**/*.scss', 'demo/**/*', 'config.yml', 'config.rb', 'Gruntfile.js'],
         tasks: ['build']
       }
     }
@@ -89,7 +104,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('work', ['concurrent:work']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['sass', 'hologram']);
+  grunt.registerTask('build', ['sass', 'hologram', 'cssmin', 'copy']);
   grunt.registerTask('server', ['connect']);
 
   /**

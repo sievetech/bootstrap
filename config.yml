@@ -52,6 +52,7 @@ exit_on_warnings: false
 # The CSS files to be included in the styleguide
 css_include:
   - './src/reset.css'
+  - './src/titles.css'
   - './src/box.css'
   - './src/buttons.css'
   - './src/forms.css'

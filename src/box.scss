@@ -4,7 +4,7 @@
 ---
 title: Box
 name: box
-category: composições
+category: composicoes
 ---
 
 O box é um grid comum para se implementar funcionalidades autosuficientes.
@@ -22,6 +22,13 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
 ```
 
 ## Exemplo
+
+<style>
+.icon-error {
+  color:#bf0000;
+}
+</style>
+
 ```html_example
 <article class="box">
   <header>
@@ -50,21 +57,21 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
           <td>Novais</td>
           <td>victornovais</td>
           <td><span class="badge badge-yellow">namorando</span></td>
-          <td><a href="#"><i class="icon-error"></i></a></td>
+          <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
         </tr>
         <tr>
           <td>Leonardo</td>
           <td>Quixadá</td>
           <td>lquixada</td>
           <td><span class="badge badge-green">solteiro</span></td>
-          <td><a href="#"><i class="icon-error"></i></a></td>
+          <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
         </tr>
         <tr>
           <td>Gabriela</td>
           <td>Cardoso</td>
           <td>gabyoncé</td>
           <td><span class="badge badge-red">casada</span></td>
-          <td><a href="#"><i class="icon-error"></i></a></td>
+          <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
         </tr>
       </tbody>
     </table>
@@ -79,6 +86,7 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
 
 .box {
     display: flex;
+    margin-bottom: 3rem;
     flex-flow: column nowrap;
     height: 100%;
     overflow: hidden;
@@ -105,19 +113,15 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
         > .list-actions {
             border-left: .1rem solid #e5e5e5;
 
-            li {
-                a {
-                  display: block;
-                  color: #6d6d6d;
-                  font-size: 1.6rem;
-                  padding: 1.6rem;
-                }
+            a {
+              display: block;
+              color: #6d6d6d;
+              font-size: 1.6rem;
+              padding: 1.6rem;
 
-                &:hover {
-                  a  {
-                    background-color: #ccc !important;
-                  }
-                }
+              &:hover {
+                  background-color: #ccc !important;
+              }
             }
         }
     }
