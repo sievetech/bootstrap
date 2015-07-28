@@ -40,7 +40,15 @@ main {
       margin: 1.5rem 0 3rem;
     }
 
-    table {
+    .table {
+      margin-bottom: 1.5rem;
+
+      &.no-border {
+        tr:last-child td {
+          border-bottom: .1rem solid #e5e5e5;
+        }
+      }
+
       .icon-error, .icon-pencil {
         color: #999;
       }
