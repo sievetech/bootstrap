@@ -19,6 +19,7 @@ Utilize a classe `.table-no-border` para remover as bordas.
       <th>Nome</th>
       <th>Sobrenome</th>
       <th>Usuário</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -26,16 +27,19 @@ Utilize a classe `.table-no-border` para remover as bordas.
       <td>Victor</td>
       <td>Novais</td>
       <td>victornovais</td>
+      <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
     </tr>
     <tr>
       <td>Leonardo</td>
       <td>Quixadá</td>
       <td>lquixada</td>
+      <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
     </tr>
     <tr>
       <td>Gabriela</td>
       <td>Cardoso</td>
       <td>gabyoncé</td>
+      <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
     </tr>
   </tbody>
 </table>
@@ -43,7 +47,8 @@ Utilize a classe `.table-no-border` para remover as bordas.
 
 ## Ordenável
 
-Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
+Use a classe `.table-sortable` para fazer tabelas que permitam ordenação. A classe `.no-sort`
+pode ser aplicada no header da coluna para prevenir o efeito de hover.
 
 ```html_example
 <table class="table table-sortable">
@@ -52,6 +57,7 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
       <th>Nome</th>
       <th>Sobrenome</th>
       <th>Usuário</th>
+      <th class="no-sort"></th>
     </tr>
   </thead>
   <tbody>
@@ -59,16 +65,19 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
       <td>Victor</td>
       <td>Novais</td>
       <td>victornovais</td>
+      <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
     </tr>
     <tr>
       <td>Leonardo</td>
       <td>Quixadá</td>
       <td>lquixada</td>
+      <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
     </tr>
     <tr>
       <td>Gabriela</td>
       <td>Cardoso</td>
       <td>gabyoncé</td>
+      <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
     </tr>
   </tbody>
 </table>
@@ -91,7 +100,7 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
     text-align: left;
     white-space: nowrap;
   }
-  
+
   thead tr {
     background-color: #f1f1f1;
   }
@@ -112,13 +121,6 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
     &:last-child td {
       border: none;
     }
-
-    &.active {
-      background: #f0f2f6 !important;
-      &:hover {
-        background: #f0f2f6 !important;
-      }
-    }
   }
 
   &.table-no-border {
@@ -126,7 +128,7 @@ Use a classe `.table-sortable` para fazer tabelas que permitam ordenação.
   }
 
   &.table-sortable {
-    th:hover {
+    th:not(.no-sort):hover {
       background-color: #e5e5e5;
       cursor: pointer;
     }
