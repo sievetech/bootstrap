@@ -7,27 +7,50 @@ name: forms
 category: composicoes
 ---
 
-# Campos
+O form é um grid comum para se implementar os campos.
+
+## Estrutura
+
+```
+<form>
+  <div class="field">(campo 1)</div>
+  <div class="field">(campo 2)</div>
+  <div class="field">(campo 3)</div>
+  <div class="field">(...)</div>
+</form>
+```
+
+## Exemplo
 
 ```html_example
-<label>Texto:</label>
-<input type="text" value="Texto" />
+<form>
+  <div class="field">
+    <label>Texto:</label>
+    <input type="text" value="Texto" />
+  </div>
 
-<label>Checkbox:</label>
-<input type="checkbox" /> A
-<input type="checkbox" /> B
-<input type="checkbox" /> C
+  <div class="field">
+    <label>Checkbox:</label>
+    <input type="checkbox" /> A
+    <input type="checkbox" /> B
+    <input type="checkbox" /> C
+  </div>
 
-<label>Radio:</label>
-<input type="radio" name="radio" /> Radio 1
-<input type="radio" name="radio" /> Radio 2
+  <div class="field">
+    <label>Radio:</label>
+    <input type="radio" name="radio" /> Radio 1
+    <input type="radio" name="radio" /> Radio 2
+  </div>
 
-<label>Select:</label>
-<select>
-  <option>Opção 1</option>
-  <option>Opção 2</option>
-  <option>Opção 3</option>
-</select>
+  <div class="field">
+    <label>Select:</label>
+    <select>
+      <option>Opção 1</option>
+      <option>Opção 2</option>
+      <option>Opção 3</option>
+    </select>
+  </div>
+</form>
 ```
 */
 
