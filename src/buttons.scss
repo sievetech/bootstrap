@@ -7,8 +7,6 @@ name: buttons
 category: css
 ---
 
-Use classes de botão em tags `<a>`, `<button>` e `<input>`.
-
 ## Padrão
 
 ```html_example
@@ -18,9 +16,6 @@ Use classes de botão em tags `<a>`, `<button>` e `<input>`.
 ```
 
 ## Desabilitado
-
-Com a classe `.button-disabled`, links, botões e inputs ganham aparência de desabilitado.
-Recomenda-se acrescentar o atributo `disabled` nos botões e nos inputs.
 
 ```html_example
 <button class="button button-disabled" disabled>Button</button>
