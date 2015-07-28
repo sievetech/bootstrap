@@ -101,6 +101,8 @@ input {
   background-color: #f4f4f4;
   border: .1rem solid #ccc;
   outline: none;
+  font-size: 1.2rem !important;
+  line-height: normal !important;
   @include border-radius(.4rem);
   @include transition(box-shadow .2s ease-in-out);
 
