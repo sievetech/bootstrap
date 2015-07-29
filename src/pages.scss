@@ -1,4 +1,126 @@
 @import "compass";
+/*doc
+---
+title: Pages
+name: page
+category: composicoes
+---
+
+O page é um grid comum para se implementar páginas. Esse é o primeiro passo na construção de uma página e entra
+direto no `<body>`.
+
+## Estrutura
+
+```
+<main class="page">
+  <header>(opcional)</header>
+
+  <section>...</section>
+
+  <footer>(opcional)</footer>
+</article>
+```
+
+## Opções
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>classe</th>
+      <th>descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="label label-blue">.page-basic</span></td>
+      <td>Tipo mais básico de página. Composto por cabeçalho, conteúdo e rodapé.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.page-fixed-header</span></td>
+      <td>Utilizado junto com <span class="label label-blue">.page-basic</span>, faz com que o header fique fixo no scroll.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.page-fixed-footer</span></td>
+      <td>Utilizado junto com <span class="label label-blue">.page-basic</span>, faz com que o footer fique fixo no scroll.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.page-modal</span></td>
+      <td>Página que possue um modal centralizado. Ótimo para telas de login, alteração de senha e warnings.</td>
+    </tr>
+
+  </tbody>
+</table>
+
+## Exemplo
+
+```html_example
+<main class="page page-basic">
+  <header>
+    <h1 class="title title-1"><img src="demo/img/logo.png"></h1>
+  </header>
+
+  <section>
+    <h2 class="title title-2">Usuários</h2>
+
+    <article class="box">
+      <header>
+        <h3>Lista</h3>
+
+        <ul class="list list-horizontal list-actions">
+          <li><a href="javascript:void(0);"><i class="icon-plus"></i></a></li>
+          <li><a href="javascript:void(0);"><i class="icon-pencil"></i></a></li>
+        </ul>
+      </header>
+
+      <section>
+        <table class="table table-no-border table-sortable">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Sobrenome</th>
+              <th>Usuário</th>
+              <th>Status</th>
+              <th>Apagar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Victor</td>
+              <td>Novais</td>
+              <td>victornovais</td>
+              <td><span class="label label-yellow">namorando</span></td>
+              <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+            </tr>
+            <tr>
+              <td>Leonardo</td>
+              <td>Quixadá</td>
+              <td>lquixada</td>
+              <td><span class="label label-green">solteiro</span></td>
+              <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+            </tr>
+            <tr>
+              <td>Gabriela</td>
+              <td>Cardoso</td>
+              <td>gabyoncé</td>
+              <td><span class="label label-red">casada</span></td>
+              <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer>
+        <p>construído com <a href="javascript:void(0);">Sieve Bootstrap</a>.</p>
+      </footer>
+    </article>
+  </section>
+
+  <footer>
+    <p>© Copyright 2015 Sieve Serviços de Tecnologia.</p>
+  </footer>
+</main>
+```
+*/
 
 .page {
   display: flex;
@@ -21,6 +143,12 @@
     > header {
       @include background(linear-gradient(0deg, #232526 10%, #414345 90%));
       @include box-shadow(0 .2rem .2rem rgba(0,0,0,0.3));
+    }
+
+    > section {
+      .title.title-2 {
+        margin: 1.5rem 0 3rem;
+      }
     }
 
     > footer {

@@ -1,73 +1,73 @@
 @import "compass";
 
-.list-links {
-  li {
-    display: inline-block;
-    border-right: .1rem solid #bbb;
-    margin-right: 2rem;
-    padding-right: 2rem;
-    font-size: 1.1rem;
-    color: #666;
+header {
+  .menu {
+    .list {
+      background-color: transparent;
 
-    a {
-      color: #666;
+      a {
+        &:hover {
+          background-color: rgba(255,255,255,0.05);
+        }
 
-      &:hover {
-        color: #7ab317;
+        &.active {
+          background-color: rgba(0,0,0,0.2);
+        }
       }
     }
-
-    &:last-child {
-      border: none;
-    }
   }
-}
 
-.list-options {
-  font-size: 2rem;
-  a {
-    display: inline-block;
-    padding: .6rem .3rem;
-    color: #999;
+  .list-options {
+    font-size: 2rem;
+    a {
+      display: inline-block;
+      padding: .6rem .3rem;
+      color: #999;
 
-    &:hover {
-      color: #fff;
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }
 
 section {
-  .title {
-    margin: 1.5rem 0 3rem;
-  }
-}
+  .table {
+    margin-bottom: 1.5rem;
 
-.table {
-  margin-bottom: 1.5rem;
+    &.no-border {
+      tr:last-child td {
+        border-bottom: .1rem solid #e5e5e5;
+      }
+    }
 
-  &.no-border {
-    tr:last-child td {
-      border-bottom: .1rem solid #e5e5e5;
+    .icon-error, .icon-pencil {
+      color: #999;
+      font-size: 1.4rem;
     }
   }
-
-  .icon-error, .icon-pencil {
-    color: #999;
-    font-size: 1.4rem;
-  }
 }
 
-.menu {
-  .list {
-    background-color: transparent;
+footer {
+  .list-links {
+    li {
+      display: inline-block;
+      border-right: .1rem solid #bbb;
+      margin-right: 2rem;
+      padding-right: 2rem;
+      font-size: 1.1rem;
+      color: #666;
 
-    a {
-      &:hover {
-        background-color: rgba(255,255,255,0.05);
+      a {
+        color: #666;
+
+        &:hover {
+          color: #7ab317;
+        }
       }
 
-      &.active {
-        background-color: rgba(0,0,0,0.2);
+      &:last-child {
+        border: none;
       }
     }
   }

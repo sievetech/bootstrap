@@ -54,6 +54,7 @@ css_include:
   - './src/reset.css'
   - './src/titles.css'
   - './src/box.css'
+  - './src/pages.css'
   - './src/buttons.css'
   - './src/forms.css'
   - './src/fields.css'
