@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sieve :: Bootstrap v1.0 Demo Page</title>
+  <link rel="stylesheet" href="../src/fonts/sieve_icon_font/css/sieve-icon-font.css">
+  <link rel="stylesheet" href="../src/sieve.bootstrap.min.css">
+
+  <!-- Customização da página -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .modal {
+    padding: 5rem 0;
+    width: 40rem;
+    background-color: #262626;
+    border-top: 10px solid #7ab317;
+    border-radius: .4rem;
+  }
+  .modal > header {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  .modal form {
+    padding: 0 3rem;
+  }
+
+  .modal form label {
+    color: #fff;
+  }
+
+  .modal form input {
+    width: 100%;
+  }
+  </style>
+</head>
+
+<body>
+
+<main class="page page-modal">
+    <section>
+
+      <article class="modal modal-black">
+        <header>
+          <img src="img/logo-big.png">
+        </header>
+
+        <section>
+          <form method="get" action="index.html">
+              <div class="field">
+                  <label>Login:</label>
+                  <input type="text" name="username" maxlength="90" autofocus />
+              </div>
+
+              <div class="field">
+                  <label>Senha:</label>
+                  <input type="password" name="password" />
+              </div>
+
+              <div class="field">
+                  <a class="forgot-password" href="http://sieve.com.br/esqueci-a-senha/">esqueci a senha</a>
+                  <button type="submit" class="button button-success">Entrar</button>
+              </div>
+          </form>
+        </section>
+      </article>
+
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="list list-horizontal">
+                <li><a href="http://sieve.com.br/sobre">Sobre nós</a></li>
+                <li><a href="http://sieve.com.br/varejistas">Varejistas</a></li>
+                <li><a href="http://sieve.com.br/fabricantes">Fabricantes</a></li>
+                <li><a href="http://sieve.com.br/clientes">Clientes</a></li>
+                <li><a href="http://sieve.com.br/contato">Contato</a></li>
+                <li><a href="http://blog.sieve.com.br/">Blog</a></li>
+                <li>© Copyright 2015 Sieve Serviços de Tecnologia.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</main>
+
+</body>
+
+</html>
