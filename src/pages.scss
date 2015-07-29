@@ -18,13 +18,7 @@
   }
 
   &.page-basic {
-    padding-top: 5rem;
-
     > header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 900;
       @include background(linear-gradient(0deg, #232526 10%, #414345 90%));
       @include box-shadow(0 .2rem .2rem rgba(0,0,0,0.3));
 
@@ -82,6 +76,30 @@
     > footer {
       padding: 2rem 0;
       background-color: #eee;
+    }
+  }
+
+  &.page-fixed-header {
+    padding-top: 4rem;
+
+    > header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 4rem;
+      z-index: 900;
+    }
+  }
+
+  &.page-fixed-footer {
+    padding-bottom: 10rem;
+
+    > footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 10rem;
+      z-index: 900;
     }
   }
 
