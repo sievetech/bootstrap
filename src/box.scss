@@ -15,7 +15,7 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
 <article class="box">
   <header>(opcional)</header>
 
-  <div class="content">...</div>
+  <section>...</section>
 
   <footer>(opcional)</footer>
 </article>
@@ -40,7 +40,7 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
     </ul>
   </header>
 
-  <div class="content">
+  <section>
     <table class="table table-no-border table-sortable">
       <thead>
         <tr>
@@ -75,7 +75,7 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
         </tr>
       </tbody>
     </table>
-  </div>
+  </section>
 
   <footer>
     <p>construído com <a href="javascript:void(0);">Sieve Bootstrap</a>.</p>
@@ -92,7 +92,7 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
     overflow: hidden;
     @include border-radius(.4rem);
 
-    header {
+    > header {
         display: flex;
         background-color: #f1f1f1;
         border-bottom: .1rem solid #e5e5e5;
@@ -126,12 +126,12 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
         }
     }
 
-    .content {
+    > section {
         flex: 1 0;
         background-color: #fff;
     }
 
-    footer {
+    > footer {
         max-height: 10rem;
         background-color: #f1f1f1;
 
