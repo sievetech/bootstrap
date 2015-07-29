@@ -108,7 +108,7 @@ input {
 
   &:not([type="checkbox"]):not([type="radio"]):not(.button):not([readonly]):focus {
     &:not(.error) {
-      @include box-shadow(0 0 .2rem #7fb93a);
+      @include box-shadow(0 0 .5rem #7fb93a);
       border-color: #7fb93a;
     }
   }
@@ -139,7 +139,7 @@ select {
 
   &:focus {
     &:not(.error) {
-      @include box-shadow(0 0 .1rem #7fb93a);
+      @include box-shadow(0 0 .5rem #7fb93a);
       border-color: #7fb93a;
     }
   }
@@ -160,7 +160,7 @@ textarea {
 
   &:focus {
     &:not(.error) {
-      @include box-shadow(0 0 .2rem #7fb93a);
+      @include box-shadow(0 0 .5rem #7fb93a);
       border-color: #7fb93a;
     }
   }
