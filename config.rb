@@ -1,11 +1,11 @@
-http_path = "/static/collect/style/"
-http_images_dir = "images"
-http_fonts_dir = "fonts"
-http_css_dir = "sheets"
+http_path = "/demo/"
+http_images_dir = "img"
+http_fonts_dir = "font"
+http_css_dir = "sheet"
 
 project_path = "style"
-images_dir = "images"
-fonts_dir = "fonts"
-css_dir = "sheets"
+images_dir = "img"
+fonts_dir = "font"
+css_dir = "sheet"
 
 relative_assets = false
