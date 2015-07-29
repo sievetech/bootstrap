@@ -423,6 +423,18 @@
       "src": "fontawesome"
     },
     {
+      "uid": "a14be0c7e0689076e2bdde97f8e309f9",
+      "css": "plug",
+      "code": 59449,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bbd66ef66bb8fa9edde54d9a90b89150",
+      "css": "user",
+      "code": 59452,
+      "src": "entypo"
+    },
+    {
       "uid": "de9a631a7d18106aea1c89ba51b1990a",
       "css": "help",
       "code": 59450,
@@ -438,6 +450,12 @@
       "uid": "4b20e1deee87faf4c3fab735fbd4bc1a",
       "css": "lamp",
       "code": 59429,
+      "src": "entypo"
+    },
+    {
+      "uid": "8beac4a5fd5bed9f82ca7a96cc8ba218",
+      "css": "key",
+      "code": 59451,
       "src": "entypo"
     },
     {

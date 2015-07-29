@@ -5,7 +5,6 @@
   background-size: 100% 100%;
 
   .modal {
-    padding: 5rem 0;
     width: 40rem;
     background-color: #262626;
     border-top: 1rem solid #7ab317;
@@ -13,12 +12,13 @@
     @include border-radius(.4rem);
 
     > header {
-      margin-bottom: 5rem;
+      margin: 8rem 0;
       text-align: center;
     }
 
     > section {
       form {
+        margin-bottom: 8rem;
         padding: 0 3rem;
 
         a {
@@ -34,10 +34,15 @@
           width: 100%;
         }
 
+        .field-group {
+          display: flex;
+        }
+
         .field:last-child {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          margin: 0;
         }
       }
     }
