@@ -1,0 +1,29 @@
+@import "compass";
+
+.modal {
+  padding: 5rem 0;
+  width: 40rem;
+  background-color: #262626;
+  border-top: 1rem solid #7ab317;
+  @include box-shadow(0 .4rem .4rem rgba(0, 0, 0, 0.3));
+  @include border-radius(.4rem);
+
+  > header {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  > section {
+    form {
+      padding: 0 3rem;
+
+      label {
+        color: #fff;
+      }
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
