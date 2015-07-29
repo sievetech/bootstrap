@@ -7,6 +7,27 @@ name: icons
 category: basico
 ---
 
+<style>
+ul.boxes li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 8rem;
+    height: 6rem;
+    margin-bottom: .5rem;
+    padding: 1rem;
+}
+
+ul.boxes li i {
+  font-size: 2rem;
+}
+
+ul.boxes li span {
+  display: block;
+  font-size: 1rem;
+}
+</style>
+
 ```html_example
 <ul class="boxes">
   <li><i class="icon-angle-circled-down"></i> <span class="i-name">icon-angle-circled-down</span></li>

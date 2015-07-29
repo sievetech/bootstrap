@@ -66,7 +66,6 @@ css_include:
   - './src/fonts/sieve_icon_font/css/sieve-icon-font.css'
 
   - './src/fonts.css'
-  - './src/utils.css'
 
 # The JavaScript files to included in the styleguide
 #js_include:
