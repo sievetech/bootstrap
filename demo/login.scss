@@ -17,12 +17,23 @@
     form {
       padding: 0 3rem;
 
+      a {
+        color: #7ab317;
+        text-decoration: underline !important;
+      }
+
       label {
         color: #fff;
       }
 
       input {
         width: 100%;
+      }
+
+      .field:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
     }
   }
