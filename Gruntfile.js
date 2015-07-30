@@ -5,6 +5,14 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+    notify: {
+      build: {
+        options: {
+          message: 'Build completo!'
+        }
+      }
+    },
+
     connect: {
       server: {
         options: {
@@ -104,7 +112,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('work', ['concurrent:work']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['sass', 'hologram', 'cssmin', 'copy']);
+  grunt.registerTask('build', ['sass', 'hologram', 'cssmin', 'copy', 'notify:build']);
   grunt.registerTask('server', ['connect']);
 
   /**
