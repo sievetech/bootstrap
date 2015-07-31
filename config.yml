@@ -63,7 +63,8 @@ css_include:
   - './src/labels.css'
   - './src/tables.css'
   - './src/pager.css'
-  - './src/menu.css'
+  - './src/menus.css'
+  - './src/grid.css'
   - './src/fonts/sieve_icon_font/css/sieve-icon-font.css'
 
   - './src/fonts.css'
