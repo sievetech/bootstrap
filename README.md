@@ -43,7 +43,8 @@ Comandos grunt para agilizar o nosso trabalho
 
 ## Todo
 
-* Layout dos ícones
 * Indicador de campos obrigatórios
 * Fork no hologram-github-theme: suporte a javascript
 * Fork no hologram-github-theme: link "back to the top"
+* Bootstrap usando o bootstrap (hologram-sieve-theme)
+
