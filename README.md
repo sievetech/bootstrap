@@ -46,6 +46,7 @@ Comandos grunt para agilizar o nosso trabalho
 * Indicador de campos obrigatórios
 * Criar Index
 * Criar Getting Started
+* Criar Desenvolvimento (idéia do Bootstrap e como montar componentes próprios)
 * Fork no hologram-github-theme: suporte a javascript
 * Fork no hologram-github-theme: link "back to the top"
 * Bootstrap usando o bootstrap (hologram-sieve-theme)
