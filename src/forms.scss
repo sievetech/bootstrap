@@ -57,13 +57,6 @@ O form é um grid comum para se implementar os campos.
 form {
   .field {
     margin-bottom: 2rem;
-    
-    &:last-child {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 0;
-    }
   }
 }
 

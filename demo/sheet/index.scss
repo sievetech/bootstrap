@@ -30,6 +30,13 @@
         .field-group {
           display: flex;
         }
+
+        .field:last-child {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 0;
+        }
       }
     }
   }
