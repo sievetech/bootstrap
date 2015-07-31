@@ -44,7 +44,30 @@ Comandos grunt para agilizar o nosso trabalho
 ## Todo
 
 * Indicador de campos obrigatórios
+* Criar Index
+* Criar Getting Started
 * Fork no hologram-github-theme: suporte a javascript
 * Fork no hologram-github-theme: link "back to the top"
 * Bootstrap usando o bootstrap (hologram-sieve-theme)
 
+## Roadmap
+
+* MVP Interno
+* Design harmônico
+* Responsive Design
+  * ver componentes necessários
+* MVP Externo
+  * bootstrap.sieve.com.br
+  * index.md
+  * hologram-sieve-theme
+  * projeto piloto
+* Animações
+* Componentes
+  * Modal
+  * Dropdown
+  * Checkboxes & Radios
+  * Button groups
+  * Progress bar
+  * Breadcrumb
+* Portal
+* Tema Por Cliente
