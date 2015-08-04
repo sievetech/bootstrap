@@ -49,8 +49,8 @@ Comandos grunt para agilizar o nosso trabalho
 * Fork no hologram-github-theme: link "back to the top"
 * Bootstrap usando o bootstrap (hologram-sieve-theme)
 * Task clean
-* Task zip para envolver fontes
 * Adicionar suporte de navegadores
+* Task versionar docs e arquivos
 
 
 ## Roadmap
