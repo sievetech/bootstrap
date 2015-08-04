@@ -13,6 +13,7 @@
     "grunt-hologram": "0.0.7",
     "grunt-notify": "^0.4.1",
     "grunt-open": "^0.2.3",
+    "grunt-zip": "^0.17.0",
     "load-grunt-tasks": "^3.1.0"
   },
   "repository": {

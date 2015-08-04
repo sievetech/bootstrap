@@ -80,6 +80,14 @@ module.exports = function(grunt) {
       },
     },
 
+    zip: {
+      dist: {
+        cwd: 'build/src/',
+        src: ['build/src/fonts/**', 'build/src/sieve.bootstrap.min.css'],
+        dest: 'build/dist/sieve.bootstrap.zip'
+      }
+    },
+
     open: {
       file: {
         path: './build/index.html'
@@ -112,7 +120,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('work', ['concurrent:work']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['sass', 'hologram', 'cssmin', 'copy', 'notify:build']);
+  grunt.registerTask('build', ['sass', 'hologram', 'cssmin', 'copy', 'zip', 'notify:build']);
   grunt.registerTask('server', ['connect']);
 
   /**
