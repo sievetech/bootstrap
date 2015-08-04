@@ -1,4 +1,4 @@
-http_path = "/demo/"
+http_path = "../"
 http_images_dir = "img"
 http_fonts_dir = "font"
 http_css_dir = "sheet"
