@@ -80,6 +80,10 @@ module.exports = function(grunt) {
       },
     },
 
+    clean: {
+      dist: ['build']
+    },
+
     zip: {
       dist: {
         cwd: 'build/src/',
@@ -120,7 +124,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('work', ['concurrent:work']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['sass', 'hologram', 'cssmin', 'copy', 'zip', 'notify:build']);
+  grunt.registerTask('build', ['clean', 'sass', 'hologram', 'cssmin', 'copy', 'zip', 'notify:build']);
   grunt.registerTask('server', ['connect']);
 
   /**
