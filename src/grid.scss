@@ -7,7 +7,7 @@ name: grid
 category: composicoes
 ---
 
-O grid é como uma estante que acomoda os componentes. Com ele você pode posicion-los facilmente sem trabalhar com css.
+O grid é como uma estante que acomoda os componentes. Com ele você pode posicioná-los facilmente sem trabalhar com css.
 Para isso, bastanta criar um `<div class="container">`, colocar o número de linhas `<div class="row">` e definir as colunas
 com as classes `.col-md-*` onde * varia de 1 a 12. Ótimo para páginas no tipo `.page-basic`. Por ora utilizamos o
 grid do twitter, <a href="http://getbootstrap.com/css/#grid">veja a documentação completa aqui</a>.
