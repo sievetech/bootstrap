@@ -18,7 +18,7 @@ name: demo
 category: inicio
 ---
 
-Veja um exemplo live do bootstrap [neste exemplo](/demo).
+Veja um exemplo live do bootstrap [neste exemplo](./demo).
 
 */
 
@@ -43,6 +43,7 @@ category: inicio
 <head>
   <meta charset="utf-8">
   <title>-coloque um título aqui</title>
+  <link rel="stylesheet" href="fonts/sieve_icon_font/css/sieve-icon-font.css">
   <link rel="stylesheet" href="sieve.bootstrap.min.css">
   <!-- coloque aqui os estilos da sua página -->
 </head>
