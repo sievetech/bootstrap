@@ -43,13 +43,16 @@ Comandos grunt para agilizar o nosso trabalho
 
 ## Todo
 
+* Colocar no bootstrap.sieve.com.br
+* Bootstrap usando o bootstrap (hologram-sieve-theme)
+* Usar jekyll? Oferece mais possibilidades
+* Task scss-lint
+* Task versionar docs e arquivos
 * Indicador de campos obrigatórios
 * Criar Desenvolvimento (idéia do Bootstrap e como montar componentes próprios)
 * Fork no hologram-github-theme: suporte a javascript
 * Fork no hologram-github-theme: link "back to the top"
-* Bootstrap usando o bootstrap (hologram-sieve-theme)
 * Adicionar suporte de navegadores
-* Task versionar docs e arquivos
 
 
 ## Roadmap
