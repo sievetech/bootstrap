@@ -1,1 +1,83 @@
-.menu{display:flex;justify-content:flex-start;font-family:"Roboto", sans-serif;font-weight:100;font-size:1.4rem}.menu .list{display:flex;background-color:#262626}.menu .list a{display:block;padding:1rem 2rem;color:#fff;text-decoration:none}.menu .list a.active{color:#75c048 !important;background-color:#000}.menu .list a:hover{background-color:#373737}.menu .list a:link,.menu .list a:visited,.menu .list a:active{display:block;padding:1rem 2rem;color:#fff;text-decoration:none}.menu .list-vertical{width:20rem}.menu .list-vertical .active{padding-left:1.6rem !important;border-left:.4rem solid #75c048}.menu .list-horizontal .active{padding-top:.6rem !important;border-top:.4rem solid #75c048}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Menu
+name: menu
+category: composicoes
+---
+
+Barra de navegação para ser utilizada como lista.
+
+## Vertical
+
+```html_example
+<nav class="menu">
+  <ul class="list list-vertical">
+    <li><a href="javascript:void(0);">home</a></li>
+    <li><a href="javascript:void(0);" class="active">profile</a></li>
+    <li><a href="javascript:void(0);">about</a></li>
+  </ul>
+</nav>
+```
+
+## Horizontal
+
+```html_example
+<nav class="menu">
+  <ul class="list list-horizontal">
+    <li><a href="javascript:void(0);">home</a></li>
+    <li><a href="javascript:void(0);" class="active">profile</a></li>
+    <li><a href="javascript:void(0);">about</a></li>
+  </ul>
+</nav>
+```
+
+*/
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+.menu .list {
+  display: flex;
+  background-color: #262626;
+}
+.menu .list a {
+  display: block;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+.menu .list a.active {
+  color: #75c048 !important;
+  background-color: #000;
+}
+.menu .list a:hover {
+  background-color: #373737;
+}
+.menu .list a:link,
+.menu .list a:visited,
+.menu .list a:active {
+  display: block;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+.menu .list-vertical {
+  width: 20rem;
+}
+.menu .list-vertical .active {
+  padding-left: 1.6rem !important;
+  border-left: .4rem solid #75c048;
+}
+.menu .list-horizontal .active {
+  padding-top: .6rem !important;
+  border-top: .4rem solid #75c048;
+}

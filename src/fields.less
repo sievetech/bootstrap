@@ -1,4 +1,4 @@
-@import "compass";
+@import "elements";
 
 /*doc
 ---
@@ -103,12 +103,12 @@ input {
   outline: none;
   font-size: 1.2rem !important;
   line-height: normal !important;
-  @include border-radius(.4rem);
-  @include transition(box-shadow .2s ease-in-out, border-color .2s ease-in-out);
+  .rounded(.4rem);
+  .transition(.2s ease-in-out);
 
   &:not([type="checkbox"]):not([type="radio"]):not(.button):not([readonly]):focus {
     &:not(.error) {
-      @include box-shadow(0 0 .5rem #7fb93a);
+      .box-shadow(0 0 .5rem #7fb93a);
       border-color: #7fb93a;
     }
   }
@@ -119,7 +119,7 @@ input {
 
   &.error {
     &:not([type="checkbox"]):not([type="radio"]) {
-      @include box-shadow(0 0 .2rem #b71c1c);
+      .box-shadow(0 0 .2rem #b71c1c);
       border-color: #b71c1c;
     }
   }
@@ -134,18 +134,18 @@ select {
   background-color: #f4f4f4;
   border: .1rem solid #ccc;
   outline: none;
-  @include border-radius(.4rem);
-  @include transition(box-shadow .2s ease-in-out, border-color .2s ease-in-out);
+  .rounded(.4rem);
+  .transition(.2s ease-in-out);
 
   &:focus {
     &:not(.error) {
-      @include box-shadow(0 0 .5rem #7fb93a);
+      .box-shadow(0 0 .5rem #7fb93a);
       border-color: #7fb93a;
     }
   }
 
   &.error {
-    @include box-shadow(0 0 .2rem #b71c1c);
+    .box-shadow(0 0 .2rem #b71c1c);
     border-color: #b71c1c;
   }
 }
@@ -155,18 +155,18 @@ textarea {
   background-color: #f4f4f4;
   border: .1rem solid #ccc;
   outline: none;
-  @include border-radius(.4rem);
-  @include transition(box-shadow .2s ease-in-out, border-color .2s ease-in-out);
+  .rounded(.4rem);
+  .transition(.2s ease-in-out);
 
   &:focus {
     &:not(.error) {
-      @include box-shadow(0 0 .5rem #7fb93a);
+      .box-shadow(0 0 .5rem #7fb93a);
       border-color: #7fb93a;
     }
   }
 
   &.error {
-    @include box-shadow(0 0 .2rem #b71c1c);
+    .box-shadow(0 0 .2rem #b71c1c);
     border-color: #b71c1c;
   }
 }
@@ -189,7 +189,7 @@ input:disabled, select:disabled, textarea:disabled {
     text-align: center;
     background-color: #d9d9d9;
     border: 1px solid #ccc;
-    @include border-radius(.4rem);
+    .rounded(.4rem);
 
     &:first-child {
       border-right-color: #d9d9d9;
@@ -207,12 +207,12 @@ input:disabled, select:disabled, textarea:disabled {
       cursor: pointer;
 
       &:hover {
-        @include box-shadow(0 .2rem .2rem #ccc);
+        .box-shadow(0 .2rem .2rem #ccc);
         border-color: #666;
       }
 
       &:active {
-        @include box-shadow(inset 0 .2rem .2rem rgba(0, 0, 0, 0.2));
+        .box-shadow(inset 0 .2rem .2rem rgba(0, 0, 0, 0.2));
       }
     }
   }

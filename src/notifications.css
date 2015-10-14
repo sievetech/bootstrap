@@ -1,1 +1,86 @@
-.notification{display:flex;justify-content:center}.notification .content{display:flex;overflow:hidden;-moz-border-radius:0.4rem;-webkit-border-radius:0.4rem;border-radius:0.4rem;-moz-box-shadow:0 0.3rem 0.3rem rgba(0,0,0,0.2);-webkit-box-shadow:0 0.3rem 0.3rem rgba(0,0,0,0.2);box-shadow:0 0.3rem 0.3rem rgba(0,0,0,0.2)}.notification .content span{color:#fff;padding:2rem;font-size:1.6rem;font-family:Roboto, sans-serif}.notification .content span.message{min-width:25rem;max-width:50rem}.notification .content span.message .icon-remove,.notification .content span.message .icon-checked{font-size:2rem;vertical-align:baseline}.notification .content span.close{display:flex;font-size:2rem;cursor:pointer}.notification .content span.close i{margin:auto}.notification.notification-success .content{background:#7ab317}.notification.notification-success .content .close{background:#5a980c}.notification.notification-error .content{background:#bf4343}.notification.notification-error .content .close{background:#941313}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Notificações
+name: notifications
+category: basico
+---
+
+Notificações podem ser usadas para dar feedbacks ao usuário
+
+## Sucesso
+
+```html_example
+<div class="notification notification-success">
+  <div class="content">
+    <span class="message"><i class="icon-checked"></i> Só sucesso!</span>
+    <span class="close"><i class="icon-cancel"></i></span>
+  </div>
+</div>
+```
+
+## Erro
+
+```html_example
+<div class="notification notification-error">
+  <div class="content">
+    <span class="message"><i class="icon-remove"></i> Deu erro!</span>
+    <span class="close"><i class="icon-cancel"></i></span>
+  </div>
+</div>
+```
+*/
+.notification {
+  display: flex;
+  justify-content: center;
+}
+.notification .content {
+  display: flex;
+  overflow: hidden;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+.notification .content span {
+  color: #fff;
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-family: Roboto, sans-serif;
+}
+.notification .content span.message {
+  min-width: 25rem;
+  max-width: 50rem;
+}
+.notification .content span.message .icon-remove,
+.notification .content span.message .icon-checked {
+  font-size: 2rem;
+  vertical-align: baseline;
+}
+.notification .content span.close {
+  display: flex;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.notification .content span.close i {
+  margin: auto;
+}
+.notification.notification-success .content {
+  background: #7ab317;
+}
+.notification.notification-success .content .close {
+  background: #5a980c;
+}
+.notification.notification-error .content {
+  background: #bf4343;
+}
+.notification.notification-error .content .close {
+  background: #941313;
+}

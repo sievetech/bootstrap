@@ -1,4 +1,4 @@
-@import "compass";
+@import "elements";
 
 /*doc
 ---
@@ -54,15 +54,15 @@ category: basico
   text-transform: none;
   vertical-align: middle;
   outline: none;
-  @include border-radius(.4rem);
+  .rounded(.4rem);
 
   &:hover {
     text-decoration: none !important;
-    @include box-shadow(0 .2rem .2rem rgba(255, 255, 255, 0.2));
+    .box-shadow(0 .2rem .2rem rgba(255, 255, 255, 0.2));
   }
 
   &:active {
-    @include box-shadow(inset 0 .2rem .2rem rgba(0, 0, 0, 0.2));
+    .box-shadow(inset 0 .2rem .2rem rgba(0, 0, 0, 0.2));
   }
 
   &.button-disabled {
@@ -71,11 +71,11 @@ category: basico
     cursor: not-allowed;
 
     &:hover {
-      @include box-shadow(none);
+      .box-shadow(none);
     }
 
     &:active {
-      @include box-shadow(none);
+      .box-shadow(none);
     }
   }
 

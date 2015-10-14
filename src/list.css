@@ -1,1 +1,47 @@
-.list{display:flex;justify-content:flex-start;list-style:none}.list.list-vertical{flex-flow:column wrap}.list.list-horizontal{flex-flow:row nowrap}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Lista
+name: lista
+category: basico
+---
+
+Barra de navegação para ser utilizada como lista.
+
+## Vertical
+
+```html_example
+<ul class="list list-vertical">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</a></li>
+</ul>
+```
+
+## Horizontal
+
+```html_example
+<ul class="list list-horizontal">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+*/
+.list {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+.list.list-vertical {
+  flex-flow: column wrap;
+}
+.list.list-horizontal {
+  flex-flow: row nowrap;
+}

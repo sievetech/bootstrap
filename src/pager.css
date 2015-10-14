@@ -1,1 +1,85 @@
-.pager{display:flex;justify-content:center}.pager ul{display:flex;flex-flow:row nowrap;align-content:center;background-color:#fff;border:.1rem solid #ccc;-moz-border-radius:0.4rem;-webkit-border-radius:0.4rem;border-radius:0.4rem}.pager ul li{cursor:pointer;padding:.8rem 1.6rem}.pager ul li:hover a{color:#7AB317}.pager ul li:first-child{padding:.8rem;border-right:.1rem solid #ccc}.pager ul li:last-child{padding:.8rem;border-left:.1rem solid #ccc}.pager ul li.active{background:#7AB317 !important;cursor:default !important}.pager ul li.active a{color:#f5f5f5 !important;cursor:default !important}.pager ul li.disabled{cursor:not-allowed !important}.pager ul li.disabled a{color:#ccc !important;cursor:not-allowed !important}.pager ul li.disabled:hover a{background:#fff !important}.pager ul li a{color:#666666;font-size:1.4rem;font-family:"Roboto", sans-serif}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Paginação
+name: pager
+category: basico
+---
+
+Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
+
+```html_example
+<div class="pager">
+  <ul>
+    <li class="disabled"><a href="javascript:void(0);"><i class="icon-left-open"></i></a></li>
+    <li class="active"><a href="javascript:void(0);">1</a></li>
+    <li><a href="javascript:void(0);">2</a></li>
+    <li><a href="javascript:void(0);">3</a></li>
+    <li><a href="javascript:void(0);">4</a></li>
+    <li><a href="javascript:void(0);">5</a></li>
+    <li><a href="javascript:void(0);">6</a></li>
+    <li><a href="javascript:void(0);">7</a></li>
+    <li><a href="javascript:void(0);">8</a></li>
+    <li><a href="javascript:void(0);">9</a></li>
+    <li><a href="javascript:void(0);"><i class="icon-right-open"></i></a></li>
+  </ul>
+</div>
+```
+*/
+.pager {
+  display: flex;
+  justify-content: center;
+}
+.pager ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  background-color: #fff;
+  border: .1rem solid #ccc;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+.pager ul li {
+  cursor: pointer;
+  padding: .8rem 1.6rem;
+}
+.pager ul li:hover a {
+  color: #7AB317;
+}
+.pager ul li:first-child {
+  padding: .8rem;
+  border-right: .1rem solid #ccc;
+}
+.pager ul li:last-child {
+  padding: .8rem;
+  border-left: .1rem solid #ccc;
+}
+.pager ul li.active {
+  background: #7AB317 !important;
+  cursor: default !important;
+}
+.pager ul li.active a {
+  color: #f5f5f5 !important;
+  cursor: default !important;
+}
+.pager ul li.disabled {
+  cursor: not-allowed !important;
+}
+.pager ul li.disabled a {
+  color: #ccc !important;
+  cursor: not-allowed !important;
+}
+.pager ul li.disabled:hover a {
+  background: #fff !important;
+}
+.pager ul li a {
+  color: #666666;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+}

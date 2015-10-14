@@ -1,1 +1,240 @@
-input{padding:1.2rem;background-color:#f4f4f4;border:.1rem solid #ccc;outline:none;font-size:1.2rem !important;line-height:normal !important;-moz-border-radius:0.4rem;-webkit-border-radius:0.4rem;border-radius:0.4rem;-moz-transition:box-shadow 0.2s ease-in-out,border-color 0.2s ease-in-out;-o-transition:box-shadow 0.2s ease-in-out,border-color 0.2s ease-in-out;-webkit-transition:box-shadow 0.2s ease-in-out,border-color 0.2s ease-in-out;transition:box-shadow 0.2s ease-in-out,border-color 0.2s ease-in-out}input:not([type="checkbox"]):not([type="radio"]):not(.button):not([readonly]):focus:not(.error){-moz-box-shadow:0 0 0.5rem #7fb93a;-webkit-box-shadow:0 0 0.5rem #7fb93a;box-shadow:0 0 0.5rem #7fb93a;border-color:#7fb93a}input[type="checkbox"],input [type="radio"]{cursor:pointer}input.error:not([type="checkbox"]):not([type="radio"]){-moz-box-shadow:0 0 0.2rem #b71c1c;-webkit-box-shadow:0 0 0.2rem #b71c1c;box-shadow:0 0 0.2rem #b71c1c;border-color:#b71c1c}input:read-only{opacity:1}select{padding:1.2rem;background-color:#f4f4f4;border:.1rem solid #ccc;outline:none;-moz-border-radius:0.4rem;-webkit-border-radius:0.4rem;border-radius:0.4rem;-moz-transition:box-shadow 0.2s ease-in-out,border-color 0.2s ease-in-out;-o-transition:box-shadow 0.2s ease-in-out,border-color 0.2s ease-in-out;-webkit-transition:box-shadow 0.2s ease-in-out,border-color 0.2s ease-in-out;transition:box-shadow 0.2s ease-in-out,border-color 0.2s ease-in-out}select:focus:not(.error){-moz-box-shadow:0 0 0.5rem #7fb93a;-webkit-box-shadow:0 0 0.5rem #7fb93a;box-shadow:0 0 0.5rem #7fb93a;border-color:#7fb93a}select.error{-moz-box-shadow:0 0 0.2rem #b71c1c;-webkit-box-shadow:0 0 0.2rem #b71c1c;box-shadow:0 0 0.2rem #b71c1c;border-color:#b71c1c}textarea{padding:1.2rem;background-color:#f4f4f4;border:.1rem solid #ccc;outline:none;-moz-border-radius:0.4rem;-webkit-border-radius:0.4rem;border-radius:0.4rem;-moz-transition:box-shadow 0.2s ease-in-out,border-color 0.2s ease-in-out;-o-transition:box-shadow 0.2s ease-in-out,border-color 0.2s ease-in-out;-webkit-transition:box-shadow 0.2s ease-in-out,border-color 0.2s ease-in-out;transition:box-shadow 0.2s ease-in-out,border-color 0.2s ease-in-out}textarea:focus:not(.error){-moz-box-shadow:0 0 0.5rem #7fb93a;-webkit-box-shadow:0 0 0.5rem #7fb93a;box-shadow:0 0 0.5rem #7fb93a;border-color:#7fb93a}textarea.error{-moz-box-shadow:0 0 0.2rem #b71c1c;-webkit-box-shadow:0 0 0.2rem #b71c1c;box-shadow:0 0 0.2rem #b71c1c;border-color:#b71c1c}input:disabled,select:disabled,textarea:disabled{background-color:#f4f4f4;color:#c6c6c6 !important;cursor:not-allowed}.field-group{display:inline-flex;flex-flow:row nowrap}.field-group .field-group-addon{padding:1rem;width:4.2rem;font-size:1.4rem;color:#666666;text-align:center;background-color:#d9d9d9;border:1px solid #ccc;-moz-border-radius:0.4rem;-webkit-border-radius:0.4rem;border-radius:0.4rem}.field-group .field-group-addon:first-child{border-right-color:#d9d9d9;border-top-right-radius:0;border-bottom-right-radius:0}.field-group .field-group-addon:last-child{border-left-color:#d9d9d9;border-top-left-radius:0;border-bottom-left-radius:0}.field-group .field-group-addon.interactive{cursor:pointer}.field-group .field-group-addon.interactive:hover{-moz-box-shadow:0 0.2rem 0.2rem #ccc;-webkit-box-shadow:0 0.2rem 0.2rem #ccc;box-shadow:0 0.2rem 0.2rem #ccc;border-color:#666}.field-group .field-group-addon.interactive:active{-moz-box-shadow:inset 0 0.2rem 0.2rem rgba(0,0,0,0.2);-webkit-box-shadow:inset 0 0.2rem 0.2rem rgba(0,0,0,0.2);box-shadow:inset 0 0.2rem 0.2rem rgba(0,0,0,0.2)}.field-group input:first-child{border-top-right-radius:0;border-bottom-right-radius:0}.field-group input:last-child{border-top-left-radius:0;border-bottom-left-radius:0}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Campos
+name: inputs
+category: basico
+---
+
+## Texto
+Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
+
+```html_example
+<input type="text" value="Texto" />
+
+<input type="text" value="Texto" disabled/>
+
+<input type="text" value="Texto" class="error"/>
+```
+
+## Checkbox
+Pode ser estilizado aplicando o atributo `disabled`.
+
+```html_example
+<input type="checkbox" /> Checkbox1
+
+<input type="checkbox" disabled/> Checkbox 2
+```
+
+## Radio
+Pode ser estilizado aplicando o atributo `disabled`.
+
+```html_example
+<input type="radio" name="radio" /> Radio 1
+
+<input type="radio" name="radio" disabled/> Radio 2
+```
+
+## Select
+Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
+
+```html_example
+<select>
+  <option>Opção 1</option>
+  <option>Opção 2</option>
+  <option>Opção 3</option>
+</select>
+
+<select disabled>
+  <option>Opção 1</option>
+  <option>Opção 2</option>
+  <option>Opção 3</option>
+</select>
+
+<select class="error">
+  <option>Opção 1</option>
+  <option>Opção 2</option>
+  <option>Opção 3</option>
+</select>
+```
+
+## Textarea
+Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
+
+```html_example
+<textarea rows="5" cols="40">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500.
+</textarea>
+
+<textarea rows="5" cols="40" disabled>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500.
+</textarea>
+
+<textarea rows="5" cols="40" class="error">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500.
+</textarea>
+```
+
+## Composto (campo + ícone)
+O ícone pode ser posicionado à esquerda ou à direita
+
+```html_example
+<div class="field-group">
+  <span class="field-group-addon"><i class="icon-dollar"></i></span>
+  <input type="text" value="100,00" />
+</div>
+
+<div class="field-group">
+  <input type="text" placeholder="Escolha uma imagem..." readonly />
+  <span class="field-group-addon interactive"><i class="icon-upload-cloud"></i></span>
+</div>
+```
+
+*/
+input {
+  padding: 1.2rem;
+  background-color: #f4f4f4;
+  border: .1rem solid #ccc;
+  outline: none;
+  font-size: 1.2rem !important;
+  line-height: normal !important;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  -webkit-transition: all 0.2s ease-in-out ease-out;
+  -moz-transition: all 0.2s ease-in-out ease-out;
+  -o-transition: all 0.2s ease-in-out ease-out;
+  transition: all 0.2s ease-in-out ease-out;
+}
+input:not([type="checkbox"]):not([type="radio"]):not(.button):not([readonly]):focus:not(.error) {
+  -webkit-box-shadow: 0 0 0.5rem #7fb93a;
+  -moz-box-shadow: 0 0 0.5rem #7fb93a;
+  box-shadow: 0 0 0.5rem #7fb93a;
+  border-color: #7fb93a;
+}
+input[type="checkbox"],
+input [type="radio"] {
+  cursor: pointer;
+}
+input.error:not([type="checkbox"]):not([type="radio"]) {
+  -webkit-box-shadow: 0 0 0.2rem #b71c1c;
+  -moz-box-shadow: 0 0 0.2rem #b71c1c;
+  box-shadow: 0 0 0.2rem #b71c1c;
+  border-color: #b71c1c;
+}
+input:read-only {
+  opacity: 1;
+}
+select {
+  padding: 1.2rem;
+  background-color: #f4f4f4;
+  border: .1rem solid #ccc;
+  outline: none;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  -webkit-transition: all 0.2s ease-in-out ease-out;
+  -moz-transition: all 0.2s ease-in-out ease-out;
+  -o-transition: all 0.2s ease-in-out ease-out;
+  transition: all 0.2s ease-in-out ease-out;
+}
+select:focus:not(.error) {
+  -webkit-box-shadow: 0 0 0.5rem #7fb93a;
+  -moz-box-shadow: 0 0 0.5rem #7fb93a;
+  box-shadow: 0 0 0.5rem #7fb93a;
+  border-color: #7fb93a;
+}
+select.error {
+  -webkit-box-shadow: 0 0 0.2rem #b71c1c;
+  -moz-box-shadow: 0 0 0.2rem #b71c1c;
+  box-shadow: 0 0 0.2rem #b71c1c;
+  border-color: #b71c1c;
+}
+textarea {
+  padding: 1.2rem;
+  background-color: #f4f4f4;
+  border: .1rem solid #ccc;
+  outline: none;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  -webkit-transition: all 0.2s ease-in-out ease-out;
+  -moz-transition: all 0.2s ease-in-out ease-out;
+  -o-transition: all 0.2s ease-in-out ease-out;
+  transition: all 0.2s ease-in-out ease-out;
+}
+textarea:focus:not(.error) {
+  -webkit-box-shadow: 0 0 0.5rem #7fb93a;
+  -moz-box-shadow: 0 0 0.5rem #7fb93a;
+  box-shadow: 0 0 0.5rem #7fb93a;
+  border-color: #7fb93a;
+}
+textarea.error {
+  -webkit-box-shadow: 0 0 0.2rem #b71c1c;
+  -moz-box-shadow: 0 0 0.2rem #b71c1c;
+  box-shadow: 0 0 0.2rem #b71c1c;
+  border-color: #b71c1c;
+}
+input:disabled,
+select:disabled,
+textarea:disabled {
+  background-color: #f4f4f4;
+  color: #c6c6c6 !important;
+  cursor: not-allowed;
+}
+.field-group {
+  display: inline-flex;
+  flex-flow: row nowrap;
+}
+.field-group .field-group-addon {
+  padding: 1rem;
+  width: 4.2rem;
+  font-size: 1.4rem;
+  color: #666666;
+  text-align: center;
+  background-color: #d9d9d9;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+.field-group .field-group-addon:first-child {
+  border-right-color: #d9d9d9;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.field-group .field-group-addon:last-child {
+  border-left-color: #d9d9d9;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.field-group .field-group-addon.interactive {
+  cursor: pointer;
+}
+.field-group .field-group-addon.interactive:hover {
+  -webkit-box-shadow: 0 0.2rem 0.2rem #cccccc;
+  -moz-box-shadow: 0 0.2rem 0.2rem #cccccc;
+  box-shadow: 0 0.2rem 0.2rem #cccccc;
+  border-color: #666;
+}
+.field-group .field-group-addon.interactive:active {
+  -webkit-box-shadow: inset 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+.field-group input:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.field-group input:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
