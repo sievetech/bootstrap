@@ -1,1 +1,69 @@
-form .field{margin-bottom:2rem}label{display:block;color:#666;font-size:1.3rem;margin-bottom:.5rem;text-align:left}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Formulários
+name: forms
+category: composicoes
+---
+
+O form é um grid comum para se implementar os campos.
+
+## Estrutura
+
+```
+<form>
+  <div class="field">(campo 1)</div>
+  <div class="field">(campo 2)</div>
+  <div class="field">(campo 3)</div>
+  <div class="field">(...)</div>
+</form>
+```
+
+## Exemplo
+
+```html_example
+<form>
+  <div class="field">
+    <label>Texto:</label>
+    <input type="text" value="Texto" />
+  </div>
+
+  <div class="field">
+    <label>Checkbox:</label>
+    <input type="checkbox" /> A
+    <input type="checkbox" /> B
+    <input type="checkbox" /> C
+  </div>
+
+  <div class="field">
+    <label>Radio:</label>
+    <input type="radio" name="radio" /> Radio 1
+    <input type="radio" name="radio" /> Radio 2
+  </div>
+
+  <div class="field">
+    <label>Select:</label>
+    <select>
+      <option>Opção 1</option>
+      <option>Opção 2</option>
+      <option>Opção 3</option>
+    </select>
+  </div>
+</form>
+```
+*/
+form .field {
+  margin-bottom: 2rem;
+}
+label {
+  display: block;
+  color: #666;
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+  text-align: left;
+}

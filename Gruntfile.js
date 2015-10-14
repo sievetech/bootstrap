@@ -5,6 +5,20 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+    less: {
+        dist: {
+          files: [
+              {
+                  expand: true,
+                  cwd: './',
+                  src: ['src/**/*.less'],
+                  dest: './',
+                  ext: '.css'
+              }
+          ]
+        }
+    },
+
     notify: {
       build: {
         options: {
@@ -55,21 +69,6 @@ module.exports = function(grunt) {
       }
     },
 
-    sass: {
-      dist: {
-        options: {
-          style: 'compressed',
-          sourcemap: 'none',
-          compass: true,
-          update: true
-        },
-
-        files: {
-          '.': '.'
-        }
-      }
-    },
-
     /**
      * Automação
      */
@@ -113,7 +112,7 @@ module.exports = function(grunt) {
       },
 
       dist: {
-        files: ['src/**/*.scss', 'demo/**/*', 'config.yml', 'config.rb', 'Gruntfile.js'],
+        files: ['src/**/*.less', 'demo/**/*', 'config.yml', 'Gruntfile.js'],
         tasks: ['build']
       }
     }
@@ -124,7 +123,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('work', ['concurrent:work']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['clean', 'sass', 'hologram', 'cssmin', 'copy', 'zip', 'notify:build']);
+  grunt.registerTask('build', ['clean', 'less', 'hologram', 'cssmin', 'copy', 'zip', 'notify:build']);
   grunt.registerTask('server', ['connect']);
 
   /**

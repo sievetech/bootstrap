@@ -1,4 +1,4 @@
-@import "compass";
+@import "elements";
 
 /*doc
 ---
@@ -39,8 +39,8 @@ Notificações podem ser usadas para dar feedbacks ao usuário
   .content {
     display: flex;
     overflow: hidden;
-    @include border-radius(.4rem);
-    @include box-shadow(0 .3rem .3rem rgba(0, 0, 0, 0.2));
+    .rounded(.4rem);
+    .box-shadow(0 .3rem .3rem rgba(0, 0, 0, 0.2));
 
     span {
       color: #fff;

@@ -1,1 +1,44 @@
-.title{margin:0;padding:0;font-family:Roboto;letter-spacing:-.1rem}.title.title-1{font-size:3.6rem}.title.title-2{font-size:3.2rem}.title.title-3{font-size:2.8rem}.title.title-4{font-size:2.4rem}.title small{color:#999}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Títulos
+name: titles
+category: basico
+---
+
+Existem 4 títulos com textos secundários opcionais.
+
+```html_example
+<h1 class="title title-1">h1. Título bootstrap <small>Texto secundário</small></h1>
+<h2 class="title title-2">h2. Título bootstrap <small>Texto secundário</small></h2>
+<h3 class="title title-3">h3. Título bootstrap <small>Texto secundário</small></h3>
+<h4 class="title title-4">h4. Título bootstrap <small>Texto secundário</small></h4>
+```
+
+*/
+.title {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  letter-spacing: -0.1rem;
+}
+.title.title-1 {
+  font-size: 3.6rem;
+}
+.title.title-2 {
+  font-size: 3.2rem;
+}
+.title.title-3 {
+  font-size: 2.8rem;
+}
+.title.title-4 {
+  font-size: 2.4rem;
+}
+.title small {
+  color: #999;
+}

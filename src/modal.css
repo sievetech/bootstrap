@@ -1,1 +1,20 @@
-.modal{width:40rem;background-color:#262626;border-top:1rem solid #7ab317;-moz-box-shadow:0 0.4rem 0.4rem rgba(0,0,0,0.3);-webkit-box-shadow:0 0.4rem 0.4rem rgba(0,0,0,0.3);box-shadow:0 0.4rem 0.4rem rgba(0,0,0,0.3);-moz-border-radius:0.4rem;-webkit-border-radius:0.4rem;border-radius:0.4rem}.modal>header{text-align:center}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.modal {
+  width: 40rem;
+  background-color: #262626;
+  border-top: 1rem solid #7ab317;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+.modal > header {
+  text-align: center;
+}
