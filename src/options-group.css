@@ -14,46 +14,69 @@ category: composicoes
 ## Única Escolha
 
 ```html_example
-<div class="options-group">
-    <label><input type="radio" name="type" value="a"> <span>A</span></label>
-    <label><input type="radio" name="type" value="a"> <span>B</span></label>
-    <label><input type="radio" name="type" value="a"> <span>C</span></label>
-</div>
+<ul class="list list-horizontal list-options">
+    <li><label><input type="radio" name="type" value="a"> <span>A</span></label></li>
+    <li><label><input type="radio" name="type" value="b"> <span>B</span></label></li>
+    <li><label><input type="radio" name="type" value="c"> <span>C</span></label></li>
+</ul>
 ```
+
+## Única Escolha com Ícones Horizontal
+
+```html_example
+<ul class="list list-horizontal list-options">
+    <li><label><input type="radio" name="type" value="a"> <span><i class="icon-eye"></i></span></label></li>
+    <li><label><input type="radio" name="type" value="b"> <span><i class="icon-eye-off"></i></span></label></li>
+    <li><label><input type="radio" name="type" value="c"> <span><i class="icon-pencil"></i></span></label></li>
+</ul>
+```
+
+## Única Escolha com Ícones Vertical
+
+```html_example
+<ul class="list list-vertical list-options">
+  <li><label><input type="radio" name="type" value="a"> <span><i class="icon-eye"></i></span></label></li>
+  <li><label><input type="radio" name="type" value="b"> <span><i class="icon-eye-off"></i></span></label></li>
+  <li><label><input type="radio" name="type" value="c"> <span><i class="icon-pencil"></i></span></label></li>
+</ul>
+```
+
 
 ## Múltipla Escolha
 
 ```html_example
-<div class="options-group">
-    <label><input type="checkbox" name="type" value="a"> <span>A</span></label>
-    <label><input type="checkbox" name="type" value="a"> <span>B</span></label>
-    <label><input type="checkbox" name="type" value="a"> <span>C</span></label>
-</div>
+<ul class="list list-horizontal list-options">
+    <li><label><input type="checkbox" name="type" value="a"> <span>A</span></label></li>
+    <li><label><input type="checkbox" name="type" value="b"> <span>B</span></label></li>
+    <li><label><input type="checkbox" name="type" value="c"> <span>C</span></label></li>
+</ul>
 ```
 */
-div.options-group {
-  display: inline-flex;
-  flex-flow: row nowrap;
+.list-options {
   overflow: hidden;
   border-radius: .4rem;
   border: .1rem solid #ccc;
 }
-div.options-group label {
-  display: inline-flex;
-  margin: 0;
+.list-options.list-horizontal li {
   border-right: .1rem solid #ccc;
 }
-div.options-group label:last-child {
+.list-options.list-vertical li {
+  border-bottom: .1rem solid #ccc;
+}
+.list-options li:last-child {
   border: none;
 }
-div.options-group label input {
+.list-options li label {
+  margin: 0;
+}
+.list-options li label input {
   display: none;
 }
-div.options-group label input:checked + * {
+.list-options li label input:checked + * {
   color: #fff;
   background-color: #6A5;
 }
-div.options-group label span {
+.list-options li label span {
   display: inline-flex;
   width: 4rem;
   height: 3.5rem;
@@ -62,6 +85,6 @@ div.options-group label span {
   align-items: center;
   cursor: pointer;
 }
-div.options-group label span::selection {
+.list-options li label span::selection {
   background-color: transparent;
 }

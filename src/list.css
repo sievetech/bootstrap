@@ -35,7 +35,7 @@ Barra de navegação para ser utilizada como lista.
 
 */
 .list {
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   list-style: none;
 }
