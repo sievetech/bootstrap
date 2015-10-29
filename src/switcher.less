@@ -1,0 +1,55 @@
+@import "elements";
+
+/*doc
+---
+title: Interruptor
+name: switchers
+category: basico
+---
+
+## Padrão
+
+```html_example
+<ul class="list list-horizontal list-switcher">
+    <li><label><input type="radio" name="type" value="a"> <span>A</span></label></li>
+    <li><label><input type="radio" name="type" value="b" checked> <span>B</span></label></li>
+</ul>
+```
+*/
+
+.list-switcher {
+  height: 1.2rem;
+  .rounded(.6rem);
+  background-color: #98d937;
+
+  li {
+    display: inline-flex;
+
+    label {
+      margin: 0;
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+
+      input {
+        display: none;
+
+        &:checked + span {
+            visibility: visible;
+        }
+      }
+
+      span {
+          visibility: hidden;
+          display: inline-block;
+          width: 2rem;
+          height: 2rem;
+          .rounded(1rem);
+          background-color: #6a5;
+          overflow: hidden;
+          text-indent: -100rem;
+          cursor: default;
+      }
+    }
+  }
+}

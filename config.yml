@@ -60,6 +60,7 @@ css_include:
   - './src/fields.css'
   - './src/options-group.css'
   - './src/list.css'
+  - './src/switcher.css'
   - './src/notifications.css'
   - './src/labels.css'
   - './src/tables.css'
