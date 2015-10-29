@@ -15,9 +15,9 @@ category: composicoes
 
 ```html_example
 <ul class="list list-horizontal list-options">
-    <li><label><input type="radio" name="type" value="a"> <span>A</span></label></li>
-    <li><label><input type="radio" name="type" value="b"> <span>B</span></label></li>
-    <li><label><input type="radio" name="type" value="c"> <span>C</span></label></li>
+    <li><label><input type="radio" name="type1" value="a"> <span>A</span></label></li>
+    <li><label><input type="radio" name="type1" value="b"> <span>B</span></label></li>
+    <li><label><input type="radio" name="type1" value="c"> <span>C</span></label></li>
 </ul>
 ```
 
@@ -25,9 +25,9 @@ category: composicoes
 
 ```html_example
 <ul class="list list-horizontal list-options">
-    <li><label><input type="radio" name="type" value="a"> <span><i class="icon-eye"></i></span></label></li>
-    <li><label><input type="radio" name="type" value="b"> <span><i class="icon-eye-off"></i></span></label></li>
-    <li><label><input type="radio" name="type" value="c"> <span><i class="icon-pencil"></i></span></label></li>
+    <li><label><input type="radio" name="type2" value="a"> <span><i class="icon-eye"></i></span></label></li>
+    <li><label><input type="radio" name="type2" value="b"> <span><i class="icon-eye-off"></i></span></label></li>
+    <li><label><input type="radio" name="type2" value="c"> <span><i class="icon-pencil"></i></span></label></li>
 </ul>
 ```
 
@@ -35,9 +35,9 @@ category: composicoes
 
 ```html_example
 <ul class="list list-vertical list-options">
-  <li><label><input type="radio" name="type" value="a"> <span><i class="icon-eye"></i></span></label></li>
-  <li><label><input type="radio" name="type" value="b"> <span><i class="icon-eye-off"></i></span></label></li>
-  <li><label><input type="radio" name="type" value="c"> <span><i class="icon-pencil"></i></span></label></li>
+  <li><label><input type="radio" name="type3" value="a"> <span><i class="icon-eye"></i></span></label></li>
+  <li><label><input type="radio" name="type3" value="b"> <span><i class="icon-eye-off"></i></span></label></li>
+  <li><label><input type="radio" name="type3" value="c"> <span><i class="icon-pencil"></i></span></label></li>
 </ul>
 ```
 
@@ -46,9 +46,9 @@ category: composicoes
 
 ```html_example
 <ul class="list list-horizontal list-options">
-    <li><label><input type="checkbox" name="type" value="a"> <span>A</span></label></li>
-    <li><label><input type="checkbox" name="type" value="b"> <span>B</span></label></li>
-    <li><label><input type="checkbox" name="type" value="c"> <span>C</span></label></li>
+    <li><label><input type="checkbox" name="type4" value="a"> <span>A</span></label></li>
+    <li><label><input type="checkbox" name="type4" value="b"> <span>B</span></label></li>
+    <li><label><input type="checkbox" name="type4" value="c"> <span>C</span></label></li>
 </ul>
 ```
 */
