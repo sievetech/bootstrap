@@ -11,24 +11,39 @@ name: switchers
 category: basico
 ---
 
-## Padrão
+## Horizontal
 
 ```html_example
 <ul class="list list-horizontal list-switcher">
-    <li><label><input type="radio" name="type" value="a"> <span>A</span></label></li>
-    <li><label><input type="radio" name="type" value="b" checked> <span>B</span></label></li>
+    <li><label><input type="radio" name="type1" value="a"> <span>A</span></label></li>
+    <li><label><input type="radio" name="type1" value="b" checked> <span>B</span></label></li>
+</ul>
+```
+
+## Vertical
+
+```html_example
+<ul class="list list-vertical list-switcher">
+    <li><label><input type="radio" name="type2" value="a"> <span>A</span></label></li>
+    <li><label><input type="radio" name="type2" value="b" checked> <span>B</span></label></li>
 </ul>
 ```
 */
 .list-switcher {
-  height: 1.2rem;
   -webkit-border-radius: 0.6rem;
   -moz-border-radius: 0.6rem;
   border-radius: 0.6rem;
   background-color: #98d937;
 }
+.list-switcher.list-horizontal {
+  height: 1.2rem;
+}
+.list-switcher.list-vertical {
+  width: 1.2rem;
+}
 .list-switcher li {
   display: inline-flex;
+  justify-content: center;
 }
 .list-switcher li label {
   margin: 0;
