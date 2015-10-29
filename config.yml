@@ -58,6 +58,7 @@ css_include:
   - './src/buttons.css'
   - './src/forms.css'
   - './src/fields.css'
+  - './src/options-group.css'
   - './src/list.css'
   - './src/notifications.css'
   - './src/labels.css'

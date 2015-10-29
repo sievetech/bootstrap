@@ -1,0 +1,59 @@
+@import "elements";
+
+/*doc
+---
+title: Grupo de Opções
+name: options
+category: composicoes
+---
+
+## Padrão
+
+```html_example
+<div class="options-group">
+    <label><input type="radio" name="type" value="a"> <span>A</span></label>
+    <label><input type="radio" name="type" value="a"> <span>B</span></label>
+    <label><input type="radio" name="type" value="a"> <span>C</span></label>
+</div>
+```
+*/
+div.options-group {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  border-radius: .4rem;
+  border: .1rem solid #ccc;
+
+  label {
+    display: inline-flex;
+    margin: 0;
+    border-right: .1rem solid #ccc;
+
+    &:last-child {
+      border: none;
+    }
+
+    input {
+      display: none;
+
+      &:checked + * {
+        color: #fff;
+        background-color: #6A5;
+      }
+    }
+
+    span {
+      display: inline-flex;
+      width: 4rem;
+      height: 3.5rem;
+      background-color: #f3f3f3;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &::selection{
+        background-color: transparent;
+      }
+    }
+  }
+}

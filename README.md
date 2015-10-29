@@ -12,7 +12,7 @@ $ npm install grunt-cli -g
 $ npm install
 ```
 
-### Hologram e Compass (via rvm)
+### Hologram (via rvm)
 
 ```
 $ gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
