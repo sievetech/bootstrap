@@ -97,7 +97,7 @@ module.exports = function(grunt) {
       },
 
       local: {
-        path: 'http://localhost:8000/'
+        path: 'http://localhost:8010/'
       },
 
       ci: {
