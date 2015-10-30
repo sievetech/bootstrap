@@ -115,9 +115,12 @@
 
                 <div class="field">
                   <label>Tipo</label>
-                  <input type="radio" name="type" /> Comum
-                  <input type="radio" name="type" /> Administrador
-                  <input type="radio" name="type" /> Intruso
+
+                  <ul class="list list-horizontal">
+                    <li><label><input type="radio" name="role" value="c" /> Comum</label></li>
+                    <li><label><input type="radio" name="role" value="a" /> Administrador</label></li>
+                    <li><label><input type="radio" name="role" value="i" /> Intruso</label></li>
+                  </ul>
                 </div>
 
                 <div class="field">
@@ -132,11 +135,10 @@
                 </div>
 
                 <div class="field">
-                  <input type="checkbox" /> Sim, quero receber e-mails com novidades da Sieve
-                </div>
-
-                <div class="field">
-                  <input type="checkbox" /> Sim, aceito e concordo incondicionalmente em vender minha alma de acordo com os termos de serviço.
+                  <ul class="list list-vertical">
+                    <li><label><input type="checkbox" /> Sim, quero receber e-mails com novidades da Sieve</label></li>
+                    <li><label><input type="checkbox" /> Sim, aceito e concordo incondicionalmente em vender minha alma de acordo com os termos de serviço.</label></li>
+                  </ul>
                 </div>
 
                 <div class="field">
