@@ -30,6 +30,7 @@ category: basico
 ```
 */
 .list-switcher {
+  vertical-align: middle;
   -webkit-border-radius: 0.6rem;
   -moz-border-radius: 0.6rem;
   border-radius: 0.6rem;
