@@ -1,0 +1,90 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Grupo de Opções
+name: options
+category: composicoes
+---
+
+## Única Escolha
+
+```html_example
+<ul class="list list-horizontal list-options">
+    <li><label><input type="radio" name="type1" value="a"> <span>A</span></label></li>
+    <li><label><input type="radio" name="type1" value="b"> <span>B</span></label></li>
+    <li><label><input type="radio" name="type1" value="c"> <span>C</span></label></li>
+</ul>
+```
+
+## Única Escolha com Ícones Horizontal
+
+```html_example
+<ul class="list list-horizontal list-options">
+    <li><label><input type="radio" name="type2" value="a"> <span><i class="icon-eye"></i></span></label></li>
+    <li><label><input type="radio" name="type2" value="b"> <span><i class="icon-eye-off"></i></span></label></li>
+    <li><label><input type="radio" name="type2" value="c"> <span><i class="icon-pencil"></i></span></label></li>
+</ul>
+```
+
+## Única Escolha com Ícones Vertical
+
+```html_example
+<ul class="list list-vertical list-options">
+  <li><label><input type="radio" name="type3" value="a"> <span><i class="icon-eye"></i></span></label></li>
+  <li><label><input type="radio" name="type3" value="b"> <span><i class="icon-eye-off"></i></span></label></li>
+  <li><label><input type="radio" name="type3" value="c"> <span><i class="icon-pencil"></i></span></label></li>
+</ul>
+```
+
+
+## Múltipla Escolha
+
+```html_example
+<ul class="list list-horizontal list-options">
+    <li><label><input type="checkbox" name="type4" value="a"> <span>A</span></label></li>
+    <li><label><input type="checkbox" name="type4" value="b"> <span>B</span></label></li>
+    <li><label><input type="checkbox" name="type4" value="c"> <span>C</span></label></li>
+</ul>
+```
+*/
+.list-options {
+  overflow: hidden;
+  border-radius: .4rem;
+  border: .1rem solid #ccc;
+}
+.list-options.list-horizontal li {
+  border-right: .1rem solid #ccc;
+}
+.list-options.list-vertical li {
+  border-bottom: .1rem solid #ccc;
+}
+.list-options li:last-child {
+  border: none;
+}
+.list-options li label {
+  margin: 0;
+}
+.list-options li label input {
+  display: none;
+}
+.list-options li label input:checked + * {
+  color: #fff;
+  background-color: #6A5;
+}
+.list-options li label span {
+  display: inline-flex;
+  width: 4rem;
+  height: 3.5rem;
+  background-color: #f3f3f3;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.list-options li label span::selection {
+  background-color: transparent;
+}
