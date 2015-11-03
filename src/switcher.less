@@ -7,67 +7,50 @@ name: switchers
 category: basico
 ---
 
-## Horizontal
-
 ```html_example
-<ul class="list list-horizontal list-switcher">
-    <li><label><input type="radio" name="type1" value="a"> <span>A</span></label></li>
-    <li><label><input type="radio" name="type1" value="b" checked> <span>B</span></label></li>
-</ul>
-```
-
-## Vertical
-
-```html_example
-<ul class="list list-vertical list-switcher">
-    <li><label><input type="radio" name="type2" value="a"> <span>A</span></label></li>
-    <li><label><input type="radio" name="type2" value="b" checked> <span>B</span></label></li>
-</ul>
+<label>
+    <input type="checkbox" class="switcher" />
+    <span>Teste</span>
+</label>
 ```
 */
 
-.list-switcher {
-  vertical-align: middle;
-  .rounded(.6rem);
-  background-color: #98d937;
+input[type="checkbox"].switcher {
+    display: none;
 
-  &.list-horizontal {
-    height: 1.2rem;
-  }
+    & + span {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        width: 4rem;
+        height: 1rem;
+        text-indent: -100rem;
+        background: #f1f1f1;
+        border: .1rem solid #ccc;
+        cursor: pointer;
+        .rounded(.5rem);
+        .user-select;
 
-  &.list-vertical {
-    width: 1.2rem;
-  }
-
-  li {
-    display: inline-flex;
-    justify-content: center;
-
-    label {
-      margin: 0;
-      display: inline-flex;
-      align-items: center;
-      cursor: pointer;
-
-      input {
-        display: none;
-
-        &:checked + span {
-            visibility: visible;
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            left: -2%;
+            width: 2rem;
+            height: 2rem;
+            background: #ccc;
+            .transition;
+            .rounded(1rem);
         }
-      }
-
-      span {
-          visibility: hidden;
-          display: inline-block;
-          width: 2rem;
-          height: 2rem;
-          .rounded(1rem);
-          background-color: #6a5;
-          overflow: hidden;
-          text-indent: -100rem;
-          cursor: default;
-      }
     }
-  }
+
+    &:checked + span {
+        background: #98d937;
+        border-color: #98d937;
+
+        &::after {
+            background: #6a5;
+            left: 52%;
+        }
+    }
 }
