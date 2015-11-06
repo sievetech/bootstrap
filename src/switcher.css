@@ -20,7 +20,9 @@ category: basico
 */
 .switcher {
   display: inline-block;
+  margin: 1rem 0;
   vertical-align: middle;
+  line-height: 1.4rem;
 }
 .switcher input[type="checkbox"] {
   display: none;
@@ -29,10 +31,10 @@ category: basico
   position: relative;
   display: inline-flex;
   align-items: center;
-  width: 4rem;
-  height: 1rem;
-  font-size: 1rem;
-  line-height: 2;
+  width: 4.2rem;
+  height: 1.2rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
   text-indent: -100rem;
   background: #f1f1f1;
   border: .1rem solid #ccc;
@@ -40,6 +42,10 @@ category: basico
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   border-radius: 0.5rem;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
