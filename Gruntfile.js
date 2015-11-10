@@ -30,7 +30,7 @@ module.exports = function(grunt) {
     connect: {
       server: {
         options: {
-          port: 8010,
+          port: 8300,
           hostname: '*',
           base: 'build/',
           useAvailablePort: true,
@@ -97,7 +97,7 @@ module.exports = function(grunt) {
       },
 
       local: {
-        path: 'http://localhost:8010/'
+        path: 'http://localhost:8300/'
       },
 
       ci: {
