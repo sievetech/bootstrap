@@ -145,7 +145,7 @@ direto no `<body>`.
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 .page.page-basic > section .title.title-2 {
-  margin: 1.5rem 0 3rem;
+  margin: 4rem 0 3rem;
 }
 .page.page-basic > footer {
   padding: 2rem 0;
@@ -153,7 +153,7 @@ direto no `<body>`.
   background-color: #3a3a3a;
 }
 .page.page-fixed-header {
-  padding-top: 4rem;
+  padding-top: 4.4rem;
 }
 .page.page-fixed-header > header {
   position: fixed;
