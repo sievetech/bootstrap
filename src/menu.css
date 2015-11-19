@@ -47,20 +47,13 @@ Barra de navegação para ser utilizada como lista.
 }
 .menu .list {
   display: flex;
-  background-color: #262626;
+  background-color: #519548;
 }
 .menu .list a {
   display: block;
   padding: 1rem 2rem;
   color: #fff;
   text-decoration: none;
-}
-.menu .list a.active {
-  color: #75c048 !important;
-  background-color: #000;
-}
-.menu .list a:hover {
-  background-color: #373737;
 }
 .menu .list a:link,
 .menu .list a:visited,
@@ -73,11 +66,22 @@ Barra de navegação para ser utilizada como lista.
 .menu .list-vertical {
   width: 20rem;
 }
-.menu .list-vertical .active {
-  padding-left: 1.6rem !important;
-  border-left: .4rem solid #75c048;
+.menu .list-vertical a {
+  border-left: .4rem solid transparent;
 }
-.menu .list-horizontal .active {
-  padding-top: .6rem !important;
-  border-top: .4rem solid #75c048;
+.menu .list-vertical a:hover {
+  border-color: #fff;
+}
+.menu .list-vertical a.active {
+  padding-left: 1.6rem !important;
+  border-left: .4rem solid #88d37c;
+}
+.menu .list-horizontal a {
+  border-bottom: .4rem solid transparent;
+}
+.menu .list-horizontal a:hover {
+  border-color: #fff;
+}
+.menu .list-horizontal a.active {
+  border-color: #88d37c;
 }
