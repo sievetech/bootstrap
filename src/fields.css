@@ -220,9 +220,9 @@ textarea:disabled {
   cursor: pointer;
 }
 .field-group .field-group-addon.interactive:hover {
-  -webkit-box-shadow: 0 0.2rem 0.2rem #cccccc;
-  -moz-box-shadow: 0 0.2rem 0.2rem #cccccc;
-  box-shadow: 0 0.2rem 0.2rem #cccccc;
+  -webkit-box-shadow: 0 0.2rem 0.2rem #ccc;
+  -moz-box-shadow: 0 0.2rem 0.2rem #ccc;
+  box-shadow: 0 0.2rem 0.2rem #ccc;
   border-color: #666;
 }
 .field-group .field-group-addon.interactive:active {

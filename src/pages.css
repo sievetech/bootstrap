@@ -130,6 +130,7 @@ direto no `<body>`.
   display: flex;
   flex-flow: column nowrap;
   min-height: 100%;
+  background-color: #f3f3f3;
 }
 .page > header {
   display: flex;
@@ -141,7 +142,7 @@ direto no `<body>`.
   height: 10rem;
 }
 .page.page-basic > header {
-  background-color: #414345;
+  background-color: #519548;
   -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
@@ -160,7 +161,6 @@ direto no `<body>`.
   position: fixed;
   top: 0;
   width: 100%;
-  height: 4rem;
   z-index: 900;
 }
 .page.page-fixed-footer {
