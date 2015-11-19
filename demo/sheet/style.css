@@ -4,51 +4,42 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
-header .menu .list {
-  background-color: transparent;
+.page-basic header .logo {
+  height: 2rem;
 }
-header .menu .list a:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-}
-header .menu .list a.active {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-header .options {
+.page-basic header .options {
   font-size: 2rem;
 }
-header .options a {
+.page-basic header .options a {
   display: inline-block;
   padding: .6rem .3rem;
-  color: #999;
-}
-header .options a:hover {
   color: #fff;
 }
-section .table {
+.page-basic section .table {
   margin-bottom: 1.5rem;
 }
-section .table.no-border tr:last-child td {
+.page-basic section .table.no-border tr:last-child td {
   border-bottom: .1rem solid #e5e5e5;
 }
-section .table .icon-error,
-section .table .icon-pencil {
+.page-basic section .table .icon-error,
+.page-basic section .table .icon-pencil {
   color: #999;
   font-size: 1.4rem;
 }
-footer .list-links li {
-  display: inline-block;
-  border-right: .1rem solid #bbb;
+.page-basic section form {
+  margin-bottom: 2rem;
+  padding: 3rem;
+  width: 51.5rem;
+  background-color: #fff;
+  border: .1rem solid #dcdcdc;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+.page-basic section form textarea {
+  width: 100%;
+}
+.page-basic footer .logo {
   margin-right: 2rem;
-  padding-right: 2rem;
-  font-size: 1.1rem;
-  color: #666;
-}
-footer .list-links li a {
-  color: #666;
-}
-footer .list-links li a:hover {
-  color: #7ab317;
-}
-footer .list-links li:last-child {
-  border: none;
+  height: 2rem;
 }
