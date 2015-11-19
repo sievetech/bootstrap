@@ -128,11 +128,9 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
 }
 .box > section {
   flex: 1 0;
-  background-color: #fff;
 }
 .box > footer {
   max-height: 10rem;
-  background-color: #f1f1f1;
 }
 .box > footer p {
   margin: 1rem;
