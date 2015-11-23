@@ -56,7 +56,7 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
   padding: .8rem 1.6rem;
 }
 .pager ul li:hover a {
-  color: #7AB317;
+  color: #519548;
 }
 .pager ul li:first-child {
   padding: .8rem;
@@ -67,7 +67,7 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
   border-left: .1rem solid #ccc;
 }
 .pager ul li.active {
-  background: #7AB317 !important;
+  background: #519548 !important;
   cursor: default !important;
 }
 .pager ul li.active a {
