@@ -118,10 +118,9 @@ pode ser aplicada no header da coluna para prevenir o efeito de hover.
 .table tbody tr td {
   padding: .8rem;
   font-size: 1.3rem;
-  border-bottom: .1rem solid #e5e5e5;
 }
 .table tbody tr:nth-child(odd) {
-  background-color: #fbfbfb;
+  background-color: #f6f6f6;
 }
 .table.table-no-border {
   border: none;
