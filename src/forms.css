@@ -6,7 +6,7 @@
   ---------------------------------------------------*/
 /*doc
 ---
-title: Formulários
+title: Grid
 name: forms
 category: Formulário
 ---
@@ -16,7 +16,7 @@ O form é um grid comum para se implementar os campos.
 ## Estrutura
 
 ```
-<form>
+<form class="form">
   <div class="field">(campo 1)</div>
   <div class="field">(campo 2)</div>
   <div class="field">(campo 3)</div>
@@ -27,7 +27,7 @@ O form é um grid comum para se implementar os campos.
 ## Exemplo
 
 ```html_example
-<form>
+<form class="form">
   <div class="field">
     <label>Texto:</label>
     <input type="text" value="Texto" />
@@ -57,18 +57,18 @@ O form é um grid comum para se implementar os campos.
 </form>
 ```
 */
-form {
+.form.form-default {
   -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
 }
-form .field {
+.form .field {
   margin-bottom: 2rem;
 }
-form .row:last-child .field {
+.form .row:last-child .field {
   margin-bottom: 0;
 }
-label {
+.form label {
   display: block;
   color: #666;
   font-size: 1.3rem;
