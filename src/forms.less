@@ -55,8 +55,16 @@ O form é um grid comum para se implementar os campos.
 */
 
 form {
+  .box-shadow(0 .2rem .2rem rgba(0, 0, 0, 0.2));
+
   .field {
     margin-bottom: 2rem;
+  }
+
+  .row:last-child {
+    .field {
+      margin-bottom: 0;
+    }
   }
 }
 

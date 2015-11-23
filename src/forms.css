@@ -57,8 +57,16 @@ O form é um grid comum para se implementar os campos.
 </form>
 ```
 */
+form {
+  -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
 form .field {
   margin-bottom: 2rem;
+}
+form .row:last-child .field {
+  margin-bottom: 0;
 }
 label {
   display: block;
