@@ -23,10 +23,30 @@ Barra de navegação para ser utilizada como lista.
 </ul>
 ```
 
+E com espaçamento:
+
+```html_example
+<ul class="list list-vertical list-spaced">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
 ## Horizontal
 
 ```html_example
 <ul class="list list-horizontal">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+E com espaçamento:
+
+```html_example
+<ul class="list list-horizontal list-spaced">
   <li>Item 1</li>
   <li>Item 2</li>
   <li>Item 3</li>
