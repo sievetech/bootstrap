@@ -42,6 +42,18 @@ Barra de navegação para ser utilizada como lista.
 .list.list-vertical {
   flex-flow: column wrap;
 }
+.list.list-vertical.list-spaced li {
+  margin-bottom: 2rem;
+}
+.list.list-vertical.list-spaced li:last-child {
+  margin-bottom: 0;
+}
 .list.list-horizontal {
   flex-flow: row nowrap;
+}
+.list.list-horizontal.list-spaced li {
+  margin-right: 2rem;
+}
+.list.list-horizontal.list-spaced li:last-child {
+  margin-right: 0;
 }
