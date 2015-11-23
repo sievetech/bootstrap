@@ -5,6 +5,7 @@
     More info at: http://lesselements.com
   ---------------------------------------------------*/
 .page-basic header .logo {
+  margin: 1.2rem 0;
   height: 2rem;
 }
 .page-basic header .options {
