@@ -112,7 +112,7 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
   padding: 1.3rem 1.2rem;
   color: #6d6d6d;
   font-size: 2rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Light", sans-serif;
 }
 .box > header > .list-actions {
   border-left: .1rem solid #e5e5e5;
