@@ -92,6 +92,12 @@ pode ser aplicada no header da coluna para prevenir o efeito de hover.
   width: 100%;
   border-collapse: collapse;
   border: .1rem solid #ddd;
+  -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
   /* Pode estar dentro de um tbody ou thead */
 }
 .table th {

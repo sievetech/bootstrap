@@ -37,10 +37,16 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
 }
 .pager ul {
   display: flex;
+  margin-bottom: .3rem;
   flex-flow: row nowrap;
   align-content: center;
   background-color: #fff;
   border: .1rem solid #ccc;
+  border-bottom: none;
+  /* a borda de baixo já é feito pela sombra */
+  -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 0.4rem;
   -moz-border-radius: 0.4rem;
   border-radius: 0.4rem;

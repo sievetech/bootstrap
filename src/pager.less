@@ -34,10 +34,13 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
 
   ul {
     display: flex;
+    margin-bottom: .3rem;
     flex-flow: row nowrap;
     align-content: center;
     background-color: #fff;
     border: .1rem solid #ccc;
+    border-bottom: none; /* a borda de baixo já é feito pela sombra */
+    .box-shadow(0 .2rem .2rem rgba(0, 0, 0, 0.2));
     .rounded(.4rem);
 
     li {
