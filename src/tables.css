@@ -125,6 +125,21 @@ pode ser aplicada no header da coluna para prevenir o efeito de hover.
 .table.table-no-border {
   border: none;
 }
+.table.table-sortable th {
+  position: relative;
+}
+.table.table-sortable th::after {
+  position: absolute;
+  top: .8rem;
+  right: .8rem;
+  font-size: 1rem;
+}
+.table.table-sortable th.asc::after {
+  content: '\25B2';
+}
+.table.table-sortable th.desc::after {
+  content: '\25BC';
+}
 .table.table-sortable th:not(.no-sort):hover {
   background-color: #e5e5e5;
   cursor: pointer;
