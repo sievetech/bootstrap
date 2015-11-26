@@ -1,0 +1,69 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Checkboxes
+name: checkbox
+category: Formulário
+---
+
+## Padrão
+
+```html_example
+<label><input type="checkbox" class="checkbox" name="type1" value="a" checked> <span></span></label>
+```
+*/
+.checkbox {
+  display: none;
+}
+.checkbox + span {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: .2rem solid #666;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+}
+.checkbox + span::after {
+  position: absolute;
+  content: '\2713';
+  display: inline-block;
+  color: #fff;
+  font-size: 2rem;
+  line-height: .8;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+}
+.checkbox:checked + span {
+  background-color: #6a5;
+  border-color: #6a5;
+}
+.checkbox:checked + span::after {
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+}

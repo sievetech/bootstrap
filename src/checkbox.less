@@ -1,0 +1,52 @@
+@import "compess";
+
+/*doc
+---
+title: Checkboxes
+name: checkbox
+category: Formulário
+---
+
+## Padrão
+
+```html_example
+<label><input type="checkbox" class="checkbox" name="type1" value="a" checked> <span></span></label>
+```
+*/
+
+.checkbox {
+  display: none;
+
+  & + span {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: .2rem solid #666;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    .transition;
+    .rounded(.2rem);
+
+    &::after {
+        position: absolute;
+        content: '\2713';
+        display: inline-block;
+        color: #fff;
+        font-size: 2rem;
+        line-height: .8;
+        .transition;
+        .opacity(0);
+    }
+  }
+
+  &:checked + span {
+    background-color: #6a5;
+    border-color: #6a5;
+
+    &::after {
+        .opacity(1);
+    }
+  }
+}

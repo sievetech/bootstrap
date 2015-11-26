@@ -58,6 +58,7 @@ css_include:
   - './src/pages.css'
   - './src/buttons.css'
   - './src/radio.css'
+  - './src/checkbox.css'
   - './src/forms.css'
   - './src/fields.css'
   - './src/options-group.css'
