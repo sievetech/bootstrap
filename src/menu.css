@@ -52,7 +52,7 @@ Barra de navegação para ser utilizada como lista.
 .menu .list a {
   display: block;
   padding: 1rem 2rem;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 .menu .list a:link,
@@ -60,7 +60,7 @@ Barra de navegação para ser utilizada como lista.
 .menu .list a:active {
   display: block;
   padding: 1rem 2rem;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 .menu .list-vertical {
@@ -70,7 +70,7 @@ Barra de navegação para ser utilizada como lista.
   border-left: .4rem solid transparent;
 }
 .menu .list-vertical a:hover {
-  border-color: #fff;
+  border-color: #ffffff;
 }
 .menu .list-vertical a.active {
   padding-left: 1.6rem !important;
@@ -80,7 +80,7 @@ Barra de navegação para ser utilizada como lista.
   border-bottom: .4rem solid transparent;
 }
 .menu .list-horizontal a:hover {
-  border-color: #fff;
+  border-color: #ffffff;
 }
 .menu .list-horizontal a.active {
   border-color: #88d37c;

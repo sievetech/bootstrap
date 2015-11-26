@@ -1,4 +1,4 @@
-@import "elements";
+@import "compess";
 
 /*doc
 ---
@@ -22,7 +22,7 @@ O label pode ser aplicado em diversos contextos
 */
 
 .label {
-  color: #fff;
+  color: @white;
   font-size: 1rem;
   text-align: center;
   text-transform: lowercase;
@@ -40,7 +40,7 @@ O label pode ser aplicado em diversos contextos
     background-color: #F5C221;
   }
   &.label-grey {
-    background-color: #666666;
+    background-color: @gray-font;
   }
   &.label-purple {
     background-color: #776B9E;

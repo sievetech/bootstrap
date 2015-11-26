@@ -1,4 +1,4 @@
-@import "elements";
+@import "compess";
 
 /*doc
 ---
@@ -127,7 +127,7 @@ direto no `<body>`.
   display: flex;
   flex-flow: column nowrap;
   min-height: 100%;
-  background-color: #f3f3f3;
+  background-color: @background;
 
   > header {
     display: flex;
@@ -143,7 +143,7 @@ direto no `<body>`.
 
   &.page-basic {
     > header {
-      background-color: #519548;
+      background-color: @green-default;
       .box-shadow(0 .2rem .2rem rgba(0,0,0,0.3));
     }
 

@@ -1,4 +1,4 @@
-@import "elements";
+@import "compess";
 
 /*doc
 ---
@@ -46,7 +46,7 @@ category: Formulário
   min-width: 14rem;
   border: none;
   cursor: pointer;
-  color: #fff !important;
+  color: @white !important;
   font-size: 1.2rem;
   line-height: normal;
   text-align: center;
@@ -82,7 +82,7 @@ category: Formulário
   &.button-default {
     background-color: #f4f4f4;
     border: .1rem solid #ccc;
-    color: #000 !important;
+    color: @black !important;
 
     &:hover {
       background-color: #f4f4f4;
@@ -95,26 +95,26 @@ category: Formulário
   }
 
   &.button-success {
-    background-color: #519548;
+    background-color: @green-default;
 
     &:hover {
-      background-color: #6cb361;
+      background-color: @green-hover;
     }
 
     &:active {
-      background-color: #286f23;
+      background-color: @green-press;
     }
   }
 
   &.button-danger {
-    background-color: #bb4c4c;
+    background-color: @red-default;
 
     &:hover {
-      background-color: #d46666;
+      background-color: @red-hover;
     }
 
     &:active {
-      background-color: #a23030;
+      background-color: @red-press;
     }
   }
 }

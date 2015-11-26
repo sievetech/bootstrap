@@ -73,7 +73,7 @@ category: Formulário
   display: none;
 }
 .list-options li label input:checked + * {
-  color: #fff;
+  color: #ffffff;
   background-color: #6A5;
 }
 .list-options li label span {

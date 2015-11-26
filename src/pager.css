@@ -40,7 +40,7 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
   margin-bottom: .3rem;
   flex-flow: row nowrap;
   align-content: center;
-  background-color: #fff;
+  background-color: #ffffff;
   border: .1rem solid #ccc;
   border-bottom: none;
   /* a borda de baixo já é feito pela sombra */
@@ -82,7 +82,7 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
   cursor: not-allowed !important;
 }
 .pager ul li.disabled:hover a {
-  background: #fff !important;
+  background: #ffffff !important;
 }
 .pager ul li a {
   color: #666666;

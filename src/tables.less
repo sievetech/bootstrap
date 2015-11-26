@@ -1,4 +1,4 @@
-@import "elements";
+@import "compess";
 
 /*doc
 ---
@@ -108,16 +108,15 @@ pode ser aplicada no header da coluna para prevenir o efeito de hover.
   }
 
   tbody tr {
-    background-color: #fff;
+    background-color: @white;
 
     td {
       padding: .8rem;
       font-size: 1.3rem;
-
     }
 
     &:nth-child(odd) {
-      background-color: #f6f6f6;
+      background-color: @gray-zebra;
     }
   }
 
