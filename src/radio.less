@@ -1,0 +1,56 @@
+@import "compess";
+
+/*doc
+---
+title: Radios
+name: radios
+category: Formulário
+---
+
+## Padrão
+
+```html_example
+<label><input type="radio" class="radio" name="type1" value="a" checked> <span></span></label>
+<label><input type="radio" class="radio" name="type1" value="b"> <span></span></label>
+```
+*/
+
+.radio {
+  display: none;
+
+  & + span {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: .2rem solid #666;
+    text-indent: 2.5rem;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    .transition;
+    .rounded(1rem);
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        top: .3rem;
+        left: .3rem;
+        width: 1rem;
+        height: 1rem;
+        background: #6a5;
+        .transition;
+        .rounded(1rem);
+        .opacity(0);
+    }
+  }
+
+  &:checked + span {
+    border-color: #6a5;
+
+    &::after {
+        .opacity(1);
+    }
+  }
+}
