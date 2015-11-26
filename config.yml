@@ -52,6 +52,7 @@ exit_on_warnings: false
 # The CSS files to be included in the styleguide
 css_include:
   - './src/reset.css'
+  - './src/color.css'
   - './src/titles.css'
   - './src/box.css'
   - './src/pages.css'
@@ -65,7 +66,7 @@ css_include:
   - './src/labels.css'
   - './src/tables.css'
   - './src/pager.css'
-  - './src/menus.css'
+  - './src/menu.css'
   - './src/grid.css'
   - './src/fonts/sieve_icon_font/css/sieve-icon-font.css'
 

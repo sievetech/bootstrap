@@ -1,10 +1,10 @@
-@import "elements";
+@import "compess";
 
 /*doc
 ---
 title: Lista
 name: lista
-category: basico
+category: Texto
 ---
 
 Barra de navegação para ser utilizada como lista.
@@ -19,10 +19,30 @@ Barra de navegação para ser utilizada como lista.
 </ul>
 ```
 
+E com espaçamento:
+
+```html_example
+<ul class="list list-vertical list-spaced">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
 ## Horizontal
 
 ```html_example
 <ul class="list list-horizontal">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+E com espaçamento:
+
+```html_example
+<ul class="list list-horizontal list-spaced">
   <li>Item 1</li>
   <li>Item 2</li>
   <li>Item 3</li>
@@ -38,9 +58,29 @@ Barra de navegação para ser utilizada como lista.
 
   &.list-vertical {
     flex-flow: column wrap;
+
+    &.list-spaced {
+      li {
+        margin-bottom: 2rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   &.list-horizontal {
     flex-flow: row nowrap;
+
+    &.list-spaced {
+      li {
+        margin-right: 2rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
   }
 }

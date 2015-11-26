@@ -1,10 +1,10 @@
-@import "elements";
+@import "compess";
 
 /*doc
 ---
 title: Tabelas
 name: tables
-category: basico
+category: Tabela
 ---
 
 ## Básico
@@ -89,6 +89,8 @@ pode ser aplicada no header da coluna para prevenir o efeito de hover.
   width: 100%;
   border-collapse: collapse;
   border: .1rem solid #ddd;
+  .box-shadow(0 .2rem .2rem rgba(0, 0, 0, 0.2));
+  .rounded(.4rem);
 
   /* Pode estar dentro de um tbody ou thead */
   th {
@@ -102,20 +104,19 @@ pode ser aplicada no header da coluna para prevenir o efeito de hover.
   }
 
   thead tr {
-    background-color: #f1f1f1;
+    background-color: #ddd;
   }
 
   tbody tr {
-    background-color: #ffffff;
+    background-color: @white;
 
     td {
       padding: .8rem;
       font-size: 1.3rem;
-      border-bottom: .1rem solid #e5e5e5;
     }
 
     &:nth-child(odd) {
-      background-color: #fbfbfb;
+      background-color: @gray-zebra;
     }
   }
 
@@ -124,9 +125,28 @@ pode ser aplicada no header da coluna para prevenir o efeito de hover.
   }
 
   &.table-sortable {
-    th:not(.no-sort):hover {
-      background-color: #e5e5e5;
-      cursor: pointer;
+    th {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: .8rem;
+        right: .8rem;
+        font-size: 1rem;
+      }
+
+      &.asc::after {
+        content: '\25B2';
+      }
+
+      &.desc::after {
+        content: '\25BC';
+      }
+
+      &:not(.no-sort):hover {
+        background-color: #e5e5e5;
+        cursor: pointer;
+      }
     }
   }
 }

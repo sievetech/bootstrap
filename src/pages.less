@@ -1,10 +1,10 @@
-@import "elements";
+@import "compess";
 
 /*doc
 ---
 title: Pages
 name: page
-category: composicoes
+category: Tabela
 ---
 
 O page é um grid comum para se implementar páginas. Esse é o primeiro passo na construção de uma página e entra
@@ -127,6 +127,7 @@ direto no `<body>`.
   display: flex;
   flex-flow: column nowrap;
   min-height: 100%;
+  background-color: @background;
 
   > header {
     display: flex;
@@ -137,35 +138,35 @@ direto no `<body>`.
   }
 
   > footer {
-    height: 10rem;
+    margin-top: 5rem;
   }
 
   &.page-basic {
     > header {
-      background-color: #414345;
+      background-color: @green-default;
       .box-shadow(0 .2rem .2rem rgba(0,0,0,0.3));
     }
 
     > section {
       .title.title-2 {
-        margin: 1.5rem 0 3rem;
+        margin: 4rem 0 3rem;
       }
     }
 
     > footer {
       padding: 2rem 0;
-      background-color: #eee;
+      color: #9f9e9e;
+      background-color: #3a3a3a;
     }
   }
 
   &.page-fixed-header {
-    padding-top: 4rem;
+    padding-top: 4.4rem;
 
     > header {
       position: fixed;
       top: 0;
       width: 100%;
-      height: 4rem;
       z-index: 900;
     }
   }

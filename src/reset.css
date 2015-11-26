@@ -26,13 +26,13 @@ ul {
   list-style: none !important;
 }
 a {
-  color: #000;
+  color: #000000;
   text-decoration: none !important;
 }
 a:link,
 a:visited,
 a:active {
-  color: #000;
+  color: #000000;
   text-decoration: none !important;
 }
 a:hover {
@@ -43,4 +43,8 @@ h2,
 h3,
 h4 {
   font-weight: 100;
+}
+input[type=checkbox],
+input[type=radio] {
+  vertical-align: middle;
 }

@@ -1,10 +1,10 @@
-@import "elements";
+@import "compess";
 
 /*doc
 ---
 title: Botões
 name: buttons
-category: basico
+category: Formulário
 ---
 
 ## Padrão
@@ -46,7 +46,7 @@ category: basico
   min-width: 14rem;
   border: none;
   cursor: pointer;
-  color: #fff !important;
+  color: @white !important;
   font-size: 1.2rem;
   line-height: normal;
   text-align: center;
@@ -82,7 +82,7 @@ category: basico
   &.button-default {
     background-color: #f4f4f4;
     border: .1rem solid #ccc;
-    color: #000 !important;
+    color: @black !important;
 
     &:hover {
       background-color: #f4f4f4;
@@ -95,26 +95,26 @@ category: basico
   }
 
   &.button-success {
-    background-color: #7AB317;
+    background-color: @green-default;
 
     &:hover {
-      background-color: #9ace22;
+      background-color: @green-hover;
     }
 
     &:active {
-      background-color: #5a980c;
+      background-color: @green-press;
     }
   }
 
   &.button-danger {
-    background-color: #b71c1c;
+    background-color: @red-default;
 
     &:hover {
-      background-color: #d12929;
+      background-color: @red-hover;
     }
 
     &:active {
-      background-color: #9d0f0f;
+      background-color: @red-press;
     }
   }
 }

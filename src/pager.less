@@ -1,10 +1,10 @@
-@import "elements";
+@import "compess";
 
 /*doc
 ---
 title: Paginação
 name: pager
-category: basico
+category: Tabela
 ---
 
 Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
@@ -34,10 +34,13 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
 
   ul {
     display: flex;
+    margin-bottom: .3rem;
     flex-flow: row nowrap;
     align-content: center;
-    background-color: #fff;
+    background-color: @white;
     border: .1rem solid #ccc;
+    border-bottom: none; /* a borda de baixo já é feito pela sombra */
+    .box-shadow(0 .2rem .2rem rgba(0, 0, 0, 0.2));
     .rounded(.4rem);
 
     li {
@@ -46,7 +49,7 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
 
       &:hover {
         a {
-          color: #7AB317;
+          color: @green-default;
         }
       }
 
@@ -61,7 +64,7 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
       }
 
       &.active {
-        background: #7AB317 !important;
+        background: @green-default !important;
         cursor: default !important;
 
         a {
@@ -80,13 +83,13 @@ Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
 
         &:hover {
           a {
-            background: #fff !important;
+            background: @white !important;
           }
         }
       }
 
       a {
-        color: #666666;
+        color: @gray-font;
         font-size: 1.4rem;
         font-family: "Roboto", sans-serif;
       }

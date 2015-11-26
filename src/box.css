@@ -8,7 +8,7 @@
 ---
 title: Box
 name: box
-category: composicoes
+category: Página
 ---
 
 O box é um grid comum para se implementar funcionalidades autosuficientes.
@@ -45,7 +45,7 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
   </header>
 
   <section>
-    <table class="table table-no-border table-sortable">
+    <table class="table table-sortable">
       <thead>
         <tr>
           <th>Nome</th>
@@ -99,7 +99,7 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
 }
 .box > header {
   display: flex;
-  background-color: #f1f1f1;
+  background-color: #ddd;
   border-bottom: .1rem solid #e5e5e5;
 }
 .box > header h3 {
@@ -112,7 +112,7 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
   padding: 1.3rem 1.2rem;
   color: #6d6d6d;
   font-size: 2rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Light", sans-serif;
 }
 .box > header > .list-actions {
   border-left: .1rem solid #e5e5e5;
@@ -128,11 +128,9 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
 }
 .box > section {
   flex: 1 0;
-  background-color: #fff;
 }
 .box > footer {
   max-height: 10rem;
-  background-color: #f1f1f1;
 }
 .box > footer p {
   margin: 1rem;

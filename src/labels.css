@@ -8,7 +8,7 @@
 ---
 title: Labels
 name: labels
-category: basico
+category: Texto
 ---
 
 O label pode ser aplicado em diversos contextos
@@ -25,7 +25,7 @@ O label pode ser aplicado em diversos contextos
 
 */
 .label {
-  color: #fff;
+  color: #ffffff;
   font-size: 1rem;
   text-align: center;
   text-transform: lowercase;

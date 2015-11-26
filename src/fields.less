@@ -1,10 +1,10 @@
-@import "elements";
+@import "compess";
 
 /*doc
 ---
 title: Campos
 name: inputs
-category: basico
+category: Formulário
 ---
 
 ## Texto
@@ -185,7 +185,7 @@ input:disabled, select:disabled, textarea:disabled {
     padding: 1rem;
     width: 4.2rem;
     font-size: 1.4rem;
-    color: #666666;
+    color: @gray-font;
     text-align: center;
     background-color: #d9d9d9;
     border: 1px solid #ccc;
@@ -208,7 +208,7 @@ input:disabled, select:disabled, textarea:disabled {
 
       &:hover {
         .box-shadow(0 .2rem .2rem #ccc);
-        border-color: #666;
+        border-color: @gray-font;
       }
 
       &:active {

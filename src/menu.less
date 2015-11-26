@@ -1,10 +1,10 @@
-@import "elements";
+@import "compess";
 
 /*doc
 ---
 title: Menu
 name: menu
-category: composicoes
+category: Componentes
 ---
 
 Barra de navegação para ser utilizada como lista.
@@ -44,27 +44,18 @@ Barra de navegação para ser utilizada como lista.
 
   .list {
     display: flex;
-    background-color: #262626;
+    background-color: @green-default;
 
     a {
       display: block;
       padding: 1rem 2rem;
-      color: #fff;
+      color: @white;
       text-decoration: none;
-
-      &.active {
-        color: #75c048 !important;
-        background-color: #000;
-      }
-
-      &:hover {
-        background-color: #373737;
-      }
 
       &:link, &:visited, &:active {
         display: block;
         padding: 1rem 2rem;
-        color: #fff;
+        color: @white;
         text-decoration: none;
       }
     }
@@ -73,16 +64,32 @@ Barra de navegação para ser utilizada como lista.
   .list-vertical {
     width: 20rem;
 
-    .active {
-      padding-left: 1.6rem !important;
-      border-left: .4rem solid #75c048;
+    a {
+      border-left: .4rem solid transparent;
+
+      &:hover {
+        border-color: @white;
+      }
+
+      &.active {
+        padding-left: 1.6rem !important;
+        border-left: .4rem solid #88d37c;
+      }
     }
   }
 
   .list-horizontal {
-    .active {
-      padding-top: .6rem !important;
-      border-top: .4rem solid #75c048;
+
+    a {
+      border-bottom: .4rem solid transparent;
+
+      &:hover {
+        border-color: @white;
+      }
+
+      &.active {
+        border-color: #88d37c;
+      }
     }
   }
 }

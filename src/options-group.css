@@ -8,7 +8,7 @@
 ---
 title: Grupo de Opções
 name: options
-category: composicoes
+category: Formulário
 ---
 
 ## Única Escolha
@@ -73,7 +73,7 @@ category: composicoes
   display: none;
 }
 .list-options li label input:checked + * {
-  color: #fff;
+  color: #ffffff;
   background-color: #6A5;
 }
 .list-options li label span {
