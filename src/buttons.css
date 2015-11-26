@@ -103,17 +103,17 @@ category: Formulário
   background-color: #519548;
 }
 .button.button-success:hover {
-  background-color: #9ace22;
+  background-color: #6cb361;
 }
 .button.button-success:active {
-  background-color: #5a980c;
+  background-color: #286f23;
 }
 .button.button-danger {
-  background-color: #b71c1c;
+  background-color: #bb4c4c;
 }
 .button.button-danger:hover {
-  background-color: #d12929;
+  background-color: #d46666;
 }
 .button.button-danger:active {
-  background-color: #9d0f0f;
+  background-color: #a23030;
 }
