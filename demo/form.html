@@ -59,7 +59,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          
+
           <article class="box">
             <section>
               <form action="javascript:void(0);" class="form form-default">
@@ -149,9 +149,24 @@
                       <label>Tipo</label>
 
                       <ul class="list list-horizontal list-spaced">
-                        <li><label><input type="radio" name="role" value="c" /> Comum</label></li>
-                        <li><label><input type="radio" name="role" value="a" /> Administrador</label></li>
-                        <li><label><input type="radio" name="role" value="i" /> Intruso</label></li>
+                        <li>
+                          <label class="radio">
+                            <input type="radio" name="role" value="c" checked>
+                            <span>Comum</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="radio">
+                            <input type="radio" name="role" value="a" checked>
+                            <span>Administrador</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="radio">
+                            <input type="radio" name="role" value="i" checked>
+                            <span>Intruso</span>
+                          </label>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -170,8 +185,19 @@
                   <div class="col-md-12">
                     <div class="field">
                       <ul class="list list-vertical">
-                        <li><label><input type="checkbox" /> Sim, quero receber e-mails com novidades da Sieve</label></li>
-                        <li><label><input type="checkbox" /> Sim, aceito e concordo incondicionalmente em vender minha alma de acordo com os termos de serviço.</label></li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span>Sim, quero receber e-mails com novidades da Sieve</span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span>Sim, aceito e concordo incondicionalmente em vender minha alma de acordo com os termos de serviço.</span>
+                          </label>
+                        </li>
                       </ul>
                     </div>
                   </div>

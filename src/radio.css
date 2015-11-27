@@ -15,42 +15,46 @@ category: Formulário
 
 ```html_example
 <label class="radio">
-  <input type="radio" name="type1" value="a" checked>
-  <span>Teste A</span>
+  <input type="radio" name="opcao" value="a" checked>
+  <span>Opção A</span>
 </label>
 
 <label class="radio">
-  <input type="radio" name="type1" value="b">
-  <span>Teste B</span>
+  <input type="radio" name="opcao" value="b">
+  <span>Opção B</span>
 </label>
 
 <label class="radio">
-  <input type="radio" name="type1" value="c">
-  <span>Teste C</span>
+  <input type="radio" name="opcao" value="c">
+  <span>Opção C</span>
 </label>
 ```
 */
+.radio {
+  display: inline-block !important;
+}
 .radio input[type="radio"] {
   display: none;
 }
 .radio input[type="radio"] + span {
-  position: relative;
   cursor: pointer;
 }
 .radio input[type="radio"] + span::before {
   content: '\2022';
   display: inline-block;
-  top: .3rem;
-  left: .3rem;
+  margin-right: .5rem;
   width: 2rem;
   height: 2rem;
   color: transparent;
-  font-size: 3.7rem;
-  line-height: 1.4rem;
+  font-size: 3.2rem;
+  line-height: 1.7rem;
   text-align: center;
-  border: .2rem solid #666;
-  vertical-align: middle;
+  border: .1rem solid #ccc;
+  vertical-align: bottom;
   overflow: hidden;
+  -webkit-box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
@@ -60,6 +64,16 @@ category: Formulário
   border-radius: 1rem;
 }
 .radio input[type="radio"]:checked + span::before {
-  color: #6a5;
-  border: 0.2rem solid #6a5;
+  color: #fff;
+  background-color: #6a5;
+  border-color: #6a5;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.radio input[type="radio"]:focus + span::before {
+  border-color: #6a5;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
