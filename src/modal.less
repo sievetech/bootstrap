@@ -1,13 +1,57 @@
 @import "compess";
 
+/*doc
+---
+title: Modal
+name: modal
+category: Componentes
+---
+
+Modais servem para dar avisos que necessitem da ação do usuário.
+
+## Default
+
+```html_example
+<div class="modal">
+  <header>
+    <h5 class="title title-5">
+      <i class="icon-attention" style="color: #e9c23a; font-size: 2.5rem;"></i>
+      Título
+    </h5>
+  </header>
+  <section>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+  </section>
+  <footer>
+    <button class="button button-default">Cancelar</button>
+    <button class="button button-success">Ok</button>
+  </footer>
+</div>
+```
+*/
+
 .modal {
-  width: 40rem;
-  background-color: #262626;
-  border-top: 1rem solid #7ab317;
+  width: 60rem;
+  background-color: #fff;
+  border-top: 1rem solid #9b9b9b;
   .box-shadow(0 .4rem .4rem rgba(0, 0, 0, 0.3));
   .rounded(.4rem);
 
   > header {
-    text-align: center;
+    padding: 2rem;
+
+    .title {
+      color: #666;
+    }
+  }
+
+  > section {
+    padding: 2rem;
+    border-top: .1rem solid #d3d3d3;
+  }
+
+  > footer {
+    padding: 2rem;
+    text-align: right;
   }
 }

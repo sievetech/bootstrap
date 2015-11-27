@@ -69,6 +69,7 @@ css_include:
   - './src/form-textarea.css'
 
   - './src/list.css'
+  - './src/modal.css'
   - './src/notifications.css'
   - './src/labels.css'
   - './src/tables.css'
