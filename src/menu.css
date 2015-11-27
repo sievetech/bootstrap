@@ -70,18 +70,18 @@ Barra de navegação para ser utilizada como lista.
   border-left: .4rem solid transparent;
 }
 .menu .list-vertical a:hover {
-  border-color: #ffffff;
+  border-color: #88d37c;
 }
 .menu .list-vertical a.active {
   padding-left: 1.6rem !important;
-  border-left: .4rem solid #88d37c;
+  border-left: 0.4rem solid #ffffff;
 }
 .menu .list-horizontal a {
   border-bottom: .4rem solid transparent;
 }
 .menu .list-horizontal a:hover {
-  border-color: #ffffff;
+  border-color: #88d37c;
 }
 .menu .list-horizontal a.active {
-  border-color: #88d37c;
+  border-color: #ffffff;
 }
