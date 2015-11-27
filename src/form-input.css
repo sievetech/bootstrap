@@ -1,0 +1,68 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Input
+name: input
+category: Formulário
+---
+
+Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
+
+## Texto
+
+```html_example
+<input type="text" class="input" value="Texto" />
+
+<input type="text" class="input" value="Texto" disabled/>
+
+<input type="text" class="input" value="Texto" class="error"/>
+```
+
+## Senha
+
+```html_example
+<input type="password" class="input" value="Texto" />
+
+<input type="password" class="input" value="Texto" disabled/>
+
+<input type="password" class="input" value="Texto" class="error"/>
+```
+
+*/
+.input {
+  padding: 1.2rem;
+  background-color: #fff;
+  border: .1rem solid #ccc;
+  outline: none;
+  font-size: 1.2rem !important;
+  line-height: normal !important;
+  -webkit-box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  -webkit-transition: all 0.2s ease-in-out ease-out;
+  -moz-transition: all 0.2s ease-in-out ease-out;
+  -o-transition: all 0.2s ease-in-out ease-out;
+  transition: all 0.2s ease-in-out ease-out;
+}
+.input:not(.error):not([readonly]):focus {
+  border-color: #6a5;
+}
+.input.error {
+  border-color: #b71c1c;
+}
+.input:read-only {
+  opacity: 1;
+}
+.input:disabled {
+  background-color: #f4f4f4;
+  color: #c6c6c6 !important;
+  cursor: not-allowed;
+}

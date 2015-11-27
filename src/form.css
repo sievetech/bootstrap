@@ -1,5 +1,9 @@
-@import "compess";
-
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 /*doc
 ---
 title: Grid
@@ -26,7 +30,7 @@ O form é um grid comum para se implementar os campos.
 <form class="form">
   <div class="field">
     <label>Texto:</label>
-    <input type="text" value="Texto" />
+    <input type="text" class="input" value="Texto" />
   </div>
 
   <div class="field">
@@ -63,7 +67,7 @@ O form é um grid comum para se implementar os campos.
 
   <div class="field">
     <label>Select:</label>
-    <select>
+    <select class="combo">
       <option>Opção 1</option>
       <option>Opção 2</option>
       <option>Opção 3</option>
@@ -72,27 +76,21 @@ O form é um grid comum para se implementar os campos.
 </form>
 ```
 */
-
-.form {
-  &.form-default {
-    .box-shadow(0 .2rem .2rem rgba(0, 0, 0, 0.2));
-  }
-
-  .field {
-    margin-bottom: 2rem;
-  }
-
-  .row:last-child {
-    .field {
-      margin-bottom: 0;
-    }
-  }
-
-  label {
-    display: block;
-    color: @gray-font;
-    font-size: 1.3rem;
-    margin-bottom: .5rem;
-    text-align: left;
-  }
+.form.form-default {
+  -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+.form .field {
+  margin-bottom: 2rem;
+}
+.form .row:last-child .field {
+  margin-bottom: 0;
+}
+.form label {
+  display: block;
+  color: #666666;
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+  text-align: left;
 }
