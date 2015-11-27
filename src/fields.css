@@ -22,24 +22,6 @@ Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
 <input type="text" value="Texto" class="error"/>
 ```
 
-## Checkbox
-Pode ser estilizado aplicando o atributo `disabled`.
-
-```html_example
-<input type="checkbox" /> Checkbox1
-
-<input type="checkbox" disabled/> Checkbox 2
-```
-
-## Radio
-Pode ser estilizado aplicando o atributo `disabled`.
-
-```html_example
-<input type="radio" name="radio" /> Radio 1
-
-<input type="radio" name="radio" disabled/> Radio 2
-```
-
 ## Select
 Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
 
