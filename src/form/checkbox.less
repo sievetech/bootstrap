@@ -1,36 +1,26 @@
-@import "compess";
+@import "../compess";
 
 /*doc
 ---
-title: Radios
-name: radios
+title: Checkboxes
+name: checkbox
 category: Formulário
 ---
 
 ## Padrão
 
 ```html_example
-<label class="radio">
-  <input type="radio" name="opcao" value="a" checked>
-  <span>Opção A</span>
-</label>
-
-<label class="radio">
-  <input type="radio" name="opcao" value="b">
-  <span>Opção B</span>
-</label>
-
-<label class="radio">
-  <input type="radio" name="opcao" value="c">
-  <span>Opção C</span>
+<label class="checkbox">
+  <input type="checkbox" name="type1" value="a" checked>
+  <span>Aceito os termos do contrato</span>
 </label>
 ```
 */
 
-.radio {
+.checkbox {
   display: inline-block !important;
 
-  input[type="radio"] {
+  input[type="checkbox"] {
     display: none;
 
     & + span {
@@ -38,22 +28,22 @@ category: Formulário
     }
 
     & + span::before {
-      content: '\2022';
+      content: '\2713';
       display: inline-block;
       margin-right: .5rem;
       width: 2rem;
       height: 2rem;
       color: transparent;
-      font-size: 3.2rem;
+      font-size: 2.2rem;
       line-height: 1.7rem;
       text-align: center;
       border: .1rem solid #ccc;
       vertical-align: bottom;
       overflow: hidden;
-      .box-shadow(inset 0 0.1rem 0.3rem rgba(0,0,0,.2));
 
+      .box-shadow(inset 0 0.1rem 0.3rem rgba(0,0,0,.2));
       .transition;
-      .rounded(1rem);
+      .rounded(.2rem);
     }
 
     &:checked + span::before {
