@@ -1,0 +1,57 @@
+@import "compess";
+
+/*doc
+---
+title: Links
+name: links
+category: Texto
+---
+
+Existem 4 títulos com textos secundários opcionais.
+
+```html_example
+<a href="javascript:void(0);" class="link link-green">clique aqui</a>
+```
+
+```html_example
+<a href="javascript:void(0);" class="link link-white">clique aqui</a>
+```
+
+```html_example
+<a href="javascript:void(0);" class="link link-green link-dropdown">clique aqui</a>
+```
+
+
+*/
+
+.link {
+  display: inline-block;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+
+  &.link-green {
+    &:link, &:visited, &:active {
+      color: #6a5;
+    }
+  }
+
+  &.link-white {
+    &:link, &:visited, &:active {
+      color: #fff;
+    }
+  }
+
+  &.link-dropdown {
+    &::after {
+      content: '\25BC';
+      margin-left: .3rem;
+      font-size: 1rem;
+
+      &:hover {
+        text-decoration: none !important
+      }
+    }
+  }
+}

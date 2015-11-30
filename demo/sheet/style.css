@@ -16,6 +16,9 @@
   padding: .6rem .3rem;
   color: #fff;
 }
+.page-basic header .account {
+  padding: 1.2rem;
+}
 .page-basic section .table {
   margin-bottom: 1.5rem;
 }

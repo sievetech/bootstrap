@@ -1,0 +1,53 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Links
+name: links
+category: Texto
+---
+
+Existem 4 títulos com textos secundários opcionais.
+
+```html_example
+<a href="javascript:void(0);" class="link link-green">clique aqui</a>
+```
+
+```html_example
+<a href="javascript:void(0);" class="link link-white">clique aqui</a>
+```
+
+```html_example
+<a href="javascript:void(0);" class="link link-green link-dropdown">clique aqui</a>
+```
+
+
+*/
+.link {
+  display: inline-block;
+}
+.link:hover {
+  text-decoration: underline !important;
+}
+.link.link-green:link,
+.link.link-green:visited,
+.link.link-green:active {
+  color: #6a5;
+}
+.link.link-white:link,
+.link.link-white:visited,
+.link.link-white:active {
+  color: #fff;
+}
+.link.link-dropdown::after {
+  content: '\25BC';
+  margin-left: .3rem;
+  font-size: 1rem;
+}
+.link.link-dropdown::after:hover {
+  text-decoration: none !important;
+}
