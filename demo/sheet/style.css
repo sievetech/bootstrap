@@ -19,6 +19,13 @@
 .page-basic header .account {
   padding: 1.2rem;
 }
+.page-basic header .link-menu {
+  padding: .1rem;
+  font-size: 3rem;
+}
+.page-basic header .link-menu::after {
+  display: none;
+}
 .page-basic section .table {
   margin-bottom: 1.5rem;
 }

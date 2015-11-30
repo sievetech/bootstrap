@@ -18,30 +18,40 @@
   <header>
     <div class="container">
       <div class="row">
-        <div class="col-md-2">
-          <h1 class="title">
-            <a href="list.html"><img src="img/logo-mono.svg" class="logo"></a>
-          </h1>
+        <div class="col-md-9 col-sm-9">
+          <div class="dropdown-group">
+            <a href="#" class="link link-white link-dropdown link-menu">
+              <i class="icon-menu-1"></i>
+            </a>
+            <div class="dropdown dropdown-left">
+              <ul class="list list-vertical">
+                <li><a href="../index.html">bootstrap</a></li>
+                <li><a href="list.html" class="active">list-big</a></li>
+                <li><a href="list-small.html">list-small</a></li>
+                <li><a href="form.html">form</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="list.html" class="link link-white">
+            <img src="img/logo-mono.svg" class="logo">
+          </a>
         </div>
 
-        <div class="col-md-7">
-          <nav class="menu">
-            <ul class="list list-horizontal list-main">
-              <li><a href="../index.html">bootstrap</a></li>
-              <li><a href="list.html">list-big</a></li>
-              <li><a href="list-small.html" class="active">list-small</a></li>
-              <li><a href="form.html">form</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-3">
           <div class="pull-right">
-            <ul class="list list-horizontal options">
-              <li><a href="javascript:void(0);"><i class="icon-bell"></i></a></li>
-              <li><a href="javascript:void(0);"><i class="icon-sliders"></i></a></li>
-              <li><a href="index.html"><i class="icon-exit"></i></a></li>
-            </ul>
+            <div class="dropdown-group">
+
+              <a href="#" class="link link-white link-dropdown account">
+                <i class="icon-user"></i>Leo Quixadá
+              </a>
+              <div class="dropdown dropdown-right">
+                <ul class="list list-vertical">
+                  <li><a href="javascript:alert('Teste');"><i class="icon-sliders"></i> Configurações</a></li>
+                  <li><a href="index.html"><i class="icon-exit"></i> Sair</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 

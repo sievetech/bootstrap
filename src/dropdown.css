@@ -37,35 +37,10 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
 </div>
 ```
 */
-.dropdown {
-  display: inline-block;
-  min-width: 20rem;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  z-index: 2000;
-  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  border-radius: 0.4rem;
-}
-.dropdown .list {
-  width: 100%;
-}
-.dropdown .list a {
-  display: block;
-  padding: 1.2rem;
-  color: #666;
-}
-.dropdown .list a:hover {
-  color: #666;
-  background-color: #eee;
-  cursor: pointer;
-}
 .dropdown-group {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
 }
 .dropdown-group .button-dropdown:focus + .dropdown {
   opacity: 1;
@@ -75,12 +50,36 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
 }
 .dropdown-group .dropdown {
   position: absolute;
+  display: inline-block;
   opacity: 0;
   top: 100%;
+  min-width: 20rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 2000;
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+.dropdown-group .dropdown .list {
+  width: 100%;
+}
+.dropdown-group .dropdown .list a {
+  display: block;
+  padding: 1.2rem;
+  color: #666;
+}
+.dropdown-group .dropdown .list a:hover {
+  color: #666;
+  background-color: #eee;
+  cursor: pointer;
 }
 .dropdown-group .dropdown-left {
   left: 0;
