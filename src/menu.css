@@ -18,9 +18,9 @@ Barra de navegação para ser utilizada como lista.
 ```html_example
 <nav class="menu">
   <ul class="list list-vertical">
-    <li><a href="javascript:void(0);">home</a></li>
-    <li><a href="javascript:void(0);" class="active">profile</a></li>
-    <li><a href="javascript:void(0);">about</a></li>
+    <li><a href="#">home</a></li>
+    <li><a href="#" class="active">profile</a></li>
+    <li><a href="#">about</a></li>
   </ul>
 </nav>
 ```
@@ -30,9 +30,9 @@ Barra de navegação para ser utilizada como lista.
 ```html_example
 <nav class="menu">
   <ul class="list list-horizontal">
-    <li><a href="javascript:void(0);">home</a></li>
-    <li><a href="javascript:void(0);" class="active">profile</a></li>
-    <li><a href="javascript:void(0);">about</a></li>
+    <li><a href="#">home</a></li>
+    <li><a href="#" class="active">profile</a></li>
+    <li><a href="#">about</a></li>
   </ul>
 </nav>
 ```

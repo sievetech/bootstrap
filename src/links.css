@@ -14,15 +14,15 @@ category: Texto
 Existem 4 títulos com textos secundários opcionais.
 
 ```html_example
-<a href="javascript:void(0);" class="link link-green">clique aqui</a>
+<a href="#" class="link link-green">clique aqui</a>
 ```
 
 ```html_example
-<a href="javascript:void(0);" class="link link-white">clique aqui</a>
+<a href="#" class="link link-white">clique aqui</a>
 ```
 
 ```html_example
-<a href="javascript:void(0);" class="link link-green link-dropdown">clique aqui</a>
+<a href="#" class="link link-green link-dropdown">clique aqui</a>
 ```
 
 

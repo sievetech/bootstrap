@@ -83,8 +83,8 @@ css_include:
   - './src/fonts.css'
 
 # The JavaScript files to included in the styleguide
-#js_include:
-#  - 'dist/scripts/main.js'
+js_include:
+  - './theme/js/theme.js'
 
 # The global title that is displayed at the top of the pages
 global_title: Sieve Bootstrap v1.0

@@ -75,7 +75,10 @@ module.exports = function(grunt) {
     copy: {
       dist: {
         // includes files within path and its sub-directories
-        files: [{expand: true, src: ['demo/**'], dest: 'build/'}]
+        files: [
+          {expand: true, src: ['demo/**'], dest: 'build/'},
+          {expand: true, src: ['theme/**'], dest: 'build/'}
+        ]
       },
     },
 
