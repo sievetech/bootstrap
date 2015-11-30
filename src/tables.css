@@ -11,13 +11,32 @@ name: tables
 category: Tabela
 ---
 
-## Básico
+## Opções
 
-Use a classe `.table` para estilizar um elemento `<table>`.
-Utilize a classe `.table-no-border` para remover as bordas.
+<table class="table">
+  <thead>
+    <tr>
+      <th>classe</th>
+      <th>descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="width: 15rem;"><span class="label label-blue">.table-no-border</span></td>
+      <td>Remove as bordas da tabela.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.table-sortable</span></td>
+      <td>Exibe a tabela como ordenável no header. A classe .no-sort pode ser
+      aplicada no header da coluna para prevenir o efeito de hover.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Sem borda
 
 ```html_example
-<table class="table">
+<table class="table table-no-border">
   <thead>
     <tr>
       <th>Nome</th>
@@ -50,9 +69,6 @@ Utilize a classe `.table-no-border` para remover as bordas.
 ```
 
 ## Ordenável
-
-Use a classe `.table-sortable` para fazer tabelas que permitam ordenação. A classe `.no-sort`
-pode ser aplicada no header da coluna para prevenir o efeito de hover.
 
 ```html_example
 <table class="table table-sortable">
