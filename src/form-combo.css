@@ -35,6 +35,8 @@ Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
 */
 .combo {
   padding: 1.2rem;
+  font-size: 1.2rem !important;
+  line-height: normal !important;
   background-color: #fff;
   border: .1rem solid #ccc;
   outline: none;

@@ -11,6 +11,36 @@ name: buttons
 category: Formulário
 ---
 
+## Opções
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>classe</th>
+      <th>descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="width: 15rem;"><span class="label label-blue">.button-disabled</span></td>
+      <td>Botão desabilitado</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.button-default</span></td>
+      <td>Botão com layout padrão.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.button-success</span></td>
+      <td>Botão que conclui alguma ação.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.button-danger</span></td>
+      <td>Botão que indica situação de perigo, normalmente ações irreversíveis.</td>
+    </tr>
+  </tbody>
+</table>
+
+
 ## Padrão
 
 ```html_example
