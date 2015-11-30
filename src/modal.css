@@ -59,3 +59,15 @@ Modais servem para dar avisos que necessitem da ação do usuário.
   padding: 2rem;
   text-align: right;
 }
+.modal.modal-page {
+  width: 40rem;
+  background-color: #262626;
+  border-color: #7ab317;
+}
+.modal.modal-page > header {
+  padding: 0;
+  text-align: center;
+}
+.modal.modal-page > section {
+  border: none;
+}
