@@ -37,6 +37,7 @@ Modais servem para dar avisos que necessitem da ação do usuário.
   width: 60rem;
   background-color: #fff;
   border-top: 1rem solid #9b9b9b;
+  z-index: 2000;
   -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
