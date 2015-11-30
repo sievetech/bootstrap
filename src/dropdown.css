@@ -68,15 +68,19 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
   display: inline-block;
 }
 .dropdown-group .button-dropdown:focus + .dropdown {
-  display: block;
+  opacity: 1;
 }
 .dropdown-group .link-dropdown:focus + .dropdown {
-  display: block;
+  opacity: 1;
 }
 .dropdown-group .dropdown {
   position: absolute;
-  display: none;
+  opacity: 0;
   top: 100%;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 .dropdown-group .dropdown-left {
   left: 0;

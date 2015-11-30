@@ -47,7 +47,8 @@ Existem 4 títulos com textos secundários opcionais.
   content: '\25BC';
   margin-left: .3rem;
   font-size: 1rem;
+  text-decoration: none !important;
 }
-.link.link-dropdown::after:hover {
+.link.link-dropdown:hover::after {
   text-decoration: none !important;
 }
