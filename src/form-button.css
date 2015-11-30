@@ -37,6 +37,10 @@ category: Formulário
       <td><span class="label label-blue">.button-danger</span></td>
       <td>Botão que indica situação de perigo, normalmente ações irreversíveis.</td>
     </tr>
+    <tr>
+      <td><span class="label label-blue">.button-dropdown</span></td>
+      <td>Indica que o click abre um dropdown.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -46,7 +50,6 @@ category: Formulário
 ```html_example
 <button class="button button-default">Button</button>
 <a href="javascript:void(0);" class="button button-default">Link</a>
-<input type="button" class="button button-default" value="Input" />
 ```
 
 ## Desabilitado
@@ -54,7 +57,6 @@ category: Formulário
 ```html_example
 <button class="button button-disabled" disabled>Button</button>
 <a href="javascript:void(0);" class="button button-disabled">Link</a>
-<input type="button" class="button button-disabled" value="Input" disabled />
 ```
 
 ## Sucesso
@@ -62,7 +64,6 @@ category: Formulário
 ```html_example
 <button class="button button-success">Button</button>
 <a href="javascript:void(0);" class="button button-success">Link</a>
-<input type="button" class="button button-success" value="Input" />
 ```
 
 ## Excluir
@@ -70,7 +71,13 @@ category: Formulário
 ```html_example
 <button class="button button-danger">Button</button>
 <a href="javascript:void(0);" class="button button-danger">Link</a>
-<input type="button" class="button button-danger" value="Input" />
+```
+
+## Dropdown
+
+```html_example
+<button class="button button-default button-dropdown">Button</button>
+<a href="javascript:void(0);" class="button button-default button-dropdown">Link</a>
 ```
 */
 .button {
@@ -146,4 +153,10 @@ category: Formulário
 }
 .button.button-danger:active {
   background-color: #a23030;
+}
+.button.button-dropdown::after {
+  content: '\25BC';
+  margin-left: .3rem;
+  color: #333;
+  font-size: 1rem;
 }

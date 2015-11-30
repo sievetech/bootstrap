@@ -1,0 +1,84 @@
+@import "compess";
+
+/*doc
+---
+title: Dropdown
+name: dropdown
+category: Página
+---
+
+Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
+
+```html_example
+<div class="dropdown">
+  <ul class="list list-vertical">
+    <li><a href="javascript:void(0);">Item 1</a></li>
+    <li><a href="javascript:void(0);">Item 2</a></li>
+    <li><a href="javascript:void(0);">Item 3</a></li>
+  </ul>
+</div>
+```
+
+
+```html_example
+<div class="dropdown-group">
+  <button class="button button-default button-dropdown">Button</button>
+  <div class="dropdown dropdown-left">
+    <ul class="list list-vertical">
+      <li><a href="javascript:void(0);">Item 1</a></li>
+      <li><a href="javascript:void(0);">Item 2</a></li>
+      <li><a href="javascript:void(0);">Item 3</a></li>
+    </ul>
+  </div>
+</div>
+```
+*/
+
+.dropdown {
+  display: inline-block;
+  min-width: 20rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: @modal;
+
+  .box-shadow(0 .4rem .4rem rgba(0, 0, 0, 0.3));
+  .rounded(.4rem);
+
+  .list {
+    width: 100%;
+    a {
+      display: block;
+      padding: 1.2rem;
+      color: #666;
+
+      &:hover {
+        color: #666;
+        background-color: #eee;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.dropdown-group {
+  position: relative;
+  display: inline-block;
+
+  .button-dropdown:focus + .dropdown {
+    display: block;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: none;
+    top: 100%;
+
+    &-left {
+      left: 0;
+    }
+
+    &-right {
+      right: 0;
+    }
+  }
+}

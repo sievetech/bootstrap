@@ -70,6 +70,7 @@ css_include:
 
   - './src/list.css'
   - './src/modal.css'
+  - './src/dropdown.css'
   - './src/notifications.css'
   - './src/labels.css'
   - './src/tables.css'
