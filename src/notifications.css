@@ -38,6 +38,7 @@ Notificações podem ser usadas para dar feedbacks ao usuário
 .notification {
   display: flex;
   justify-content: center;
+  z-index: 3000;
 }
 .notification .content {
   display: flex;
