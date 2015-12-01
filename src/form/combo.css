@@ -11,7 +11,7 @@ name: combo
 category: Formulário
 ---
 
-Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
+Pode ser estilizado aplicando o atributo `disabled` ou a classe `.combo-error`.
 
 ```html_example
 <select class="combo">
@@ -26,7 +26,7 @@ Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
   <option>Opção 3</option>
 </select>
 
-<select class="combo error">
+<select class="combo combo-error">
   <option>Opção 1</option>
   <option>Opção 2</option>
   <option>Opção 3</option>
@@ -54,7 +54,7 @@ Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
 .combo:not(.error):focus {
   border-color: #7fb93a;
 }
-.combo.error {
+.combo.combo-error {
   border-color: #b71c1c;
 }
 .combo:disabled {

@@ -11,26 +11,26 @@ name: input
 category: Formulário
 ---
 
-Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
+Pode ser estilizado aplicando o atributo `disabled` ou a classe `.input-error`.
 
 ## Texto
 
 ```html_example
-<input type="text" class="input" value="Texto" />
+<input type="text" value="Texto" class="input" />
 
-<input type="text" class="input" value="Texto" disabled/>
+<input type="text" value="Texto" class="input" disabled/>
 
-<input type="text" class="input" value="Texto" class="error"/>
+<input type="text" value="Texto" class="input input-error" />
 ```
 
 ## Senha
 
 ```html_example
-<input type="password" class="input" value="Texto" />
+<input type="password" value="Texto" class="input" />
 
-<input type="password" class="input" value="Texto" disabled/>
+<input type="password" value="Texto" class="input" disabled/>
 
-<input type="password" class="input" value="Texto" class="error"/>
+<input type="password" value="Texto" class="input input-error" />
 ```
 
 */
@@ -55,7 +55,7 @@ Pode ser estilizado aplicando o atributo `disabled` ou a classe `.error`.
 .input:not(.error):not([readonly]):focus {
   border-color: #6a5;
 }
-.input.error {
+.input.input-error {
   border-color: #b71c1c;
 }
 .input:read-only {
