@@ -15,19 +15,21 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
 
 ```html_example
 <div class="dropdown">
-  <ul class="list list-vertical">
-    <li><a href="#">Item 1</a></li>
-    <li><a href="#">Item 2</a></li>
-    <li><a href="#">Item 3</a></li>
-  </ul>
+  <div class="dropdown-list">
+    <ul class="list list-vertical">
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
+  </div>
 </div>
 ```
 
 
 ```html_example
-<div class="dropdown-group">
+<div class="dropdown dropdown-left">
   <button class="button button-default button-dropdown">Button</button>
-  <div class="dropdown dropdown-left">
+  <div class="dropdown-list">
     <ul class="list list-vertical">
       <li><a href="#">Item 1</a></li>
       <li><a href="#">Item 2</a></li>
@@ -37,18 +39,18 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
 </div>
 ```
 */
-.dropdown-group {
+.dropdown {
   position: relative;
   display: inline-block;
   vertical-align: middle;
 }
-.dropdown-group .button-dropdown:focus + .dropdown {
+.dropdown .button-dropdown:focus + .dropdown-list {
   opacity: 1;
 }
-.dropdown-group .link-dropdown:focus + .dropdown {
+.dropdown .link-dropdown:focus + .dropdown-list {
   opacity: 1;
 }
-.dropdown-group .dropdown {
+.dropdown .dropdown-list {
   position: absolute;
   display: inline-block;
   opacity: 0;
@@ -68,22 +70,22 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
   -moz-border-radius: 0.4rem;
   border-radius: 0.4rem;
 }
-.dropdown-group .dropdown .list {
+.dropdown .dropdown-list .list {
   width: 100%;
 }
-.dropdown-group .dropdown .list a {
+.dropdown .dropdown-list .list a {
   display: block;
   padding: 1.2rem;
   color: #666;
 }
-.dropdown-group .dropdown .list a:hover {
+.dropdown .dropdown-list .list a:hover {
   color: #666;
   background-color: #eee;
   cursor: pointer;
 }
-.dropdown-group .dropdown-left {
+.dropdown-left .dropdown-list {
   left: 0;
 }
-.dropdown-group .dropdown-right {
+.dropdown-right .dropdown-list {
   right: 0;
 }

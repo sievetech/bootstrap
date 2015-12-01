@@ -11,19 +11,21 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
 
 ```html_example
 <div class="dropdown">
-  <ul class="list list-vertical">
-    <li><a href="#">Item 1</a></li>
-    <li><a href="#">Item 2</a></li>
-    <li><a href="#">Item 3</a></li>
-  </ul>
+  <div class="dropdown-list">
+    <ul class="list list-vertical">
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
+  </div>
 </div>
 ```
 
 
 ```html_example
-<div class="dropdown-group">
+<div class="dropdown dropdown-left">
   <button class="button button-default button-dropdown">Button</button>
-  <div class="dropdown dropdown-left">
+  <div class="dropdown-list">
     <ul class="list list-vertical">
       <li><a href="#">Item 1</a></li>
       <li><a href="#">Item 2</a></li>
@@ -34,20 +36,20 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
 ```
 */
 
-.dropdown-group {
+.dropdown {
   position: relative;
   display: inline-block;
   vertical-align: middle;
 
-  .button-dropdown:focus + .dropdown {
+  .button-dropdown:focus + .dropdown-list {
     opacity: 1;
   }
 
-  .link-dropdown:focus + .dropdown {
+  .link-dropdown:focus + .dropdown-list {
     opacity: 1;
   }
 
-  .dropdown {
+  .dropdown-list {
     position: absolute;
     display: inline-block;
     opacity: 0;
@@ -75,12 +77,16 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
         }
       }
     }
+  }
 
-    &-left {
+  &-left {
+    .dropdown-list {
       left: 0;
     }
+  }
 
-    &-right {
+  &-right {
+    .dropdown-list {
       right: 0;
     }
   }
