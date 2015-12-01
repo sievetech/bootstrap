@@ -26,7 +26,7 @@
   width: 100%;
 }
 .page-modal .modal > section form .field-group {
-  display: flex;
+  width: 100%;
 }
 .page-modal .modal > section form .field:last-child {
   display: flex;
