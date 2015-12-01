@@ -64,7 +64,11 @@ module.exports = function(grunt) {
     cssmin: {
       target: {
         files: {
-          'build/src/sieve.bootstrap.min.css': 'build/src/*.css'
+          'build/src/sieve.bootstrap.min.css': [
+            'build/src/fonts/sieve_icon_font/css/sieve-icon-font.css',
+            'build/src/*.css',
+            'build/src/form/*.css'
+          ]
         }
       }
     },
