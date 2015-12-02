@@ -17,11 +17,6 @@ Existem 4 títulos com textos secundários opcionais.
 <a href="#" class="link link-white">clique aqui</a>
 ```
 
-```html_example
-<a href="#" class="link link-green link-dropdown">clique aqui</a>
-```
-
-
 */
 
 .link {
@@ -40,21 +35,6 @@ Existem 4 títulos com textos secundários opcionais.
   &.link-white {
     &:link, &:visited, &:active {
       color: #fff;
-    }
-  }
-
-  &.link-dropdown {
-    &::after {
-      content: '\25BC';
-      margin-left: .3rem;
-      font-size: 1rem;
-      text-decoration: none !important;
-    }
-
-    &:hover {
-      &::after {
-        text-decoration: none !important;
-      }
     }
   }
 }

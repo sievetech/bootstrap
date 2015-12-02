@@ -24,7 +24,7 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
 
 ```html_example
 <div class="dropdown dropdown-left">
-  <button class="button button-default button-dropdown">Button</button>
+  <button class="button button-default dropdown-trigger">Button <i class="icon-down-dir"></i></button>
   <div class="dropdown-list">
     <ul class="list list-vertical">
       <li><a href="#">Item 1</a></li>
@@ -41,11 +41,7 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
   display: inline-block;
   vertical-align: middle;
 
-  .button-dropdown:focus + .dropdown-list {
-    opacity: 1;
-  }
-
-  .link-dropdown:focus + .dropdown-list {
+  .dropdown-trigger:focus + .dropdown-list {
     opacity: 1;
   }
 

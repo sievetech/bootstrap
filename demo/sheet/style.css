@@ -45,9 +45,6 @@
   padding: .1rem;
   font-size: 3rem;
 }
-.page-basic > header .link-menu::after {
-  display: none;
-}
 .page-basic > section .page-content > header {
   margin-bottom: 3rem;
   background-color: #ebebeb;

@@ -33,10 +33,6 @@ category: Formulário
       <td><span class="label label-blue">.button-danger</span></td>
       <td>Botão que indica situação de perigo, normalmente ações irreversíveis.</td>
     </tr>
-    <tr>
-      <td><span class="label label-blue">.button-dropdown</span></td>
-      <td>Indica que o click abre um dropdown.</td>
-    </tr>
   </tbody>
 </table>
 
@@ -69,12 +65,6 @@ category: Formulário
 <a href="#" class="button button-danger">Link</a>
 ```
 
-## Dropdown
-
-```html_example
-<button class="button button-default button-dropdown">Button</button>
-<a href="#" class="button button-default button-dropdown">Link</a>
-```
 */
 
 .button {
@@ -152,15 +142,6 @@ category: Formulário
 
     &:active {
       background-color: @red-press;
-    }
-  }
-
-  &.button-dropdown {
-    &::after {
-      content: '\25BC';
-      margin-left: .3rem;
-      color: #333;
-      font-size: 1rem;
     }
   }
 }
