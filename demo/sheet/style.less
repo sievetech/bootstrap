@@ -1,13 +1,13 @@
 @import "../../src/elements";
 
 .page-basic {
-  header {
+  > header {
     .logo {
       margin: 1.2rem 0;
       height: 2rem;
     }
 
-    .options {
+    .nav-account {
       i {
         font-size: 1.9rem;
       }
@@ -19,8 +19,36 @@
       }
     }
 
-    .account {
-      padding: 1.2rem;
+    .nav-platforms {
+      padding: 2rem 2rem 0;
+      width: 25rem !important;
+
+      li {
+        margin-bottom: 2rem;
+
+        a {
+          padding: 0 !important;
+
+          &:hover {
+            background-color: transparent !important;
+          }
+        }
+
+        img {
+          height: 3rem;
+        }
+
+        span {
+          position: relative;
+          margin-top: -.5rem;
+          font-size: 1.2rem;
+          color: #999;
+        }
+      }
+    }
+
+    .nav-menu {
+      margin-top: .2rem;
     }
 
     .link-menu {
@@ -33,7 +61,29 @@
     }
   }
 
-  section {
+  > section {
+    .page-content {
+      > header {
+        margin-bottom: 3rem;
+        background-color: #ebebeb;
+        border: 1px solid #e4e4e4;
+
+        .list {
+          margin: 3rem 0;
+
+          i {
+            font-size: 2.1rem;
+          }
+
+          a {
+            display: inline-block;
+            padding: .2rem .3rem;
+            color: #999;
+          }
+        }
+      }
+    }
+
     .table {
       margin-bottom: 1.5rem;
 
@@ -63,7 +113,7 @@
     }
   }
 
-  footer {
+  > footer {
     .logo {
       margin-right: 2rem;
       height: 2rem;

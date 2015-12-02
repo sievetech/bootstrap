@@ -148,7 +148,7 @@ direto no `<body>`.
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 .page.page-basic > section .title.title-2 {
-  margin: 4rem 0 3rem;
+  margin: 3rem 0;
 }
 .page.page-basic > footer {
   padding: 2rem 0;
