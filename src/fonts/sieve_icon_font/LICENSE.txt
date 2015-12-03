@@ -1,15 +1,6 @@
 Font license info
 
 
-## Font Awesome
-
-   Copyright (C) 2012 by Dave Gandy
-
-   Author:    Dave Gandy
-   License:   SIL ()
-   Homepage:  http://fortawesome.github.com/Font-Awesome/
-
-
 ## MFG Labs
 
    Copyright (C) 2012 by Daniel Bruce
@@ -53,6 +44,15 @@ Font license info
    Author:    P.J. Onori
    License:   SIL (http://scripts.sil.org/OFL)
    Homepage:  http://somerandomdude.com/work/iconic/
+
+
+## Font Awesome
+
+   Copyright (C) 2012 by Dave Gandy
+
+   Author:    Dave Gandy
+   License:   SIL ()
+   Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 
 ## Modern Pictograms
