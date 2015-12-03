@@ -15,10 +15,6 @@
   margin-bottom: 8rem;
   padding: 0 3rem;
 }
-.page-modal .modal > section form a {
-  color: #7ab317;
-  text-decoration: underline !important;
-}
 .page-modal .modal > section form label {
   color: #fff;
 }
