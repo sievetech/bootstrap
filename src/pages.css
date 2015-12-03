@@ -142,7 +142,7 @@ direto no `<body>`.
   margin-top: 5rem;
 }
 .page.page-basic > header {
-  background-color: #519548;
+  background-color: #484848;
   -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
@@ -156,7 +156,7 @@ direto no `<body>`.
   background-color: #3a3a3a;
 }
 .page.page-fixed-header {
-  padding-top: 4.4rem;
+  padding-top: 8.8rem;
 }
 .page.page-fixed-header > header {
   position: fixed;
@@ -183,4 +183,16 @@ direto no `<body>`.
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* medium */
+@media (min-width: 992px) {
+  .page.page-fixed-header {
+    padding-top: 4.4rem;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .page.page-fixed-header {
+    padding-top: 4.4rem;
+  }
 }

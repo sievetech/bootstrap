@@ -25,12 +25,13 @@ O label pode ser aplicado em diversos contextos
 
 */
 .label {
+  padding: .4rem 1rem;
   color: #ffffff;
   font-size: 1rem;
   text-align: center;
   text-transform: lowercase;
   vertical-align: middle;
-  padding: .4rem 1rem;
+  white-space: nowrap;
   -webkit-border-radius: 0.4rem;
   -moz-border-radius: 0.4rem;
   border-radius: 0.4rem;

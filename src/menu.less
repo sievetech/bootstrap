@@ -7,16 +7,16 @@ name: menu
 category: Página
 ---
 
-Barra de navegação para ser utilizada como lista.
+Barra de navegação para ser utilizada como lista. **Nota**: o background-color é opcional e foi inserido apenas para visualização na documentação.
 
 ## Vertical
 
 ```html_example
-<nav class="menu">
+<nav class="menu" style="background-color: #484848;">
   <ul class="list list-vertical">
-    <li><a href="#">home</a></li>
-    <li><a href="#" class="active">profile</a></li>
-    <li><a href="#">about</a></li>
+    <li><a href="#" class="link link-white">home</a></li>
+    <li><a href="#" class="link link-white active">profile</a></li>
+    <li><a href="#" class="link link-white">about</a></li>
   </ul>
 </nav>
 ```
@@ -24,11 +24,11 @@ Barra de navegação para ser utilizada como lista.
 ## Horizontal
 
 ```html_example
-<nav class="menu">
+<nav class="menu" style="background-color: #484848;">
   <ul class="list list-horizontal">
-    <li><a href="#">home</a></li>
-    <li><a href="#" class="active">profile</a></li>
-    <li><a href="#">about</a></li>
+    <li><a href="#" class="link link-white">home</a></li>
+    <li><a href="#" class="link link-white active">profile</a></li>
+    <li><a href="#" class="link link-white">about</a></li>
   </ul>
 </nav>
 ```
@@ -36,7 +36,7 @@ Barra de navegação para ser utilizada como lista.
 */
 
 .menu {
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -44,18 +44,19 @@ Barra de navegação para ser utilizada como lista.
 
   .list {
     display: flex;
-    background-color: @green-default;
 
     a {
       display: block;
       padding: 1rem 2rem;
-      color: @white;
       text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
 
       &:link, &:visited, &:active {
         display: block;
         padding: 1rem 2rem;
-        color: @white;
         text-decoration: none;
       }
     }
@@ -65,15 +66,17 @@ Barra de navegação para ser utilizada como lista.
     width: 20rem;
 
     a {
-      border-left: .4rem solid transparent;
+      border-left: .3rem solid transparent;
 
       &:hover {
-        border-color: #88d37c;
+        color: #fff;
+        border-color: #85c11c;
       }
 
       &.active {
+        color: #fff;
         padding-left: 1.6rem !important;
-        border-left: .4rem solid @white;
+        border-left: .3rem solid #85c11c;
       }
     }
   }
@@ -81,14 +84,16 @@ Barra de navegação para ser utilizada como lista.
   .list-horizontal {
 
     a {
-      border-bottom: .4rem solid transparent;
+      border-bottom: .3rem solid transparent;
 
       &:hover {
-        border-color: #88d37c;
+        color: #fff;
+        border-color: #85c11c;
       }
 
       &.active {
-        border-color: @white;
+        color: #fff;
+        border-color: #85c11c;
       }
     }
   }

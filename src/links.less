@@ -23,7 +23,7 @@ Existem 4 títulos com textos secundários opcionais.
   display: inline-block;
 
   &:hover {
-    text-decoration: underline !important;
+    text-decoration: underline;
   }
 
   &.link-green {
@@ -35,6 +35,12 @@ Existem 4 títulos com textos secundários opcionais.
   &.link-white {
     &:link, &:visited, &:active {
       color: #fff;
+    }
+  }
+
+  &.link-gray {
+    &:link, &:visited, &:active {
+      color: #b8b8b8;
     }
   }
 }
