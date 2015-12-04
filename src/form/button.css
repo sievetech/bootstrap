@@ -22,7 +22,11 @@ category: Formulário
   </thead>
   <tbody>
     <tr>
-      <td style="width: 15rem;"><span class="label label-blue">.button-disabled</span></td>
+      <td><span class="label label-blue">.button</span></td>
+      <td>Classe base para todos os botões.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.button-disabled</span></td>
       <td>Botão desabilitado</td>
     </tr>
     <tr>

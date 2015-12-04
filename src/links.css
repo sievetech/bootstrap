@@ -22,7 +22,11 @@ category: Texto
   </thead>
   <tbody>
     <tr>
-      <td style="width: 15rem;"><span class="label label-blue">.link-green</span></td>
+      <td><span class="label label-blue">.link</span></td>
+      <td>Classe base para todos os links.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.link-green</span></td>
       <td>Renderiza link verde.</td>
     </tr>
     <tr>
