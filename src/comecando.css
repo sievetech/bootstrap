@@ -17,9 +17,15 @@ category: Começando
 <html>
 <head>
   <meta charset="utf-8">
-  <title>-coloque um título aqui</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página Exemplo</title>
   <link rel="stylesheet" href="sieve.bootstrap.min.css">
   <!-- coloque aqui os estilos da sua página -->
+
+  <!-- A versão e a origem do jquery é opcional -->
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="../src/sieve.bootstrap.min.js"></script>
+  <!-- coloque aqui os scripts da sua página -->
 </head>
 <body>
 
@@ -35,9 +41,15 @@ category: Começando
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Página Exemplo</title>
   <link rel="stylesheet" href="sieve.bootstrap.min.css">
   <!-- coloque aqui os estilos da sua página -->
+
+  <!-- A versão e a origem do jquery é opcional -->
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="../src/sieve.bootstrap.min.js"></script>
+  <!-- coloque aqui os scripts da sua página -->
 </head>
 <body>
 
@@ -59,9 +71,15 @@ category: Começando
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Página Exemplo</title>
   <link rel="stylesheet" href="sieve.bootstrap.min.css">
   <!-- coloque aqui os estilos da sua página -->
+
+  <!-- A versão e a origem do jquery é opcional -->
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="../src/sieve.bootstrap.min.js"></script>
+  <!-- coloque aqui os scripts da sua página -->
 </head>
 <body>
   <main class="page page-basic">
