@@ -30,13 +30,21 @@
   justify-content: space-between;
   margin: 0;
 }
+.page-modal > footer {
+  margin: 2rem;
+}
+.page-modal > footer .list-links {
+  flex-wrap: wrap;
+}
 .page-modal > footer .list-links li {
   display: inline-block;
   border-right: .1rem solid #bbb;
   margin-right: 2rem;
+  margin-bottom: 1rem;
   padding-right: 2rem;
   font-size: 1.1rem;
   color: #666;
+  white-space: nowrap;
 }
 .page-modal > footer .list-links li:last-child {
   border: none;

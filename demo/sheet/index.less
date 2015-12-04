@@ -37,14 +37,20 @@
   }
 
   > footer {
+    margin: 2rem;
+
     .list-links {
+      flex-wrap: wrap;
+
       li {
         display: inline-block;
         border-right: .1rem solid #bbb;
         margin-right: 2rem;
+        margin-bottom: 1rem;
         padding-right: 2rem;
         font-size: 1.1rem;
         color: #666;
+        white-space: nowrap;
 
         &:last-child {
           border: none;
