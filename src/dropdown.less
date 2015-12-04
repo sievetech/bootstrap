@@ -43,12 +43,14 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
 
   .dropdown-trigger:focus + .dropdown-list {
     opacity: 1;
+    display: block;
   }
 
   .dropdown-list {
     position: absolute;
     display: inline-block;
     opacity: 0;
+    display: none;
     top: 100%;
     min-width: 20rem;
     background-color: #fff;
