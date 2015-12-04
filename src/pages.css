@@ -132,6 +132,13 @@ direto no `<body>`.
   min-height: 100%;
   background-color: #f3f3f3;
 }
+.page *::selection {
+  color: #ffffff;
+  background-color: #6cb361;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+}
 .page > header {
   display: flex;
 }

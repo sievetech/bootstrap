@@ -129,6 +129,12 @@ direto no `<body>`.
   min-height: 100%;
   background-color: @background;
 
+  *::selection {
+    color: @white;
+    background-color: @green-hover;
+    .rounded(.3rem);
+  }
+
   > header {
     display: flex;
   }
