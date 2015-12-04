@@ -59,10 +59,10 @@ module.exports = function(grunt) {
     },
 
     /**
-     * Pré-compiladores
+     * Automação
      */
     cssmin: {
-      target: {
+      dist: {
         files: {
           'build/src/sieve.bootstrap.min.css': [
             'build/src/fonts/sieve_icon_font/css/sieve-icon-font.css',
@@ -73,9 +73,17 @@ module.exports = function(grunt) {
       }
     },
 
-    /**
-     * Automação
-     */
+    uglify: {
+      dist: {
+        files: {
+          'build/src/sieve.bootstrap.min.js': [
+            'build/src/*.js',
+            'build/src/form/*.js'
+          ]
+        }
+      }
+    },
+
     copy: {
       dist: {
         // includes files within path and its sub-directories
@@ -130,7 +138,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('work', ['concurrent:work']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['clean', 'less', 'hologram', 'cssmin', 'copy', 'zip', 'notify:build']);
+  grunt.registerTask('build', ['clean', 'less', 'hologram', 'cssmin', 'uglify', 'copy', 'zip', 'notify:build']);
   grunt.registerTask('server', ['connect']);
 
   /**
