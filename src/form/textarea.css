@@ -46,7 +46,7 @@ Ipsum has been the industry's standard dummy text ever since the 1500.
   -o-transition: all 0.2s ease-in-out ease-out;
   transition: all 0.2s ease-in-out ease-out;
 }
-.textarea:not(.error):focus {
+.textarea:not(.textarea-error):focus {
   border-color: #7fb93a;
 }
 .textarea.textarea-error {

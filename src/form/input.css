@@ -52,7 +52,7 @@ Pode ser estilizado aplicando o atributo `disabled` ou a classe `.input-error`.
   -o-transition: all 0.2s ease-in-out ease-out;
   transition: all 0.2s ease-in-out ease-out;
 }
-.input:not(.error):not([readonly]):focus {
+.input:not(.input-error):not([readonly]):focus {
   border-color: #6a5;
 }
 .input.input-error {

@@ -51,7 +51,7 @@ Pode ser estilizado aplicando o atributo `disabled` ou a classe `.combo-error`.
   -o-transition: all 0.2s ease-in-out ease-out;
   transition: all 0.2s ease-in-out ease-out;
 }
-.combo:not(.error):focus {
+.combo:not(.combo-error):focus {
   border-color: #7fb93a;
 }
 .combo.combo-error {
