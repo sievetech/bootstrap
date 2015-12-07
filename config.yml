@@ -51,6 +51,8 @@ exit_on_warnings: false
 
 # The CSS files to be included in the styleguide
 css_include:
+  - './theme/css/theme.css'
+
   - './src/reset.css'
   - './src/color.css'
   - './src/titles.css'

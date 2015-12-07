@@ -11,7 +11,7 @@ module.exports = function(grunt) {
               {
                   expand: true,
                   cwd: './',
-                  src: ['src/**/*.less', 'demo/**/*.less'],
+                  src: ['src/**/*.less', 'demo/**/*.less', 'theme/**/*.less'],
                   dest: './',
                   ext: '.css'
               }
