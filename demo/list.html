@@ -3,46 +3,93 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Sieve :: Bootstrap v1.0 Demo Page</title>
-  <link rel="stylesheet" href="../src/fonts/sieve_icon_font/css/sieve-icon-font.css">
-  <link rel="stylesheet" href="../src/sieve.bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Sieve - Bootstrap v1.0 Demo Page</title>
+
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../src/sieve.bootstrap.min.css">
   <!-- Customização da página -->
   <link rel="stylesheet" href="sheet/style.css">
+
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="../src/sieve.bootstrap.min.js"></script>
 </head>
 
 <body>
 
 <main class="page page-basic page-fixed-header">
+
   <header>
     <div class="container">
       <div class="row">
-        <div class="col-md-2">
-          <h1 class="title">
-            <a href="list.html"><img src="img/logo-mono.svg" class="logo"></a>
-          </h1>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+          <div class="dropdown dropdown-left">
+            <a href="#" class="link link-white link-menu dropdown-trigger">
+              <i class="icon-menu"></i>
+            </a>
+            <div class="dropdown-list">
+                <ul class="list list-vertical nav-platforms">
+                  <li>
+                    <a href="http://www.admatic.com.br/"><img src="img/admatic.gif"></a>
+                    <span>Monitore campanhas de marketing.</span>
+                  </li>
+                  <li>
+                    <a href="http://www.infoprice.co/"><img src="img/infoprice.png"></a>
+                    <span>Preços off-line ao seu alcance.</span>
+                  </li>
+                  <li>
+                    <a href="http://www.siteblindado.com/pt/"><img src="img/site_blindado.png"></a>
+                    <span>Seu site mais seguro.</span>
+                  </li>
+                  <li>
+                    <a href="http://skyhub.com.br/"><img src="img/skyhub.png"></a>
+                    <span>Inteligência em Marketplace.</span>
+                  </li>
+                  <li>
+                    <a href="http://sieve.com.br/"><img src="img/sieve-black.png"></a>
+                    <span>Inteligência em preço no e-commerce.</span>
+                  </li>
+                </ul>
+            </div>
+          </div>
+
+          <a href="list.html" class="link link-white">
+            <img src="img/sieve-white.png" class="logo">
+          </a>
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-3 col-sm-3 col-xs-6 pull-right">
+          <div class="pull-right">
+            <ul class="list list-horizontal nav-account">
+              <li><a href="#" class="link link-gray"><i class="icon-bell"></i></a></li>
+              <li>
+                <div class="dropdown dropdown-right">
+                  <a href="#" class="link link-gray dropdown-trigger">
+                    <i class="icon-user"></i>Leo Quixadá <i class="icon-down-dir"></i>
+                  </a>
+                  <div class="dropdown-list">
+                    <ul class="list list-vertical">
+                      <li><a href="javascript:alert('Teste');"><i class="icon-sliders"></i> Configurações</a></li>
+                      <li><a href="index.html"><i class="icon-exit"></i> Sair</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-xs-12">
           <nav class="menu">
-            <ul class="list list-horizontal list-main">
-              <li><a href="../index.html">bootstrap</a></li>
-              <li><a href="list.html" class="active">list-big</a></li>
-              <li><a href="list-small.html">list-small</a></li>
-              <li><a href="form.html">form</a></li>
+            <ul class="list list-horizontal nav-menu">
+              <li><a href="../index.html" class="link link-gray">Bootstrap</a></li>
+              <li><a href="list.html" class="link link-gray active">Lista Grande</a></li>
+              <li><a href="list-small.html" class="link link-gray">Lista Pequena</a></li>
+              <li><a href="form.html" class="link link-gray">Formulário</a></li>
             </ul>
           </nav>
-        </div>
-
-        <div class="col-md-3">
-          <div class="pull-right">
-            <ul class="list list-horizontal options">
-              <li><a href="javascript:void(0);"><i class="icon-bell"></i></a></li>
-              <li><a href="javascript:void(0);"><i class="icon-sliders"></i></a></li>
-              <li><a href="index.html"><i class="icon-exit"></i></a></li>
-            </ul>
-          </div>
         </div>
 
       </div>
@@ -50,271 +97,285 @@
   </header>
 
   <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="title title-2">Muitos Usuários</h2>
-        </div>
-      </div>
+    <article class="page-content">
+      <header>
+        <div class="container">
 
-      <div class="row">
-        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-10 col-sm-10 col-xs-10">
+              <h2 class="title title-2">Muitos Usuários</h2>
+            </div>
 
-          <article class="box">
-            <header>
-              <h3>Usuários</h3>
-
-              <ul class="list list-horizontal list-actions">
-                <li><a href="form.html"><i class="icon-plus"></i></a></li>
-                <li><a href="form.html"><i class="icon-pencil"></i></a></li>
-              </ul>
-            </header>
-
-            <section>
-              <table class="table table-sortable">
-                <thead>
-                  <tr>
-                    <th>Nome</th>
-                    <th>Sobrenome</th>
-                    <th>Usuário</th>
-                    <th>Status</th>
-                    <th class="no-sort" style="width:6rem;"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Victor</td>
-                    <td>Novais</td>
-                    <td>victornovais</td>
-                    <td><span class="label label-yellow">enrolando</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Leonardo</td>
-                    <td>Quixadá</td>
-                    <td>lquixada</td>
-                    <td><span class="label label-green">na pista</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Gabriela</td>
-                    <td>Cardoso</td>
-                    <td>gabyonce</td>
-                    <td><span class="label label-red">game over</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Marcus</td>
-                    <td>Vinicius</td>
-                    <td>marcus.designer</td>
-                    <td><span class="label label-yellow">enrolando</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Nicholas</td>
-                    <td>Teodósio</td>
-                    <td>nicolete</td>
-                    <td><span class="label label-red">game over</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Felipe</td>
-                    <td>Salvini</td>
-                    <td>salvini</td>
-                    <td><span class="label label-red">game over</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Flávio</td>
-                    <td>Lemos</td>
-                    <td>kingofburguer</td>
-                    <td><span class="label label-green">na pista</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Dalton</td>
-                    <td>Barreto</td>
-                    <td>dbarreto</td>
-                    <td><span class="label label-red">game over</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Elias</td>
-                    <td>Barrionovo</td>
-                    <td>burguerfromhells</td>
-                    <td><span class="label label-yellow">enrolando</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>João</td>
-                    <td>Leite</td>
-                    <td>milk</td>
-                    <td><span class="label label-yellow">enrolando</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Jonathas</td>
-                    <td>Alves</td>
-                    <td>jeff</td>
-                    <td><span class="label label-yellow">enrolando</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Camila</td>
-                    <td>Tavares</td>
-                    <td>littlemermaid</td>
-                    <td><span class="label label-yellow">enrolando</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Fábio</td>
-                    <td>Moraes</td>
-                    <td>amomessi</td>
-                    <td><span class="label label-green">na pista</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Vinícius</td>
-                    <td>Souza</td>
-                    <td>papai</td>
-                    <td><span class="label label-blue">papai</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Erick</td>
-                    <td>Almeida</td>
-                    <td>canttouchthis</td>
-                    <td><span class="label label-green">na pista</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Cintia</td>
-                    <td>Sestelo</td>
-                    <td>miguxa</td>
-                    <td><span class="label label-yellow">enrolando</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Caroline</td>
-                    <td>Xavier</td>
-                    <td>goofy</td>
-                    <td><span class="label label-green">na pista</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>André</td>
-                    <td>Patrício</td>
-                    <td>patrick</td>
-                    <td><span class="label label-yellow">enrolando</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Jonathas</td>
-                    <td>Alves</td>
-                    <td>jeff</td>
-                    <td><span class="label label-yellow">enrolando</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Camila</td>
-                    <td>Tavares</td>
-                    <td>littlemermaid</td>
-                    <td><span class="label label-yellow">enrolando</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Fábio</td>
-                    <td>Moraes</td>
-                    <td>amomessi</td>
-                    <td><span class="label label-green">na pista</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Vinícius</td>
-                    <td>Souza</td>
-                    <td>papai</td>
-                    <td><span class="label label-blue">papai</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Erick</td>
-                    <td>Almeida</td>
-                    <td>canttouchthis</td>
-                    <td><span class="label label-green">na pista</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Cintia</td>
-                    <td>Sestelo</td>
-                    <td>miguxa</td>
-                    <td><span class="label label-yellow">enrolando</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>Caroline</td>
-                    <td>Xavier</td>
-                    <td>goofy</td>
-                    <td><span class="label label-green">na pista</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>André</td>
-                    <td>Patrício</td>
-                    <td>patrick</td>
-                    <td><span class="label label-yellow">enrolando</span></td>
-                    <td><a href="form.html"><i class="icon-pencil"></i></a>
-                      <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div class="pager">
-                <ul>
-                  <li class="disabled"><a href="javascript:void(0);"><i class="icon-left-open"></i></a></li>
-                  <li class="active"><a href="javascript:void(0);">1</a></li>
-                  <li><a href="javascript:void(0);">2</a></li>
-                  <li><a href="javascript:void(0);">3</a></li>
-                  <li><a href="javascript:void(0);">4</a></li>
-                  <li><a href="javascript:void(0);">5</a></li>
-                  <li><a href="javascript:void(0);">6</a></li>
-                  <li><a href="javascript:void(0);">7</a></li>
-                  <li><a href="javascript:void(0);">8</a></li>
-                  <li><a href="javascript:void(0);">9</a></li>
-                  <li><a href="javascript:void(0);"><i class="icon-right-open"></i></a></li>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+              <div class="pull-right">
+                <ul class="list list-horizontal">
+                  <li><a href="#"><i class="icon-funnel"></i></a></li>
+                  <li><a href="#"><i class="icon-export"></i></a></li>
+                  <li><a href="#"><i class="icon-plus"></i></a></li>
+                  <li><a href="#"><i class="icon-question"></i></a></li>
                 </ul>
               </div>
-
-            </section>
-          </article>
-
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </header>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10">
+
+              <article class="box">
+                <section>
+                  <table class="table table-sortable">
+                    <thead>
+                      <tr>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Usuário</th>
+                        <th>Status</th>
+                        <th class="no-sort" style="width:6rem;"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Victor</td>
+                        <td>Novais</td>
+                        <td>victornovais</td>
+                        <td><span class="label label-yellow">enrolando</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Leonardo</td>
+                        <td>Quixadá</td>
+                        <td>lquixada</td>
+                        <td><span class="label label-green">na pista</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Gabriela</td>
+                        <td>Cardoso</td>
+                        <td>gabyonce</td>
+                        <td><span class="label label-red">game over</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Marcus</td>
+                        <td>Vinicius</td>
+                        <td>marcus.designer</td>
+                        <td><span class="label label-yellow">enrolando</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Nicholas</td>
+                        <td>Teodósio</td>
+                        <td>nicolete</td>
+                        <td><span class="label label-red">game over</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Felipe</td>
+                        <td>Salvini</td>
+                        <td>salvini</td>
+                        <td><span class="label label-red">game over</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Flávio</td>
+                        <td>Lemos</td>
+                        <td>kingofburguer</td>
+                        <td><span class="label label-green">na pista</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Dalton</td>
+                        <td>Barreto</td>
+                        <td>dbarreto</td>
+                        <td><span class="label label-red">game over</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Elias</td>
+                        <td>Barrionovo</td>
+                        <td>burguerfromhells</td>
+                        <td><span class="label label-yellow">enrolando</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>João</td>
+                        <td>Leite</td>
+                        <td>milk</td>
+                        <td><span class="label label-yellow">enrolando</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Jonathas</td>
+                        <td>Alves</td>
+                        <td>jeff</td>
+                        <td><span class="label label-yellow">enrolando</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Camila</td>
+                        <td>Tavares</td>
+                        <td>littlemermaid</td>
+                        <td><span class="label label-yellow">enrolando</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Fábio</td>
+                        <td>Moraes</td>
+                        <td>amomessi</td>
+                        <td><span class="label label-green">na pista</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Vinícius</td>
+                        <td>Souza</td>
+                        <td>papai</td>
+                        <td><span class="label label-blue">papai</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Erick</td>
+                        <td>Almeida</td>
+                        <td>canttouchthis</td>
+                        <td><span class="label label-green">na pista</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Cintia</td>
+                        <td>Sestelo</td>
+                        <td>miguxa</td>
+                        <td><span class="label label-yellow">enrolando</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Caroline</td>
+                        <td>Xavier</td>
+                        <td>goofy</td>
+                        <td><span class="label label-green">na pista</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>André</td>
+                        <td>Patrício</td>
+                        <td>patrick</td>
+                        <td><span class="label label-yellow">enrolando</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Jonathas</td>
+                        <td>Alves</td>
+                        <td>jeff</td>
+                        <td><span class="label label-yellow">enrolando</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Camila</td>
+                        <td>Tavares</td>
+                        <td>littlemermaid</td>
+                        <td><span class="label label-yellow">enrolando</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Fábio</td>
+                        <td>Moraes</td>
+                        <td>amomessi</td>
+                        <td><span class="label label-green">na pista</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Vinícius</td>
+                        <td>Souza</td>
+                        <td>papai</td>
+                        <td><span class="label label-blue">papai</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Erick</td>
+                        <td>Almeida</td>
+                        <td>canttouchthis</td>
+                        <td><span class="label label-green">na pista</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Cintia</td>
+                        <td>Sestelo</td>
+                        <td>miguxa</td>
+                        <td><span class="label label-yellow">enrolando</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Caroline</td>
+                        <td>Xavier</td>
+                        <td>goofy</td>
+                        <td><span class="label label-green">na pista</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>André</td>
+                        <td>Patrício</td>
+                        <td>patrick</td>
+                        <td><span class="label label-yellow">enrolando</span></td>
+                        <td><a href="form.html"><i class="icon-pencil"></i></a>
+                          <a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="pager">
+                    <ul>
+                      <li class="disabled"><a href="javascript:void(0);"><i class="icon-left-open"></i></a></li>
+                      <li class="active"><a href="javascript:void(0);">1</a></li>
+                      <li><a href="javascript:void(0);">2</a></li>
+                      <li><a href="javascript:void(0);">3</a></li>
+                      <li><a href="javascript:void(0);">4</a></li>
+                      <li><a href="javascript:void(0);">5</a></li>
+                      <li><a href="javascript:void(0);">6</a></li>
+                      <li><a href="javascript:void(0);">7</a></li>
+                      <li><a href="javascript:void(0);">8</a></li>
+                      <li><a href="javascript:void(0);">9</a></li>
+                      <li><a href="javascript:void(0);"><i class="icon-right-open"></i></a></li>
+                    </ul>
+                  </div>
+
+                </section>
+              </article>
+
+            </div>
+            <div class="col-md-2">
+              <img src="img/chart.png">
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
   </section>
 
   <footer>
@@ -322,7 +383,7 @@
       <div class="row">
         <div class="col-md-12">
           <p>
-            <a href="list.html"><img src="img/logo-mono.svg" class="logo"></a>
+            <a href="list.html"><img src="img/sieve-white.png" class="logo"></a>
             Projetado e construído com todo amor |
             © Copyright 2015 Sieve Serviços de Tecnologia.
           </p>

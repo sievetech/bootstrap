@@ -1,0 +1,52 @@
+@import "../compess";
+
+/*doc
+---
+title: Textarea
+name: textarea
+category: Formulário
+---
+
+Pode ser estilizado aplicando o atributo `disabled` ou a classe `.textarea-error`.
+
+```html_example
+<textarea rows="5" cols="40" class="textarea">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500.
+</textarea>
+
+<textarea rows="5" cols="40" class="textarea" disabled>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500.
+</textarea>
+
+<textarea rows="5" cols="40" class="textarea textarea-error">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500.
+</textarea>
+```
+*/
+
+.textarea {
+  padding: 1.2rem;
+  background-color: #fff;
+  border: .1rem solid #ccc;
+  outline: none;
+  .box-shadow(inset 0 0.1rem 0.3rem rgba(0,0,0,.2));
+  .rounded(.4rem);
+  .transition(.2s ease-in-out);
+
+  &:not(.textarea-error):focus {
+    border-color: #7fb93a;
+  }
+
+  &.textarea-error {
+    border-color: #b71c1c;
+  }
+
+  &:disabled {
+    background-color: #f4f4f4;
+    color: #c6c6c6 !important;
+    cursor: not-allowed;
+  }
+}

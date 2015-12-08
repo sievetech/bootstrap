@@ -51,17 +51,29 @@ exit_on_warnings: false
 
 # The CSS files to be included in the styleguide
 css_include:
+  - './theme/css/theme.css'
+
   - './src/reset.css'
   - './src/color.css'
   - './src/titles.css'
+  - './src/links.css'
   - './src/box.css'
   - './src/pages.css'
-  - './src/buttons.css'
-  - './src/forms.css'
-  - './src/fields.css'
-  - './src/options-group.css'
+
+  - './src/form/form.css'
+  - './src/form/button.css'
+  - './src/form/checkbox.css'
+  - './src/form/combo.css'
+  - './src/form/composite.css'
+  - './src/form/input.css'
+  - './src/form/options-group.css'
+  - './src/form/radio.css'
+  - './src/form/switcher.css'
+  - './src/form/textarea.css'
+
   - './src/list.css'
-  - './src/switcher.css'
+  - './src/modal.css'
+  - './src/dropdown.css'
   - './src/notifications.css'
   - './src/labels.css'
   - './src/tables.css'
@@ -73,8 +85,9 @@ css_include:
   - './src/fonts.css'
 
 # The JavaScript files to included in the styleguide
-#js_include:
-#  - 'dist/scripts/main.js'
+js_include:
+  - './theme/js/theme.js'
+  - './src/dropdown.js'
 
 # The global title that is displayed at the top of the pages
 global_title: Sieve Bootstrap v1.0

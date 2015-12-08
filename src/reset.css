@@ -25,23 +25,12 @@ ol,
 ul {
   list-style: none !important;
 }
-a {
-  color: #000000;
-  text-decoration: none !important;
-}
-a:link,
-a:visited,
-a:active {
-  color: #000000;
-  text-decoration: none !important;
-}
-a:hover {
-  text-decoration: none !important;
-}
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-weight: 100;
 }
 input[type=checkbox],

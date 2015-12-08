@@ -4,10 +4,40 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
+/*doc
+---
+title: Modal
+name: modal
+category: Página
+---
+
+Modais servem para dar avisos que necessitem da ação do usuário.
+
+## Default
+
+```html_example
+<div class="modal">
+  <header>
+    <h5 class="title title-5">
+      <i class="icon-attention" style="color: #e9c23a; font-size: 2.5rem;"></i>
+      Título
+    </h5>
+  </header>
+  <section>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+  </section>
+  <footer>
+    <button class="button button-default">Cancelar</button>
+    <button class="button button-success">Ok</button>
+  </footer>
+</div>
+```
+*/
 .modal {
-  width: 40rem;
-  background-color: #262626;
-  border-top: 1rem solid #7ab317;
+  width: 60rem;
+  background-color: #fff;
+  border-top: 1rem solid #9b9b9b;
+  z-index: 2000;
   -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
@@ -16,5 +46,28 @@
   border-radius: 0.4rem;
 }
 .modal > header {
+  padding: 2rem;
+}
+.modal > header .title {
+  color: #666;
+}
+.modal > section {
+  padding: 2rem;
+  border-top: .1rem solid #d3d3d3;
+}
+.modal > footer {
+  padding: 2rem;
+  text-align: right;
+}
+.modal.modal-page {
+  width: 40rem;
+  background-color: #262626;
+  border-color: #7ab317;
+}
+.modal.modal-page > header {
+  padding: 0;
   text-align: center;
+}
+.modal.modal-page > section {
+  border: none;
 }

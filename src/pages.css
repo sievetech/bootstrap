@@ -8,7 +8,7 @@
 ---
 title: Pages
 name: page
-category: Tabela
+category: Página
 ---
 
 O page é um grid comum para se implementar páginas. Esse é o primeiro passo na construção de uma página e entra
@@ -36,6 +36,10 @@ direto no `<body>`.
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><span class="label label-blue">.page</span></td>
+      <td>Classe base para todas as páginas.</td>
+    </tr>
     <tr>
       <td><span class="label label-blue">.page-basic</span></td>
       <td>Tipo mais básico de página. Composto por cabeçalho, conteúdo e rodapé.</td>
@@ -72,8 +76,8 @@ direto no `<body>`.
         <h3>Lista</h3>
 
         <ul class="list list-horizontal list-actions">
-          <li><a href="javascript:void(0);"><i class="icon-plus"></i></a></li>
-          <li><a href="javascript:void(0);"><i class="icon-pencil"></i></a></li>
+          <li><a href="#"><i class="icon-plus"></i></a></li>
+          <li><a href="#"><i class="icon-pencil"></i></a></li>
         </ul>
       </header>
 
@@ -94,28 +98,28 @@ direto no `<body>`.
               <td>Novais</td>
               <td>victornovais</td>
               <td><span class="label label-yellow">namorando</span></td>
-              <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+              <td><a href="#"><i class="icon-error"></i></a></td>
             </tr>
             <tr>
               <td>Leonardo</td>
               <td>Quixadá</td>
               <td>lquixada</td>
               <td><span class="label label-green">solteiro</span></td>
-              <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+              <td><a href="#"><i class="icon-error"></i></a></td>
             </tr>
             <tr>
               <td>Gabriela</td>
               <td>Cardoso</td>
               <td>gabyoncé</td>
               <td><span class="label label-red">casada</span></td>
-              <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+              <td><a href="#"><i class="icon-error"></i></a></td>
             </tr>
           </tbody>
         </table>
       </section>
 
       <footer>
-        <p>construído com <a href="javascript:void(0);">Sieve Bootstrap</a>.</p>
+        <p>construído com <a href="#">Sieve Bootstrap</a>.</p>
       </footer>
     </article>
   </section>
@@ -132,6 +136,13 @@ direto no `<body>`.
   min-height: 100%;
   background-color: #f3f3f3;
 }
+.page *::selection {
+  color: #ffffff;
+  background-color: #6cb361;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+}
 .page > header {
   display: flex;
 }
@@ -142,13 +153,13 @@ direto no `<body>`.
   margin-top: 5rem;
 }
 .page.page-basic > header {
-  background-color: #519548;
+  background-color: #484848;
   -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 .page.page-basic > section .title.title-2 {
-  margin: 4rem 0 3rem;
+  margin: 3rem 0;
 }
 .page.page-basic > footer {
   padding: 2rem 0;
@@ -156,7 +167,7 @@ direto no `<body>`.
   background-color: #3a3a3a;
 }
 .page.page-fixed-header {
-  padding-top: 4.4rem;
+  padding-top: 8.8rem;
 }
 .page.page-fixed-header > header {
   position: fixed;
@@ -183,4 +194,16 @@ direto no `<body>`.
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* medium */
+@media (min-width: 992px) {
+  .page.page-fixed-header {
+    padding-top: 4.4rem;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .page.page-fixed-header {
+    padding-top: 4.4rem;
+  }
 }

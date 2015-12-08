@@ -15,10 +15,6 @@
   margin-bottom: 8rem;
   padding: 0 3rem;
 }
-.page-modal .modal > section form a {
-  color: #7ab317;
-  text-decoration: underline !important;
-}
 .page-modal .modal > section form label {
   color: #fff;
 }
@@ -26,7 +22,7 @@
   width: 100%;
 }
 .page-modal .modal > section form .field-group {
-  display: flex;
+  width: 100%;
 }
 .page-modal .modal > section form .field:last-child {
   display: flex;
@@ -34,13 +30,21 @@
   justify-content: space-between;
   margin: 0;
 }
+.page-modal > footer {
+  margin: 2rem;
+}
+.page-modal > footer .list-links {
+  flex-wrap: wrap;
+}
 .page-modal > footer .list-links li {
   display: inline-block;
   border-right: .1rem solid #bbb;
   margin-right: 2rem;
+  margin-bottom: 1rem;
   padding-right: 2rem;
   font-size: 1.1rem;
   color: #666;
+  white-space: nowrap;
 }
 .page-modal > footer .list-links li:last-child {
   border: none;

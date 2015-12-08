@@ -1,4 +1,4 @@
-@import "compess";
+@import "../compess";
 
 /*doc
 ---
@@ -7,37 +7,68 @@ name: buttons
 category: Formulário
 ---
 
+## Opções
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>classe</th>
+      <th>descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="label label-blue">.button</span></td>
+      <td>Classe base para todos os botões.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.button-disabled</span></td>
+      <td>Botão desabilitado</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.button-default</span></td>
+      <td>Botão com layout padrão.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.button-success</span></td>
+      <td>Botão que conclui alguma ação.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.button-danger</span></td>
+      <td>Botão que indica situação de perigo, normalmente ações irreversíveis.</td>
+    </tr>
+  </tbody>
+</table>
+
+
 ## Padrão
 
 ```html_example
 <button class="button button-default">Button</button>
-<a href="javascript:void(0);" class="button button-default">Link</a>
-<input type="button" class="button button-default" value="Input" />
+<a href="#" class="button button-default">Link</a>
 ```
 
 ## Desabilitado
 
 ```html_example
 <button class="button button-disabled" disabled>Button</button>
-<a href="javascript:void(0);" class="button button-disabled">Link</a>
-<input type="button" class="button button-disabled" value="Input" disabled />
+<a href="#" class="button button-disabled">Link</a>
 ```
 
 ## Sucesso
 
 ```html_example
 <button class="button button-success">Button</button>
-<a href="javascript:void(0);" class="button button-success">Link</a>
-<input type="button" class="button button-success" value="Input" />
+<a href="#" class="button button-success">Link</a>
 ```
 
 ## Excluir
 
 ```html_example
 <button class="button button-danger">Button</button>
-<a href="javascript:void(0);" class="button button-danger">Link</a>
-<input type="button" class="button button-danger" value="Input" />
+<a href="#" class="button button-danger">Link</a>
 ```
+
 */
 
 .button {

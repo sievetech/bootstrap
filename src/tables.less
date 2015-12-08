@@ -7,13 +7,36 @@ name: tables
 category: Tabela
 ---
 
-## Básico
+## Opções
 
-Use a classe `.table` para estilizar um elemento `<table>`.
-Utilize a classe `.table-no-border` para remover as bordas.
+<table class="table">
+  <thead>
+    <tr>
+      <th>classe</th>
+      <th>descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="label label-blue">.table</span></td>
+      <td>Classe base para todas as tabelas.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.table-no-border</span></td>
+      <td>Remove as bordas da tabela.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.table-sortable</span></td>
+      <td>Exibe a tabela como ordenável no header. A classe .no-sort pode ser
+      aplicada no header da coluna para prevenir o efeito de hover.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Sem borda
 
 ```html_example
-<table class="table">
+<table class="table table-no-border">
   <thead>
     <tr>
       <th>Nome</th>
@@ -27,28 +50,25 @@ Utilize a classe `.table-no-border` para remover as bordas.
       <td>Victor</td>
       <td>Novais</td>
       <td>victornovais</td>
-      <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+      <td><a href="#"><i class="icon-error"></i></a></td>
     </tr>
     <tr>
       <td>Leonardo</td>
       <td>Quixadá</td>
       <td>lquixada</td>
-      <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+      <td><a href="#"><i class="icon-error"></i></a></td>
     </tr>
     <tr>
       <td>Gabriela</td>
       <td>Cardoso</td>
       <td>gabyoncé</td>
-      <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+      <td><a href="#"><i class="icon-error"></i></a></td>
     </tr>
   </tbody>
 </table>
 ```
 
 ## Ordenável
-
-Use a classe `.table-sortable` para fazer tabelas que permitam ordenação. A classe `.no-sort`
-pode ser aplicada no header da coluna para prevenir o efeito de hover.
 
 ```html_example
 <table class="table table-sortable">
@@ -65,19 +85,19 @@ pode ser aplicada no header da coluna para prevenir o efeito de hover.
       <td>Victor</td>
       <td>Novais</td>
       <td>victornovais</td>
-      <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+      <td><a href="#"><i class="icon-error"></i></a></td>
     </tr>
     <tr>
       <td>Leonardo</td>
       <td>Quixadá</td>
       <td>lquixada</td>
-      <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+      <td><a href="#"><i class="icon-error"></i></a></td>
     </tr>
     <tr>
       <td>Gabriela</td>
       <td>Cardoso</td>
       <td>gabyoncé</td>
-      <td><a href="javascript:void(0);"><i class="icon-error"></i></a></td>
+      <td><a href="#"><i class="icon-error"></i></a></td>
     </tr>
   </tbody>
 </table>

@@ -21,11 +21,6 @@
     <div class="hgt-pagehead">
       <div class="hgt-container">
         <nav class="hgt-pagehead-nav" role="navigation">
-          <a href="index.html"
-             class="hgt-pagehead-nav-item <% if file_name.include?('index.html') %>selected<% end %>">
-            Home
-          </a>
-
           <% @categories.each do |cat| %>
           <a href="<%= cat[1] %>"
              class="hgt-pagehead-nav-item <% if title == cat[0] %>selected<% end %>">

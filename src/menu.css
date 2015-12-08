@@ -8,19 +8,19 @@
 ---
 title: Menu
 name: menu
-category: Componentes
+category: Página
 ---
 
-Barra de navegação para ser utilizada como lista.
+Barra de navegação para ser utilizada como lista. **Nota**: o background-color é opcional e foi inserido apenas para visualização na documentação.
 
 ## Vertical
 
 ```html_example
-<nav class="menu">
+<nav class="menu" style="background-color: #484848;">
   <ul class="list list-vertical">
-    <li><a href="javascript:void(0);">home</a></li>
-    <li><a href="javascript:void(0);" class="active">profile</a></li>
-    <li><a href="javascript:void(0);">about</a></li>
+    <li><a href="#" class="link link-white">home</a></li>
+    <li><a href="#" class="link link-white active">profile</a></li>
+    <li><a href="#" class="link link-white">about</a></li>
   </ul>
 </nav>
 ```
@@ -28,18 +28,18 @@ Barra de navegação para ser utilizada como lista.
 ## Horizontal
 
 ```html_example
-<nav class="menu">
+<nav class="menu" style="background-color: #484848;">
   <ul class="list list-horizontal">
-    <li><a href="javascript:void(0);">home</a></li>
-    <li><a href="javascript:void(0);" class="active">profile</a></li>
-    <li><a href="javascript:void(0);">about</a></li>
+    <li><a href="#" class="link link-white">home</a></li>
+    <li><a href="#" class="link link-white active">profile</a></li>
+    <li><a href="#" class="link link-white">about</a></li>
   </ul>
 </nav>
 ```
 
 */
 .menu {
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -47,12 +47,13 @@ Barra de navegação para ser utilizada como lista.
 }
 .menu .list {
   display: flex;
-  background-color: #519548;
 }
 .menu .list a {
   display: block;
   padding: 1rem 2rem;
-  color: #ffffff;
+  text-decoration: none;
+}
+.menu .list a:hover {
   text-decoration: none;
 }
 .menu .list a:link,
@@ -60,28 +61,31 @@ Barra de navegação para ser utilizada como lista.
 .menu .list a:active {
   display: block;
   padding: 1rem 2rem;
-  color: #ffffff;
   text-decoration: none;
 }
 .menu .list-vertical {
   width: 20rem;
 }
 .menu .list-vertical a {
-  border-left: .4rem solid transparent;
+  border-left: .3rem solid transparent;
 }
 .menu .list-vertical a:hover {
-  border-color: #ffffff;
+  color: #fff;
+  border-color: #85c11c;
 }
 .menu .list-vertical a.active {
+  color: #fff;
   padding-left: 1.6rem !important;
-  border-left: .4rem solid #88d37c;
+  border-left: .3rem solid #85c11c;
 }
 .menu .list-horizontal a {
-  border-bottom: .4rem solid transparent;
+  border-bottom: .3rem solid transparent;
 }
 .menu .list-horizontal a:hover {
-  border-color: #ffffff;
+  color: #fff;
+  border-color: #85c11c;
 }
 .menu .list-horizontal a.active {
-  border-color: #88d37c;
+  color: #fff;
+  border-color: #85c11c;
 }

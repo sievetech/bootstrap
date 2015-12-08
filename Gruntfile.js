@@ -11,7 +11,7 @@ module.exports = function(grunt) {
               {
                   expand: true,
                   cwd: './',
-                  src: ['src/**/*.less', 'demo/**/*.less'],
+                  src: ['src/**/*.less', 'demo/**/*.less', 'theme/**/*.less'],
                   dest: './',
                   ext: '.css'
               }
@@ -59,23 +59,38 @@ module.exports = function(grunt) {
     },
 
     /**
-     * Pré-compiladores
+     * Automação
      */
     cssmin: {
-      target: {
+      dist: {
         files: {
-          'build/src/sieve.bootstrap.min.css': 'build/src/*.css'
+          'build/src/sieve.bootstrap.min.css': [
+            'build/src/fonts/sieve_icon_font/css/sieve-icon-font.css',
+            'build/src/*.css',
+            'build/src/form/*.css'
+          ]
         }
       }
     },
 
-    /**
-     * Automação
-     */
+    uglify: {
+      dist: {
+        files: {
+          'build/src/sieve.bootstrap.min.js': [
+            'build/src/*.js',
+            'build/src/form/*.js'
+          ]
+        }
+      }
+    },
+
     copy: {
       dist: {
         // includes files within path and its sub-directories
-        files: [{expand: true, src: ['demo/**'], dest: 'build/'}]
+        files: [
+          {expand: true, src: ['demo/**'], dest: 'build/'},
+          {expand: true, src: ['theme/**'], dest: 'build/'}
+        ]
       },
     },
 
@@ -123,7 +138,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('work', ['concurrent:work']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['clean', 'less', 'hologram', 'cssmin', 'copy', 'zip', 'notify:build']);
+  grunt.registerTask('build', ['clean', 'less', 'hologram', 'cssmin', 'uglify', 'copy', 'zip', 'notify:build']);
   grunt.registerTask('server', ['connect']);
 
   /**

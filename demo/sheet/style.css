@@ -4,43 +4,91 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
-.page-basic header .logo {
+.page-basic > header .logo {
   margin: 1.2rem 0;
   height: 2rem;
 }
-.page-basic header .options {
-  font-size: 2rem;
+.page-basic > header .nav-account {
+  white-space: nowrap;
 }
-.page-basic header .options a {
+.page-basic > header .nav-account i {
+  font-size: 1.9rem;
+}
+.page-basic > header .nav-account a {
   display: inline-block;
-  padding: .6rem .3rem;
+  padding: .9rem .3rem;
   color: #fff;
 }
-.page-basic section .table {
+.page-basic > header .nav-platforms {
+  padding: 2rem 2rem 0;
+  width: 25rem !important;
+}
+.page-basic > header .nav-platforms li {
+  margin-bottom: 2rem;
+}
+.page-basic > header .nav-platforms li a {
+  padding: 0 !important;
+}
+.page-basic > header .nav-platforms li a:hover {
+  background-color: transparent !important;
+}
+.page-basic > header .nav-platforms li img {
+  height: 3rem;
+}
+.page-basic > header .nav-platforms li span {
+  position: relative;
+  margin-top: -0.5rem;
+  font-size: 1.2rem;
+  color: #999;
+}
+.page-basic > header .nav-menu {
+  margin-top: .3rem;
+  white-space: nowrap;
+}
+.page-basic > header .link-menu {
+  padding: .1rem;
+  font-size: 3rem;
+}
+.page-basic > section .page-content > header {
+  margin-bottom: 3rem;
+  background-color: #ebebeb;
+  border: 1px solid #e4e4e4;
+}
+.page-basic > section .page-content > header .list {
+  margin: 3rem 0;
+}
+.page-basic > section .page-content > header .list i {
+  font-size: 2.1rem;
+}
+.page-basic > section .page-content > header .list a {
+  display: inline-block;
+  padding: .2rem .3rem;
+  color: #999;
+}
+.page-basic > section .table {
   margin-bottom: 1.5rem;
 }
-.page-basic section .table.no-border tr:last-child td {
+.page-basic > section .table.no-border tr:last-child td {
   border-bottom: .1rem solid #e5e5e5;
 }
-.page-basic section .table .icon-error,
-.page-basic section .table .icon-pencil {
+.page-basic > section .table .icon-error,
+.page-basic > section .table .icon-pencil {
   color: #999;
   font-size: 1.4rem;
 }
-.page-basic section .form {
+.page-basic > section .form {
   margin-bottom: 2rem;
   padding: 3rem;
-  width: 51.5rem;
   background-color: #fff;
   border: .1rem solid #dcdcdc;
   -webkit-border-radius: 0.4rem;
   -moz-border-radius: 0.4rem;
   border-radius: 0.4rem;
 }
-.page-basic section .form textarea {
+.page-basic > section .form textarea {
   width: 100%;
 }
-.page-basic footer .logo {
+.page-basic > footer .logo {
   margin-right: 2rem;
   height: 2rem;
 }

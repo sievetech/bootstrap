@@ -1,0 +1,69 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Checkboxes
+name: checkbox
+category: Formulário
+---
+
+## Padrão
+
+```html_example
+<label class="checkbox">
+  <input type="checkbox" name="type1" value="a" checked>
+  <span>Aceito os termos do contrato</span>
+</label>
+```
+*/
+.checkbox {
+  display: inline-block !important;
+}
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+.checkbox input[type="checkbox"] + span {
+  cursor: pointer;
+}
+.checkbox input[type="checkbox"] + span::before {
+  content: '\2713';
+  display: inline-block;
+  margin-right: .5rem;
+  width: 2rem;
+  height: 2rem;
+  color: transparent;
+  font-size: 2.2rem;
+  line-height: 1.7rem;
+  text-align: center;
+  border: .1rem solid #ccc;
+  vertical-align: bottom;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+}
+.checkbox input[type="checkbox"]:checked + span::before {
+  color: #fff;
+  background-color: #6a5;
+  border-color: #6a5;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.checkbox input[type="checkbox"]:focus + span::before {
+  border-color: #6a5;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}

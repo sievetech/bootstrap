@@ -1,0 +1,67 @@
+@import "compess";
+
+/*doc
+---
+title: Links
+name: links
+category: Texto
+---
+
+## Opções
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>classe</th>
+      <th>descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="label label-blue">.link</span></td>
+      <td>Classe base para todos os links.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.link-green</span></td>
+      <td>Renderiza link verde.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.link-white</span></td>
+      <td>Renderiza link branco.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Link verde
+
+```html_example
+<a href="#" class="link link-green">clique aqui</a>
+```
+
+*/
+
+.link {
+  display: inline-block;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.link-green {
+    &:link, &:visited, &:active {
+      color: #6a5;
+    }
+  }
+
+  &.link-white {
+    &:link, &:visited, &:active {
+      color: #fff;
+    }
+  }
+
+  &.link-gray {
+    &:link, &:visited, &:active {
+      color: #b8b8b8;
+    }
+  }
+}
