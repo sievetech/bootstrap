@@ -101,7 +101,7 @@ module.exports = function(grunt) {
     zip: {
       dist: {
         cwd: 'build/src/',
-        src: ['build/src/fonts/**', 'build/src/sieve.bootstrap.min.css'],
+        src: ['build/src/fonts/**', 'build/src/sieve.bootstrap.min.css', 'build/src/sieve.bootstrap.min.js'],
         dest: 'build/dist/sieve.bootstrap.zip'
       }
     },
