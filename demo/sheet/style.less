@@ -2,61 +2,55 @@
 
 .page-basic {
   > header {
-    .logo {
-      margin: 1.2rem 0;
-      height: 2rem;
+    display: block;
+
+    .title {
+      text-align: center;
+
+      .logo {
+        margin: 1.2rem 0;
+        height: 2.5rem;
+      }
     }
 
     .nav-account {
+      margin: 1.1rem 0;
       white-space: nowrap;
 
       i {
         font-size: 1.9rem;
-      }
 
-      a {
-        display: inline-block;
-        padding: .9rem .3rem;
-        color: #fff;
-      }
-    }
-
-    .nav-platforms {
-      padding: 2rem 2rem 0;
-      width: 25rem !important;
-
-      li {
-        margin-bottom: 2rem;
-
-        a {
-          padding: 0 !important;
-
-          &:hover {
-            background-color: transparent !important;
-          }
-        }
-
-        img {
-          height: 3rem;
-        }
-
-        span {
-          position: relative;
-          margin-top: -.5rem;
-          font-size: 1.2rem;
-          color: #999;
+        &.icon-down-dir {
+          font-size: 1.3rem;
         }
       }
     }
 
-    .nav-menu {
-      margin-top: .3rem;
-      white-space: nowrap;
+    .link-account {
+      &:hover {
+        text-decoration: none;
+      }
+
+      span {
+        display: none;
+      }
     }
 
     .link-menu {
-      padding: .1rem;
-      font-size: 3rem;
+      margin: .3rem 0;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      i {
+        margin-right: -0.4rem;
+        font-size: 3rem;
+      }
+
+      span {
+        display: none;
+      }
     }
   }
 
@@ -115,6 +109,63 @@
     .logo {
       margin-right: 2rem;
       height: 2rem;
+    }
+  }
+}
+
+/* small */
+@media (min-width: 768px) {
+  .page-basic {
+    > header {
+      .link-account {
+        span {
+          display: inline-block;
+        }
+      }
+
+      .link-menu {
+        span {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+/* medium */
+@media (min-width: 992px) {
+  .page-basic {
+    > header {
+      .link-account {
+        span {
+          display: inline-block;
+        }
+      }
+
+      .link-menu {
+        span {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+/* large */
+@media (min-width: 1200px) {
+  .page-basic {
+    > header {
+      .link-account {
+        span {
+          display: inline-block;
+        }
+      }
+
+      .link-menu {
+        span {
+          display: inline-block;
+        }
+      }
     }
   }
 }
