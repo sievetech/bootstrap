@@ -14,6 +14,10 @@
   margin: 1.2rem 0;
   height: 2.5rem;
 }
+.page-basic > header .dropdown .link:hover,
+.page-basic > header .dropdown .link:focus {
+  text-decoration: none;
+}
 .page-basic > header .nav-account {
   margin: 1.1rem 0;
   white-space: nowrap;
@@ -24,17 +28,11 @@
 .page-basic > header .nav-account i.icon-down-dir {
   font-size: 1.3rem;
 }
-.page-basic > header .link-account:hover {
-  text-decoration: none;
-}
 .page-basic > header .link-account span {
   display: none;
 }
 .page-basic > header .link-menu {
   margin: .3rem 0;
-}
-.page-basic > header .link-menu:hover {
-  text-decoration: none;
 }
 .page-basic > header .link-menu i {
   margin-right: -0.4rem;
