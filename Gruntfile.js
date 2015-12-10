@@ -65,9 +65,9 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'build/src/sieve.bootstrap.min.css': [
-            'build/src/fonts/sieve_icon_font/css/sieve-icon-font.css',
-            'build/src/*.css',
-            'build/src/form/*.css'
+            'src/fonts/sieve_icon_font/css/sieve-icon-font.css',
+            'src/*.css',
+            'src/form/*.css'
           ]
         }
       }
@@ -77,8 +77,8 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'build/src/sieve.bootstrap.min.js': [
-            'build/src/*.js',
-            'build/src/form/*.js'
+            'src/*.js',
+            'src/form/*.js'
           ]
         }
       }
@@ -101,9 +101,22 @@ module.exports = function(grunt) {
     zip: {
       dist: {
         cwd: 'build/src/',
-        src: ['build/src/fonts/**', 'build/src/sieve.bootstrap.min.css', 'build/src/sieve.bootstrap.min.js'],
+        src: [
+          'build/src/fonts/**',
+          'build/src/sieve.bootstrap.min.css',
+          'build/src/sieve.bootstrap.min.js'
+        ],
         dest: 'build/dist/sieve.bootstrap.zip'
+      },
+
+      demo: {
+        src: ['demo/**'],
+        dest: 'build/dist/sieve.bootstrap.demo.zip'
       }
+    },
+
+    unzip: {
+      'demo/vendor/': 'build/dist/sieve.bootstrap.zip'
     },
 
     open: {
@@ -138,7 +151,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('work', ['concurrent:work']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['clean', 'less', 'hologram', 'cssmin', 'uglify', 'copy', 'zip', 'notify:build']);
+  grunt.registerTask('build', ['clean', 'less', 'hologram', 'cssmin', 'uglify', 'copy', 'zip:dist', 'unzip', 'zip:demo', 'notify:build']);
   grunt.registerTask('server', ['connect']);
 
   /**
