@@ -55,10 +55,10 @@ css_include:
 
   - './src/reset.css'
   - './src/color.css'
-  - './src/titles.css'
-  - './src/links.css'
+  - './src/title.css'
+  - './src/link.css'
   - './src/box.css'
-  - './src/pages.css'
+  - './src/page.css'
 
   - './src/form/form.css'
   - './src/form/button.css'
@@ -75,14 +75,14 @@ css_include:
   - './src/modal.css'
   - './src/dropdown.css'
   - './src/notifications.css'
-  - './src/labels.css'
-  - './src/tables.css'
+  - './src/label.css'
+  - './src/table.css'
   - './src/pager.css'
   - './src/menu.css'
   - './src/grid.css'
   - './src/fonts/sieve_icon_font/css/sieve-icon-font.css'
 
-  - './src/fonts.css'
+  - './src/font.css'
 
 # The JavaScript files to included in the styleguide
 js_include:
