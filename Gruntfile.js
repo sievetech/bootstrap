@@ -133,6 +133,13 @@ module.exports = function(grunt) {
       }
     },
 
+    'gh-pages': {
+      options: {
+        base: 'build'
+      },
+      src: ['**']
+    },
+
     watch: {
       options: {
         atBegin: true,
@@ -152,6 +159,8 @@ module.exports = function(grunt) {
   grunt.registerTask('work', ['concurrent:work']);
   grunt.registerTask('default', ['build']);
   grunt.registerTask('build', ['clean', 'less', 'hologram', 'cssmin', 'uglify', 'copy', 'zip:dist', 'unzip', 'zip:demo', 'notify:build']);
+  grunt.registerTask('publish', ['gh-pages']);
+  grunt.registerTask('deploy', ['build', 'publish']);
   grunt.registerTask('server', ['connect']);
 
   /**
