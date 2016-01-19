@@ -1,0 +1,66 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Links
+name: links
+category: Texto
+---
+
+## Opções
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>classe</th>
+      <th>descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="label label-blue">.link</span></td>
+      <td>Classe base para todos os links.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.link-green</span></td>
+      <td>Renderiza link verde.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.link-white</span></td>
+      <td>Renderiza link branco.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Link verde
+
+```html_example
+<a href="#" class="link link-green">clique aqui</a>
+```
+
+*/
+.link {
+  display: inline-block;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.link.link-green:link,
+.link.link-green:visited,
+.link.link-green:active {
+  color: #6a5;
+}
+.link.link-white:link,
+.link.link-white:visited,
+.link.link-white:active {
+  color: #fff;
+}
+.link.link-gray:link,
+.link.link-gray:visited,
+.link.link-gray:active {
+  color: #b8b8b8;
+}

@@ -1,0 +1,84 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Dropdown
+name: dropdown
+category: Página
+---
+
+Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
+
+```html_example
+<div class="dropdown">
+  <div class="dropdown-list">
+    <ul class="list list-vertical">
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
+  </div>
+</div>
+```
+
+
+```html_example
+<div class="dropdown dropdown-left">
+  <button class="button button-default dropdown-trigger">Button <i class="icon-down-dir"></i></button>
+  <div class="dropdown-list">
+    <ul class="list list-vertical">
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
+  </div>
+</div>
+```
+*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.dropdown .dropdown-list {
+  position: absolute;
+  display: none;
+  top: 100%;
+  min-width: 20rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 2000;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+.dropdown .dropdown-list .list {
+  width: 100%;
+}
+.dropdown .dropdown-list .list a {
+  display: block;
+  padding: 1.2rem;
+  color: #666;
+}
+.dropdown .dropdown-list .list a:hover {
+  color: #666;
+  background-color: #eee;
+  cursor: pointer;
+}
+.dropdown-left .dropdown-list {
+  left: 0;
+}
+.dropdown-right .dropdown-list {
+  right: 0;
+}

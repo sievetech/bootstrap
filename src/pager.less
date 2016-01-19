@@ -1,0 +1,98 @@
+@import "compess";
+
+/*doc
+---
+title: Paginação
+name: pager
+category: Tabela
+---
+
+Use a classe `.pager` para transformar um `<ul>` num componente de paginação.
+
+```html_example
+<div class="pager">
+  <ul>
+    <li class="disabled"><a href="#"><i class="icon-left-open"></i></a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">8</a></li>
+    <li><a href="#">9</a></li>
+    <li><a href="#"><i class="icon-right-open"></i></a></li>
+  </ul>
+</div>
+```
+*/
+
+.pager {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    margin-bottom: .3rem;
+    flex-flow: row nowrap;
+    align-content: center;
+    background-color: @white;
+    border: .1rem solid #ccc;
+    border-bottom: none; /* a borda de baixo já é feito pela sombra */
+    .box-shadow(0 .2rem .2rem rgba(0, 0, 0, 0.2));
+    .rounded(.4rem);
+
+    li {
+      cursor: pointer;
+      padding: .8rem 1.6rem;
+
+      &:hover {
+        a {
+          color: @green-default;
+        }
+      }
+
+      &:first-child {
+        padding: .8rem;
+        border-right: .1rem solid #ccc;
+      }
+
+      &:last-child {
+        padding: .8rem;
+        border-left: .1rem solid #ccc;
+      }
+
+      &.active {
+        background: @green-default !important;
+        cursor: default !important;
+
+        a {
+          color: #f5f5f5 !important;
+          cursor: default !important;
+        }
+      }
+
+      &.disabled {
+        cursor: not-allowed !important;
+
+        a {
+          color: #ccc !important;
+          cursor: not-allowed !important;
+        }
+
+        &:hover {
+          a {
+            background: @white !important;
+          }
+        }
+      }
+
+      a {
+        color: @gray-font;
+        font-size: 1.4rem;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+  }
+}

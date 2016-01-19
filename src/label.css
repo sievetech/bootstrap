@@ -1,0 +1,59 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Labels
+name: labels
+category: Texto
+---
+
+O label pode ser aplicado em diversos contextos
+
+```html_example
+<span class="label label-green">Verde</span>
+<span class="label label-red">Vermelho</span>
+<span class="label label-yellow">Amarelo</span>
+<span class="label label-grey">Cinza</span>
+<span class="label label-purple">Roxo</span>
+<span class="label label-pink">Rosa</span>
+<span class="label label-blue">Azul</span>
+```
+
+*/
+.label {
+  padding: .4rem 1rem;
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: lowercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+.label.label-green {
+  background-color: #7AB317;
+}
+.label.label-red {
+  background-color: #b71c1c;
+}
+.label.label-yellow {
+  background-color: #F5C221;
+}
+.label.label-grey {
+  background-color: #666666;
+}
+.label.label-purple {
+  background-color: #776B9E;
+}
+.label.label-pink {
+  background-color: #D651A1;
+}
+.label.label-blue {
+  background-color: #177eb3;
+}

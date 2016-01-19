@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sieve - Bootstrap v1.0 Demo Page</title>
+
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="vendor/sieve.bootstrap.min.css">
+  <!-- Customização da página -->
+  <link rel="stylesheet" href="sheet/style.css">
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="vendor/sieve.bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<main class="page page-basic page-fixed-header">
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <div class="dropdown dropdown-left">
+            <a href="#" class="link link-white link-menu dropdown-trigger">
+              <i class="icon-menu"></i>
+              <span>Menu</span>
+            </a>
+            <div class="dropdown-list">
+              <ul class="list list-vertical">
+                <li><a href="../index.html" class="link link-gray">Bootstrap</a></li>
+                <li><a href="list.html" class="link link-gray">Lista Grande</a></li>
+                <li><a href="list-small.html" class="link link-gray">Lista Pequena</a></li>
+                <li><a href="form.html" class="link link-gray">Formulário</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-5">
+          <h1 class="title">
+            <a href="list.html" class="link link-white">
+              <img src="img/sieve-white.png" class="logo">
+            </a>
+          </h1>
+        </div>
+
+        <div class="col-md-3 col-sm-3 col-xs-4">
+          <div class="pull-right">
+            <ul class="list list-horizontal nav-account">
+              <li><a href="#" class="link link-gray"><i class="icon-bell"></i></a></li>
+              <li>
+                <div class="dropdown dropdown-right">
+                  <a href="#" class="link link-gray link-account dropdown-trigger">
+                    <i class="icon-user"></i>
+                    <span>Leo Quixadá</span>
+                    <i class="icon-down-dir"></i>
+                  </a>
+                  <div class="dropdown-list">
+                    <ul class="list list-vertical">
+                      <li><a href="javascript:alert('Teste');" class="link link-gray"><i class="icon-sliders"></i> Configurações</a></li>
+                      <li><a href="index.html" class="link link-gray"><i class="icon-exit"></i> Sair</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <article class="page-content">
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-sm-10 col-xs-10">
+              <h2 class="title title-2">Novo Usuário</h2>
+            </div>
+
+            <div class="col-md-2 col-sm-2 col-xs-2">
+              <div class="pull-right">
+                <ul class="list list-horizontal">
+                  <li><a href="#"><i class="icon-funnel"></i></a></li>
+                  <li><a href="#"><i class="icon-export"></i></a></li>
+                  <li><a href="#"><i class="icon-plus"></i></a></li>
+                  <li><a href="#"><i class="icon-question"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-sm-9 col-xs-12">
+
+              <article class="box">
+                <section>
+                  <form action="javascript:void(0);" class="form form-default">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="field">
+                          <label for="user-name">Nome</label>
+                          <input id="user-name" type="text" class="input" />
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="field">
+                          <label for="user-account">Conta na Suíça</label>
+                          <label class="field-group field-group-normal">
+                            <input id="user-account" type="text" value="100.000.000,00" class="input" />
+                            <span><i class="icon-dollar"></i></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="field">
+                          <label for="user-mail">E-mail</label>
+                          <input id="user-mail" type="text" class="input" />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="field">
+                          <label for="user-password">Senha</label>
+                          <input id="user-password" type="password" class="input" />
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="field">
+                          <label for="user-twitter">Twitter</label>
+                          <label class="field-group field-group-normal">
+                            <input id="user-twitter" type="text" value="" class="input" />
+                            <span>@</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="field">
+                          <label for="user-icecream">Sorvete favorito</label>
+                          <select class="combo" id="user-icecream">
+                            <option></option>
+                            <option>Flocos (perfect!)</option>
+                            <option>Côco (eca!)</option>
+                            <option>Napolitano (meh...)</option>
+                            <option>Floresta Negra (prr...)</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="field">
+                          <label>Permissões</label>
+                          <ul class="list list-horizontal list-options">
+                              <li><label><input type="radio" name="perm" value="not-view" checked> <span><i class="icon-eye-off"></i></span></label></li>
+                              <li><label><input type="radio" name="perm" value="view"> <span><i class="icon-eye"></i></span></label></li>
+                              <li><label><input type="radio" name="perm" value="edit"> <span><i class="icon-pencil"></i></span></label></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="field">
+                          <label>Usuário beta</label>
+                          <label class="switcher">
+                              <input type="checkbox" name="beta" />
+                              <span>Sim</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="field">
+                          <label>Tipo</label>
+
+                          <ul class="list list-horizontal list-spaced">
+                            <li>
+                              <label class="radio">
+                                <input type="radio" name="role" value="c" checked>
+                                <span>Comum</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="radio">
+                                <input type="radio" name="role" value="a" checked>
+                                <span>Administrador</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="radio">
+                                <input type="radio" name="role" value="i" checked>
+                                <span>Intruso</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="field">
+                          <label for="user-bio">Biografia</label>
+                          <textarea id="user-bio" rows="5" cols="60" class="textarea"></textarea>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="field">
+                          <ul class="list list-vertical">
+                            <li>
+                              <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Sim, quero receber e-mails com novidades da Sieve</span>
+                              </label>
+                            </li>
+
+                            <li>
+                              <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Sim, aceito e concordo incondicionalmente em vender minha alma de acordo com os termos de serviço.</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="field">
+                          <button class="button button-success">Enviar</button>
+                          <button class="button button-default">Limpar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </section>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            <a href="list.html"><img src="img/sieve-white.png" class="logo"></a>
+            Projetado e construído com todo amor |
+            © Copyright 2015 Sieve Serviços de Tecnologia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+</body>
+
+</html>

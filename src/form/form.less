@@ -1,0 +1,98 @@
+@import "../compess";
+
+/*doc
+---
+title: Grid
+name: forms
+category: Formulário
+---
+
+O form é um grid comum para se implementar os campos.
+
+## Estrutura
+
+```
+<form class="form">
+  <div class="field">(campo 1)</div>
+  <div class="field">(campo 2)</div>
+  <div class="field">(campo 3)</div>
+  <div class="field">(...)</div>
+</form>
+```
+
+## Exemplo
+
+```html_example
+<form class="form">
+  <div class="field">
+    <label>Texto:</label>
+    <input type="text" class="input" value="Texto" />
+  </div>
+
+  <div class="field">
+    <label>Checkbox:</label>
+
+    <label class="checkbox">
+      <input type="checkbox"> <span>A</span>
+    </label>
+
+    <label class="checkbox">
+      <input type="checkbox"> <span>B</span>
+    </label>
+
+    <label class="checkbox">
+      <input type="checkbox"> <span>C</span>
+    </label>
+  </div>
+
+  <div class="field">
+    <label>Radio:</label>
+
+    <label class="radio">
+      <input type="radio" name="opcao" value="a" checked> <span>Opção A</span>
+    </label>
+
+    <label class="radio">
+      <input type="radio" name="opcao" value="b"> <span>Opção B</span>
+    </label>
+
+    <label class="radio">
+      <input type="radio" name="opcao" value="c"> <span>Opção C</span>
+    </label>
+  </div>
+
+  <div class="field">
+    <label>Select:</label>
+    <select class="combo">
+      <option>Opção 1</option>
+      <option>Opção 2</option>
+      <option>Opção 3</option>
+    </select>
+  </div>
+</form>
+```
+*/
+
+.form {
+  &.form-default {
+    .box-shadow(0 .2rem .2rem rgba(0, 0, 0, 0.2));
+  }
+
+  .field {
+    margin-bottom: 2rem;
+  }
+
+  .row:last-child {
+    .field {
+      margin-bottom: 0;
+    }
+  }
+
+  label {
+    display: block;
+    color: @gray-font;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    text-align: left;
+  }
+}

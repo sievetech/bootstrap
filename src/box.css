@@ -1,0 +1,138 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Box
+name: box
+category: Página
+---
+
+O box é um grid comum para se implementar funcionalidades autosuficientes.
+
+## Estrutura
+
+```
+<article class="box">
+  <header>(opcional)</header>
+
+  <section>...</section>
+
+  <footer>(opcional)</footer>
+</article>
+```
+
+## Exemplo
+
+<style>
+.icon-error {
+  color:#bf0000;
+}
+</style>
+
+```html_example
+<article class="box">
+  <header>
+    <h3>Título do Box</h3>
+
+    <ul class="list list-horizontal list-actions">
+      <li><a href="#"><i class="icon-plus"></i></a></li>
+      <li><a href="#"><i class="icon-pencil"></i></a></li>
+    </ul>
+  </header>
+
+  <section>
+    <table class="table table-sortable">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>Usuário</th>
+          <th>Status</th>
+          <th>Apagar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Victor</td>
+          <td>Novais</td>
+          <td>victornovais</td>
+          <td><span class="label label-yellow">namorando</span></td>
+          <td><a href="#"><i class="icon-error"></i></a></td>
+        </tr>
+        <tr>
+          <td>Leonardo</td>
+          <td>Quixadá</td>
+          <td>lquixada</td>
+          <td><span class="label label-green">solteiro</span></td>
+          <td><a href="#"><i class="icon-error"></i></a></td>
+        </tr>
+        <tr>
+          <td>Gabriela</td>
+          <td>Cardoso</td>
+          <td>gabyoncé</td>
+          <td><span class="label label-red">casada</span></td>
+          <td><a href="#"><i class="icon-error"></i></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>construído com <a href="#">Sieve Bootstrap</a>.</p>
+  </footer>
+</article>
+```
+*/
+.box {
+  display: flex;
+  margin-bottom: 3rem;
+  flex-flow: column nowrap;
+  height: 100%;
+  overflow: hidden;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+.box > header {
+  display: flex;
+  background-color: #ddd;
+  border-bottom: .1rem solid #e5e5e5;
+}
+.box > header h3 {
+  margin: 0;
+  padding: 0;
+  flex: 1 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 1.3rem 1.2rem;
+  color: #6d6d6d;
+  font-size: 2rem;
+  font-family: "Roboto Light", sans-serif;
+}
+.box > header > .list-actions {
+  border-left: .1rem solid #e5e5e5;
+}
+.box > header > .list-actions a {
+  display: block;
+  color: #6d6d6d;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+}
+.box > header > .list-actions a:hover {
+  background-color: #ccc !important;
+}
+.box > section {
+  flex: 1 0;
+}
+.box > footer {
+  max-height: 10rem;
+}
+.box > footer p {
+  margin: 1rem;
+  font-size: 1rem;
+}

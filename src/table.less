@@ -1,0 +1,172 @@
+@import "compess";
+
+/*doc
+---
+title: Tabelas
+name: tables
+category: Tabela
+---
+
+## Opções
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>classe</th>
+      <th>descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="label label-blue">.table</span></td>
+      <td>Classe base para todas as tabelas.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.table-no-border</span></td>
+      <td>Remove as bordas da tabela.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.table-sortable</span></td>
+      <td>Exibe a tabela como ordenável no header. A classe .no-sort pode ser
+      aplicada no header da coluna para prevenir o efeito de hover.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Sem borda
+
+```html_example
+<table class="table table-no-border">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Sobrenome</th>
+      <th>Usuário</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Victor</td>
+      <td>Novais</td>
+      <td>victornovais</td>
+      <td><a href="#"><i class="icon-error"></i></a></td>
+    </tr>
+    <tr>
+      <td>Leonardo</td>
+      <td>Quixadá</td>
+      <td>lquixada</td>
+      <td><a href="#"><i class="icon-error"></i></a></td>
+    </tr>
+    <tr>
+      <td>Gabriela</td>
+      <td>Cardoso</td>
+      <td>gabyoncé</td>
+      <td><a href="#"><i class="icon-error"></i></a></td>
+    </tr>
+  </tbody>
+</table>
+```
+
+## Ordenável
+
+```html_example
+<table class="table table-sortable">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Sobrenome</th>
+      <th>Usuário</th>
+      <th class="no-sort"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Victor</td>
+      <td>Novais</td>
+      <td>victornovais</td>
+      <td><a href="#"><i class="icon-error"></i></a></td>
+    </tr>
+    <tr>
+      <td>Leonardo</td>
+      <td>Quixadá</td>
+      <td>lquixada</td>
+      <td><a href="#"><i class="icon-error"></i></a></td>
+    </tr>
+    <tr>
+      <td>Gabriela</td>
+      <td>Cardoso</td>
+      <td>gabyoncé</td>
+      <td><a href="#"><i class="icon-error"></i></a></td>
+    </tr>
+  </tbody>
+</table>
+```
+
+*/
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: .1rem solid #ddd;
+  .box-shadow(0 .2rem .2rem rgba(0, 0, 0, 0.2));
+  .rounded(.4rem);
+
+  /* Pode estar dentro de um tbody ou thead */
+  th {
+    border-bottom: .1rem solid #e5e5e5;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #797979;
+    padding: .7rem .8rem;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  thead tr {
+    background-color: #ddd;
+  }
+
+  tbody tr {
+    background-color: @white;
+
+    td {
+      padding: .8rem;
+      font-size: 1.3rem;
+    }
+
+    &:nth-child(odd) {
+      background-color: @gray-zebra;
+    }
+  }
+
+  &.table-no-border {
+    border: none;
+  }
+
+  &.table-sortable {
+    th {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: .8rem;
+        right: .8rem;
+        font-size: 1rem;
+      }
+
+      &.asc::after {
+        content: '\25B2';
+      }
+
+      &.desc::after {
+        content: '\25BC';
+      }
+
+      &:not(.no-sort):hover {
+        background-color: #e5e5e5;
+        cursor: pointer;
+      }
+    }
+  }
+}

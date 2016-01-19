@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Texto &ndash; Sieve Bootstrap v1.0</title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="styles/hgt-syntax.css">
+    <link rel="stylesheet" href="styles/hgt.css">
+
+    <!-- Source CSS -->
+    
+      
+        <link rel="stylesheet" href="./theme/css/theme.css">
+      
+        <link rel="stylesheet" href="./src/reset.css">
+      
+        <link rel="stylesheet" href="./src/color.css">
+      
+        <link rel="stylesheet" href="./src/title.css">
+      
+        <link rel="stylesheet" href="./src/link.css">
+      
+        <link rel="stylesheet" href="./src/box.css">
+      
+        <link rel="stylesheet" href="./src/page.css">
+      
+        <link rel="stylesheet" href="./src/form/form.css">
+      
+        <link rel="stylesheet" href="./src/form/button.css">
+      
+        <link rel="stylesheet" href="./src/form/checkbox.css">
+      
+        <link rel="stylesheet" href="./src/form/combo.css">
+      
+        <link rel="stylesheet" href="./src/form/composite.css">
+      
+        <link rel="stylesheet" href="./src/form/input.css">
+      
+        <link rel="stylesheet" href="./src/form/options-group.css">
+      
+        <link rel="stylesheet" href="./src/form/radio.css">
+      
+        <link rel="stylesheet" href="./src/form/switcher.css">
+      
+        <link rel="stylesheet" href="./src/form/textarea.css">
+      
+        <link rel="stylesheet" href="./src/list.css">
+      
+        <link rel="stylesheet" href="./src/modal.css">
+      
+        <link rel="stylesheet" href="./src/dropdown.css">
+      
+        <link rel="stylesheet" href="./src/notifications.css">
+      
+        <link rel="stylesheet" href="./src/label.css">
+      
+        <link rel="stylesheet" href="./src/table.css">
+      
+        <link rel="stylesheet" href="./src/pager.css">
+      
+        <link rel="stylesheet" href="./src/menu.css">
+      
+        <link rel="stylesheet" href="./src/grid.css">
+      
+        <link rel="stylesheet" href="./src/fonts/sieve_icon_font/css/sieve-icon-font.css">
+      
+        <link rel="stylesheet" href="./src/font.css">
+      
+    
+</head>
+
+  <body class="hgt-body">
+    <div class="hgt-pagehead">
+      <div class="hgt-container">
+        <nav class="hgt-pagehead-nav" role="navigation">
+          
+          <a href="index.html"
+             class="hgt-pagehead-nav-item ">
+            Index
+          </a>
+          
+          <a href="página.html"
+             class="hgt-pagehead-nav-item ">
+            Página
+          </a>
+          
+          <a href="formulário.html"
+             class="hgt-pagehead-nav-item ">
+            Formulário
+          </a>
+          
+          <a href="começando.html"
+             class="hgt-pagehead-nav-item ">
+            Começando
+          </a>
+          
+          <a href="texto.html"
+             class="hgt-pagehead-nav-item selected">
+            Texto
+          </a>
+          
+          <a href="tabela.html"
+             class="hgt-pagehead-nav-item ">
+            Tabela
+          </a>
+          
+        </nav>
+
+        <h1 class="hgt-pagehead-title">Sieve Bootstrap v1.0</h1>
+      </div>
+    </div>
+
+    <div class="hgt-styleguide hgt-container">
+      <div class="hgt-columns">
+        
+          <div class="hgt-column one-fourth">
+            <nav class="hgt-menu">
+              
+                
+                  <a href="#icons" class="hgt-menu-item">Ícones</a>
+                
+              
+                
+                  <a href="#labels" class="hgt-menu-item">Labels</a>
+                
+              
+                
+                  <a href="#links" class="hgt-menu-item">Links</a>
+                
+              
+                
+                  <a href="#lista" class="hgt-menu-item">Lista</a>
+                
+              
+                
+                  <a href="#titles" class="hgt-menu-item">Títulos</a>
+                
+              
+            </nav>
+          </div>
+        
+
+        <div class="hgt-column three-fourths">
+          <div class="hgt-content">
+<h1 id="icons" class="styleguide">Ícones</h1>
+
+<style>
+ul.boxes li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 8rem;
+    height: 6rem;
+    margin-bottom: .5rem;
+    padding: 1rem;
+}
+
+ul.boxes li i {
+  font-size: 2rem;
+}
+
+ul.boxes li span {
+  display: block;
+  font-size: 1rem;
+}
+</style>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <ul class="boxes">
+  <li><i class="icon-addressee"></i> <span class="i-name">icon-addressee</span></li>
+  <li><i class="icon-angle-circled-down"></i> <span class="i-name">icon-angle-circled-down</span></li>
+  <li><i class="icon-angle-circled-up"></i> <span class="i-name">icon-angle-circled-up</span></li>
+  <li><i class="icon-angle-down"></i> <span class="i-name">icon-angle-down</span></li>
+  <li><i class="icon-angle-left"></i> <span class="i-name">icon-angle-left</span></li>
+  <li><i class="icon-angle-right"></i> <span class="i-name">icon-angle-right</span></li>
+  <li><i class="icon-angle-up"></i> <span class="i-name">icon-angle-up</span></li>
+  <li><i class="icon-arrows-cw"></i> <span class="i-name">icon-arrows-cw</span></li>
+  <li><i class="icon-attention"></i> <span class="i-name">icon-bell</span></li>
+  <li><i class="icon-bell"></i> <span class="i-name">icon-bell</span></li>
+  <li><i class="icon-calendar"></i> <span class="i-name">icon-calendar</span></li>
+  <li><i class="icon-camera"></i> <span class="i-name">icon-camera</span></li>
+  <li><i class="icon-cancel"></i> <span class="i-name">icon-cancel</span></li>
+  <li><i class="icon-chart-bar"></i> <span class="i-name">icon-chart-bar</span></li>
+  <li><i class="icon-chart-line"></i> <span class="i-name">icon-chart-line</span></li>
+  <li><i class="icon-chart-pie-outline"></i> <span class="i-name">icon-chart-pie-outline</span></li>
+  <li><i class="icon-checked"></i> <span class="i-name">icon-checked</span></li>
+  <li><i class="icon-clock"></i> <span class="i-name">icon-clock</span></li>
+  <li><i class="icon-cog"></i> <span class="i-name">icon-cog</span></li>
+  <li><i class="icon-columns"></i> <span class="i-name">icon-columns</span></li>
+  <li><i class="icon-corner-drag"></i> <span class="i-name">icon-corner-drag</span></li>
+  <li><i class="icon-cube"></i> <span class="i-name">icon-cube</span></li>
+  <li><i class="icon-dashboard"></i> <span class="i-name">icon-dashboard</span></li>
+  <li><i class="icon-dent"></i> <span class="i-name">icon-dent</span></li>
+  <li><i class="icon-doc"></i> <span class="i-name">icon-doc</span></li>
+  <li><i class="icon-docs"></i> <span class="i-name">icon-docs</span></li>
+  <li><i class="icon-dollar"></i> <span class="i-name">icon-dollar</span></li>
+  <li><i class="icon-down-dir"></i> <span class="i-name">icon-down-dir</span></li>
+  <li><i class="icon-download"></i> <span class="i-name">icon-download</span></li>
+  <li><i class="icon-envelope"></i> <span class="i-name">icon-envelope</span></li>
+  <li><i class="icon-error"></i> <span class="i-name">icon-error</span></li>
+  <li><i class="icon-exit"></i> <span class="i-name">icon-exit</span></li>
+  <li><i class="icon-export"></i> <span class="i-name">icon-export</span></li>
+  <li><i class="icon-eye-off"></i> <span class="i-name">icon-eye-off</span></li>
+  <li><i class="icon-eye"></i> <span class="i-name">icon-eye</span></li>
+  <li><i class="icon-flag"></i> <span class="i-name">icon-flag</span></li>
+  <li><i class="icon-forward"></i> <span class="i-name">icon-forward</span></li>
+  <li><i class="icon-funnel"></i> <span class="i-name">icon-funnel</span></li>
+  <li><i class="icon-gauge"></i> <span class="i-name">icon-gauge</span></li>
+  <li><i class="icon-group"></i> <span class="i-name">icon-group</span></li>
+  <li><i class="icon-help"></i> <span class="i-name">icon-help</span></li>
+  <li><i class="icon-inbox"></i> <span class="i-name">icon-inbox</span></li>
+  <li><i class="icon-key"></i> <span class="i-name">icon-key</span></li>
+  <li><i class="icon-keyboard"></i> <span class="i-name">icon-keyboard</span></li>
+  <li><i class="icon-lamp"></i> <span class="i-name">icon-lamp</span></li>
+  <li><i class="icon-left-dir"></i> <span class="i-name">icon-left-dir</span></li>
+  <li><i class="icon-left-open"></i> <span class="i-name">icon-left-open</span></li>
+  <li><i class="icon-link"></i> <span class="i-name">icon-link</span></li>
+  <li><i class="icon-locked"></i> <span class="i-name">icon-locked</span></li>
+  <li><i class="icon-magnify"></i> <span class="i-name">icon-magnify</span></li>
+  <li><i class="icon-menu"></i> <span class="i-name">icon-menu</span></li>
+  <li><i class="icon-pencil"></i> <span class="i-name">icon-pencil</span></li>
+  <li><i class="icon-ok"></i> <span class="i-name">icon-ok</span></li>
+  <li><i class="icon-pencil"></i> <span class="i-name">icon-pencil</span></li>
+  <li><i class="icon-plus"></i> <span class="i-name">icon-plus</span></li>
+  <li><i class="icon-power"></i> <span class="i-name">icon-power</span></li>
+  <li><i class="icon-question"></i> <span class="i-name">icon-question</span></li>
+  <li><i class="icon-remove"></i> <span class="i-name">icon-remove</span></li>
+  <li><i class="icon-resize-full"></i> <span class="i-name">icon-resize-full</span></li>
+  <li><i class="icon-resize-small"></i> <span class="i-name">icon-resize-small</span></li>
+  <li><i class="icon-right-dir"></i> <span class="i-name">icon-right-dir</span></li>
+  <li><i class="icon-right-open"></i> <span class="i-name">icon-right-open</span></li>
+  <li><i class="icon-sliders"></i> <span class="i-name">icon-sliders</span></li>
+  <li><i class="icon-sort-numeric-outline"></i> <span class="i-name">icon-sort-numeric-outline</span></li>
+  <li><i class="icon-star"></i> <span class="i-name">icon-star</span></li>
+  <li><i class="icon-table"></i> <span class="i-name">icon-table</span></li>
+  <li><i class="icon-tags"></i> <span class="i-name">icon-tags</span></li>
+  <li><i class="icon-unlink"></i> <span class="i-name">icon-unlink</span></li>
+  <li><i class="icon-up-dir"></i> <span class="i-name">icon-up-dir</span></li>
+  <li><i class="icon-upload-cloud"></i> <span class="i-name">icon-upload-cloud</span></li>
+  <li><i class="icon-zoom-in"></i> <span class="i-name">icon-zoom-in</span></li>
+</ul>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"boxes"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-addressee"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-addressee<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-angle-circled-down"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-angle-circled-down<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-angle-circled-up"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-angle-circled-up<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-angle-down"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-angle-down<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-angle-left"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-angle-left<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-angle-right"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-angle-right<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-angle-up"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-angle-up<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-arrows-cw"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-arrows-cw<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-attention"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-bell<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-bell"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-bell<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-calendar"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-calendar<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-camera"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-camera<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-cancel"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-cancel<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-chart-bar"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-chart-bar<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-chart-line"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-chart-line<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-chart-pie-outline"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-chart-pie-outline<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-checked"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-checked<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-clock"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-clock<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-cog"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-cog<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-columns"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-columns<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-corner-drag"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-corner-drag<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-cube"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-cube<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-dashboard"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-dashboard<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-dent"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-dent<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-doc"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-doc<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-docs"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-docs<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-dollar"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-dollar<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-down-dir"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-down-dir<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-download"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-download<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-envelope"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-envelope<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-error"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-error<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-exit"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-exit<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-export"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-export<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-eye-off"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-eye-off<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-eye"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-eye<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-flag"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-flag<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-forward"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-forward<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-funnel"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-funnel<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-gauge"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-gauge<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-group"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-group<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-help"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-help<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-inbox"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-inbox<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-key"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-key<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-keyboard"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-keyboard<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-lamp"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-lamp<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-left-dir"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-left-dir<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-left-open"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-left-open<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-link"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-link<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-locked"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-locked<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-magnify"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-magnify<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-menu"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-menu<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-pencil"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-pencil<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-ok"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-ok<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-pencil"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-pencil<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-plus"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-plus<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-power"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-power<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-question"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-question<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-remove"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-remove<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-resize-full"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-resize-full<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-resize-small"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-resize-small<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-right-dir"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-right-dir<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-right-open"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-right-open<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-sliders"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-sliders<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-sort-numeric-outline"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-sort-numeric-outline<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-star"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-star<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-table"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-table<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-tags"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-tags<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-unlink"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-unlink<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-up-dir"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-up-dir<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-upload-cloud"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-upload-cloud<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-zoom-in"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"i-name"</span><span class="nt">&gt;</span>icon-zoom-in<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="labels" class="styleguide">Labels</h1>
+<p class="styleguide">O label pode ser aplicado em diversos contextos</p><div class="codeExample">
+  <div class="exampleOutput">
+    <span class="label label-green">Verde</span>
+<span class="label label-red">Vermelho</span>
+<span class="label label-yellow">Amarelo</span>
+<span class="label label-grey">Cinza</span>
+<span class="label label-purple">Roxo</span>
+<span class="label label-pink">Rosa</span>
+<span class="label label-blue">Azul</span>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-green"</span><span class="nt">&gt;</span>Verde<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-red"</span><span class="nt">&gt;</span>Vermelho<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-yellow"</span><span class="nt">&gt;</span>Amarelo<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-grey"</span><span class="nt">&gt;</span>Cinza<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-purple"</span><span class="nt">&gt;</span>Roxo<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-pink"</span><span class="nt">&gt;</span>Rosa<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-blue"</span><span class="nt">&gt;</span>Azul<span class="nt">&lt;/span&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="links" class="styleguide">Links</h1>
+
+<h2>Opções</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>classe</th>
+      <th>descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="label label-blue">.link</span></td>
+      <td>Classe base para todos os links.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.link-green</span></td>
+      <td>Renderiza link verde.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.link-white</span></td>
+      <td>Renderiza link branco.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Link verde</h2>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <a href="#" class="link link-green">clique aqui</a>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link link-green"</span><span class="nt">&gt;</span>clique aqui<span class="nt">&lt;/a&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="lista" class="styleguide">Lista</h1>
+<p class="styleguide">Barra de navegação para ser utilizada como lista.</p>
+<h2>Opções</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>classe</th>
+      <th>descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="label label-blue">.list</span></td>
+      <td>Classe base para todas as listas.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.list-horizontal</span></td>
+      <td>Direciona lista na horizontal.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.list-vertical</span></td>
+      <td>Direciona lista na vertical.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.list-spaced</span></td>
+      <td>Adiciona espaçamento entre os itens</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Vertical</h2>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <ul class="list list-vertical">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</a></li>
+</ul>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list list-vertical"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Item 1<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Item 2<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Item 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2>Horizontal</h2>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <ul class="list list-horizontal">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list list-horizontal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Item 1<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Item 2<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Item 3<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2>Espaçado</h2>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <ul class="list list-horizontal list-spaced">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list list-horizontal list-spaced"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Item 1<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Item 2<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Item 3<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="titles" class="styleguide">Títulos</h1>
+<p class="styleguide">Existem 4 títulos com textos secundários opcionais.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <h1 class="title title-1">h1. Título bootstrap <small>Texto secundário</small></h1>
+<h2 class="title title-2">h2. Título bootstrap <small>Texto secundário</small></h2>
+<h3 class="title title-3">h3. Título bootstrap <small>Texto secundário</small></h3>
+<h4 class="title title-4">h4. Título bootstrap <small>Texto secundário</small></h4>
+<h5 class="title title-5">h5. Título bootstrap <small>Texto secundário</small></h5>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"title title-1"</span><span class="nt">&gt;</span>h1. Título bootstrap <span class="nt">&lt;small&gt;</span>Texto secundário<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"title title-2"</span><span class="nt">&gt;</span>h2. Título bootstrap <span class="nt">&lt;small&gt;</span>Texto secundário<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"title title-3"</span><span class="nt">&gt;</span>h3. Título bootstrap <span class="nt">&lt;small&gt;</span>Texto secundário<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"title title-4"</span><span class="nt">&gt;</span>h4. Título bootstrap <span class="nt">&lt;small&gt;</span>Texto secundário<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
+<span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"title title-5"</span><span class="nt">&gt;</span>h5. Título bootstrap <span class="nt">&lt;small&gt;</span>Texto secundário<span class="nt">&lt;/small&gt;&lt;/h5&gt;</span></pre>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="hgt-footer">
+      Built using <a href="https://github.com/trulia/hologram">Hologram</a> and <a href="https://github.com/wearecube/hologram-github-theme">Hologram Github Theme</a>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="scripts/vendor/jquery.waypoints.min.js"></script>
+  <script src="scripts/vendor/sticky.min.js"></script>
+  <script src="scripts/vendor/infinite.min.js"></script>
+  <script src="scripts/hgt.js"></script>
+
+  
+    
+      <script type="text/javascript" src="./theme/js/theme.js"></script>
+    
+      <script type="text/javascript" src="./src/dropdown.js"></script>
+    
+  
+
+  
+</body>
+</html>

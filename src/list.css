@@ -1,0 +1,98 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Lista
+name: lista
+category: Texto
+---
+
+Barra de navegação para ser utilizada como lista.
+
+## Opções
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>classe</th>
+      <th>descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="label label-blue">.list</span></td>
+      <td>Classe base para todas as listas.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.list-horizontal</span></td>
+      <td>Direciona lista na horizontal.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.list-vertical</span></td>
+      <td>Direciona lista na vertical.</td>
+    </tr>
+    <tr>
+      <td><span class="label label-blue">.list-spaced</span></td>
+      <td>Adiciona espaçamento entre os itens</td>
+    </tr>
+  </tbody>
+</table>
+
+## Vertical
+
+```html_example
+<ul class="list list-vertical">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</a></li>
+</ul>
+```
+
+## Horizontal
+
+```html_example
+<ul class="list list-horizontal">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+## Espaçado
+
+```html_example
+<ul class="list list-horizontal list-spaced">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+*/
+.list {
+  display: inline-flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+.list.list-vertical {
+  flex-flow: column wrap;
+}
+.list.list-vertical.list-spaced li {
+  margin-bottom: 2rem;
+}
+.list.list-vertical.list-spaced li:last-child {
+  margin-bottom: 0;
+}
+.list.list-horizontal {
+  flex-flow: row nowrap;
+}
+.list.list-horizontal.list-spaced li {
+  margin-right: 2rem;
+}
+.list.list-horizontal.list-spaced li:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,91 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*doc
+---
+title: Menu
+name: menu
+category: Página
+---
+
+Barra de navegação para ser utilizada como lista. **Nota**: o background-color é opcional e foi inserido apenas para visualização na documentação.
+
+## Vertical
+
+```html_example
+<nav class="menu" style="background-color: #484848;">
+  <ul class="list list-vertical">
+    <li><a href="#" class="link link-white">home</a></li>
+    <li><a href="#" class="link link-white active">profile</a></li>
+    <li><a href="#" class="link link-white">about</a></li>
+  </ul>
+</nav>
+```
+
+## Horizontal
+
+```html_example
+<nav class="menu" style="background-color: #484848;">
+  <ul class="list list-horizontal">
+    <li><a href="#" class="link link-white">home</a></li>
+    <li><a href="#" class="link link-white active">profile</a></li>
+    <li><a href="#" class="link link-white">about</a></li>
+  </ul>
+</nav>
+```
+
+*/
+.menu {
+  display: inline-flex;
+  justify-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+.menu .list {
+  display: flex;
+}
+.menu .list a {
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+.menu .list a:hover {
+  text-decoration: none;
+}
+.menu .list a:link,
+.menu .list a:visited,
+.menu .list a:active {
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+.menu .list-vertical {
+  width: 20rem;
+}
+.menu .list-vertical a {
+  border-left: .3rem solid transparent;
+}
+.menu .list-vertical a:hover {
+  color: #fff;
+  border-color: #85c11c;
+}
+.menu .list-vertical a.active {
+  color: #fff;
+  padding-left: 1.6rem !important;
+  border-left: .3rem solid #85c11c;
+}
+.menu .list-horizontal a {
+  border-bottom: .3rem solid transparent;
+}
+.menu .list-horizontal a:hover {
+  color: #fff;
+  border-color: #85c11c;
+}
+.menu .list-horizontal a.active {
+  color: #fff;
+  border-color: #85c11c;
+}

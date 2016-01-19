@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Começando &ndash; Sieve Bootstrap v1.0</title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="styles/hgt-syntax.css">
+    <link rel="stylesheet" href="styles/hgt.css">
+
+    <!-- Source CSS -->
+    
+      
+        <link rel="stylesheet" href="./theme/css/theme.css">
+      
+        <link rel="stylesheet" href="./src/reset.css">
+      
+        <link rel="stylesheet" href="./src/color.css">
+      
+        <link rel="stylesheet" href="./src/title.css">
+      
+        <link rel="stylesheet" href="./src/link.css">
+      
+        <link rel="stylesheet" href="./src/box.css">
+      
+        <link rel="stylesheet" href="./src/page.css">
+      
+        <link rel="stylesheet" href="./src/form/form.css">
+      
+        <link rel="stylesheet" href="./src/form/button.css">
+      
+        <link rel="stylesheet" href="./src/form/checkbox.css">
+      
+        <link rel="stylesheet" href="./src/form/combo.css">
+      
+        <link rel="stylesheet" href="./src/form/composite.css">
+      
+        <link rel="stylesheet" href="./src/form/input.css">
+      
+        <link rel="stylesheet" href="./src/form/options-group.css">
+      
+        <link rel="stylesheet" href="./src/form/radio.css">
+      
+        <link rel="stylesheet" href="./src/form/switcher.css">
+      
+        <link rel="stylesheet" href="./src/form/textarea.css">
+      
+        <link rel="stylesheet" href="./src/list.css">
+      
+        <link rel="stylesheet" href="./src/modal.css">
+      
+        <link rel="stylesheet" href="./src/dropdown.css">
+      
+        <link rel="stylesheet" href="./src/notifications.css">
+      
+        <link rel="stylesheet" href="./src/label.css">
+      
+        <link rel="stylesheet" href="./src/table.css">
+      
+        <link rel="stylesheet" href="./src/pager.css">
+      
+        <link rel="stylesheet" href="./src/menu.css">
+      
+        <link rel="stylesheet" href="./src/grid.css">
+      
+        <link rel="stylesheet" href="./src/fonts/sieve_icon_font/css/sieve-icon-font.css">
+      
+        <link rel="stylesheet" href="./src/font.css">
+      
+    
+</head>
+
+  <body class="hgt-body">
+    <div class="hgt-pagehead">
+      <div class="hgt-container">
+        <nav class="hgt-pagehead-nav" role="navigation">
+          
+          <a href="index.html"
+             class="hgt-pagehead-nav-item ">
+            Index
+          </a>
+          
+          <a href="página.html"
+             class="hgt-pagehead-nav-item ">
+            Página
+          </a>
+          
+          <a href="formulário.html"
+             class="hgt-pagehead-nav-item ">
+            Formulário
+          </a>
+          
+          <a href="começando.html"
+             class="hgt-pagehead-nav-item selected">
+            Começando
+          </a>
+          
+          <a href="texto.html"
+             class="hgt-pagehead-nav-item ">
+            Texto
+          </a>
+          
+          <a href="tabela.html"
+             class="hgt-pagehead-nav-item ">
+            Tabela
+          </a>
+          
+        </nav>
+
+        <h1 class="hgt-pagehead-title">Sieve Bootstrap v1.0</h1>
+      </div>
+    </div>
+
+    <div class="hgt-styleguide hgt-container">
+      <div class="hgt-columns">
+        
+          <div class="hgt-column one-fourth">
+            <nav class="hgt-menu">
+              
+                
+                  <a href="#comecando" class="hgt-menu-item">Começando</a>
+                
+              
+            </nav>
+          </div>
+        
+
+        <div class="hgt-column three-fourths">
+          <div class="hgt-content">
+<h1 id="comecando" class="styleguide">Começando</h1>
+
+<h3>1. Baixe o arquivo com todos os componentes</h3>
+<p class="styleguide"><a href="./dist/sieve.bootstrap.zip" class="button button-success" target="_blank" download>Baixar sieve.bootstrap.zip</a></p>
+<h3>2. Crie um novo arquivo html (digamos index.html) com link para o bootstrap</h3>
+<div class="codeBlock">
+  <div class="highlight">
+    <pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Página Exemplo<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"sieve.bootstrap.min.css"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- coloque aqui os estilos da sua página --&gt;</span>
+
+  <span class="c">&lt;!-- A versão e a origem do jquery é opcional --&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//code.jquery.com/jquery-2.1.4.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"../src/sieve.bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="c">&lt;!-- coloque aqui os scripts da sua página --&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></pre>
+  </div>
+</div>
+<h3>3. Escolha uma page e acrecente as tags dentro de <code class="styleguide">&lt;body&gt;</code>.</h3>
+<div class="codeBlock">
+  <div class="highlight">
+    <pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Página Exemplo<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"sieve.bootstrap.min.css"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- coloque aqui os estilos da sua página --&gt;</span>
+
+  <span class="c">&lt;!-- A versão e a origem do jquery é opcional --&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//code.jquery.com/jquery-2.1.4.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"../src/sieve.bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="c">&lt;!-- coloque aqui os scripts da sua página --&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+  <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"page page-basic"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;header&gt;&lt;/header&gt;</span>
+    <span class="nt">&lt;section&gt;&lt;/section&gt;</span>
+    <span class="nt">&lt;footer&gt;&lt;/footer&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></pre>
+  </div>
+</div>
+<h3>4. Monte o grid dentro do <code class="styleguide">&lt;section&gt;</code> e opcionalmente dentro de <code class="styleguide">&lt;header&gt;</code> e <code class="styleguide">&lt;footer&gt;</code>. Veja o exemplo:</h3>
+<div class="codeBlock">
+  <div class="highlight">
+    <pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Página Exemplo<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"sieve.bootstrap.min.css"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- coloque aqui os estilos da sua página --&gt;</span>
+
+  <span class="c">&lt;!-- A versão e a origem do jquery é opcional --&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//code.jquery.com/jquery-2.1.4.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"../src/sieve.bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="c">&lt;!-- coloque aqui os scripts da sua página --&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"page page-basic"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;header&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-2"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-7"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-3"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+
+    <span class="nt">&lt;section&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-8"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+
+    <span class="nt">&lt;footer&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-12"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/footer&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></pre>
+  </div>
+</div>
+<h3>5. Agora é só começar a brincar de lego com os componentes inserindo-os nas reticências dos exemplo anterior! :)</h3>
+        </div>
+      </div>
+    </div>
+
+    <footer class="hgt-footer">
+      Built using <a href="https://github.com/trulia/hologram">Hologram</a> and <a href="https://github.com/wearecube/hologram-github-theme">Hologram Github Theme</a>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="scripts/vendor/jquery.waypoints.min.js"></script>
+  <script src="scripts/vendor/sticky.min.js"></script>
+  <script src="scripts/vendor/infinite.min.js"></script>
+  <script src="scripts/hgt.js"></script>
+
+  
+    
+      <script type="text/javascript" src="./theme/js/theme.js"></script>
+    
+      <script type="text/javascript" src="./src/dropdown.js"></script>
+    
+  
+
+  
+</body>
+</html>

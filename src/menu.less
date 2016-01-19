@@ -1,0 +1,100 @@
+@import "compess";
+
+/*doc
+---
+title: Menu
+name: menu
+category: Página
+---
+
+Barra de navegação para ser utilizada como lista. **Nota**: o background-color é opcional e foi inserido apenas para visualização na documentação.
+
+## Vertical
+
+```html_example
+<nav class="menu" style="background-color: #484848;">
+  <ul class="list list-vertical">
+    <li><a href="#" class="link link-white">home</a></li>
+    <li><a href="#" class="link link-white active">profile</a></li>
+    <li><a href="#" class="link link-white">about</a></li>
+  </ul>
+</nav>
+```
+
+## Horizontal
+
+```html_example
+<nav class="menu" style="background-color: #484848;">
+  <ul class="list list-horizontal">
+    <li><a href="#" class="link link-white">home</a></li>
+    <li><a href="#" class="link link-white active">profile</a></li>
+    <li><a href="#" class="link link-white">about</a></li>
+  </ul>
+</nav>
+```
+
+*/
+
+.menu {
+  display: inline-flex;
+  justify-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.4rem;
+
+  .list {
+    display: flex;
+
+    a {
+      display: block;
+      padding: 1rem 2rem;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:link, &:visited, &:active {
+        display: block;
+        padding: 1rem 2rem;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .list-vertical {
+    width: 20rem;
+
+    a {
+      border-left: .3rem solid transparent;
+
+      &:hover {
+        color: #fff;
+        border-color: #85c11c;
+      }
+
+      &.active {
+        color: #fff;
+        padding-left: 1.6rem !important;
+        border-left: .3rem solid #85c11c;
+      }
+    }
+  }
+
+  .list-horizontal {
+
+    a {
+      border-bottom: .3rem solid transparent;
+
+      &:hover {
+        color: #fff;
+        border-color: #85c11c;
+      }
+
+      &.active {
+        color: #fff;
+        border-color: #85c11c;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "compess";
+
+/*doc
+---
+title: Títulos
+name: titles
+category: Texto
+---
+
+Existem 4 títulos com textos secundários opcionais.
+
+```html_example
+<h1 class="title title-1">h1. Título bootstrap <small>Texto secundário</small></h1>
+<h2 class="title title-2">h2. Título bootstrap <small>Texto secundário</small></h2>
+<h3 class="title title-3">h3. Título bootstrap <small>Texto secundário</small></h3>
+<h4 class="title title-4">h4. Título bootstrap <small>Texto secundário</small></h4>
+<h5 class="title title-5">h5. Título bootstrap <small>Texto secundário</small></h5>
+```
+
+*/
+
+.title {
+  margin: 0;
+  padding: 0;
+  color: #6a5;
+  font-family: "Roboto Light";
+  letter-spacing: -.1rem;
+  line-height: 1;
+
+  &.title-1 {
+    font-size: 3.6rem;
+  }
+
+  &.title-2 {
+    font-size: 3.2rem;
+  }
+
+  &.title-3 {
+    font-size: 2.8rem;
+  }
+
+  &.title-4 {
+    font-size: 2.4rem;
+  }
+
+  &.title-5 {
+    font-size: 2rem;
+  }
+
+  small {
+    color: #999;
+  }
+}

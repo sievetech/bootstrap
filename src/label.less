@@ -1,0 +1,56 @@
+@import "compess";
+
+/*doc
+---
+title: Labels
+name: labels
+category: Texto
+---
+
+O label pode ser aplicado em diversos contextos
+
+```html_example
+<span class="label label-green">Verde</span>
+<span class="label label-red">Vermelho</span>
+<span class="label label-yellow">Amarelo</span>
+<span class="label label-grey">Cinza</span>
+<span class="label label-purple">Roxo</span>
+<span class="label label-pink">Rosa</span>
+<span class="label label-blue">Azul</span>
+```
+
+*/
+
+.label {
+  padding: .4rem 1rem;
+  color: @white;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: lowercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  
+  .rounded(.4rem);
+
+  &.label-green {
+    background-color: #7AB317;
+  }
+  &.label-red {
+    background-color: #b71c1c;
+  }
+  &.label-yellow {
+    background-color: #F5C221;
+  }
+  &.label-grey {
+    background-color: @gray-font;
+  }
+  &.label-purple {
+    background-color: #776B9E;
+  }
+  &.label-pink {
+    background-color: #D651A1;
+  }
+  &.label-blue {
+    background-color: #177eb3;
+  }
+}

@@ -1,0 +1,93 @@
+@import "compess";
+
+/*doc
+---
+title: Notificações
+name: notification
+category: Página
+---
+
+Notificações podem ser usadas para dar feedbacks ao usuário
+
+## Sucesso
+
+```html_example
+<div class="notification notification-success">
+  <div class="content">
+    <span class="message"><i class="icon-checked"></i> Só sucesso!</span>
+    <span class="close"><i class="icon-cancel"></i></span>
+  </div>
+</div>
+```
+
+## Erro
+
+```html_example
+<div class="notification notification-error">
+  <div class="content">
+    <span class="message"><i class="icon-remove"></i> Deu erro!</span>
+    <span class="close"><i class="icon-cancel"></i></span>
+  </div>
+</div>
+```
+*/
+
+.notification {
+  display: flex;
+  justify-content: center;
+  z-index: @notification;
+
+  .content {
+    display: flex;
+    overflow: hidden;
+    .rounded(.4rem);
+    .box-shadow(0 .3rem .3rem rgba(0, 0, 0, 0.2));
+
+    span {
+      color: @white;
+      padding: 2rem;
+      font-size: 1.6rem;
+      font-family: Roboto, sans-serif;
+
+      &.message {
+        min-width: 25rem;
+        max-width: 50rem;
+
+        .icon-remove, .icon-checked {
+          font-size: 2rem;
+          vertical-align: baseline;
+        }
+      }
+
+      &.close {
+        display: flex;
+        font-size: 2rem;
+        cursor: pointer;
+
+        i {
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  &.notification-success {
+    .content {
+      background: #7ab317;
+
+      .close {
+        background: #5a980c;
+      }
+    }
+
+  }
+  &.notification-error {
+    .content {
+      background: #bf4343;
+
+      .close {
+        background: #941313;
+      }
+    }
+  }
+}
