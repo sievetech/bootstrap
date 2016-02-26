@@ -167,7 +167,7 @@ direto no `<body>`.
   background-color: #3a3a3a;
 }
 .page.page-fixed-header {
-  padding-top: 8.8rem;
+  padding-top: 4.4rem;
 }
 .page.page-fixed-header > header {
   position: fixed;
@@ -194,16 +194,4 @@ direto no `<body>`.
   display: flex;
   justify-content: center;
   align-items: center;
-}
-/* medium */
-@media (min-width: 992px) {
-  .page.page-fixed-header {
-    padding-top: 4.4rem;
-  }
-}
-/* large */
-@media (min-width: 1200px) {
-  .page.page-fixed-header {
-    padding-top: 4.4rem;
-  }
 }
