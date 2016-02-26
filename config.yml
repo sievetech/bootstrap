@@ -74,7 +74,7 @@ css_include:
   - './src/list.css'
   - './src/modal.css'
   - './src/dropdown.css'
-  - './src/notifications.css'
+  - './src/notification.css'
   - './src/label.css'
   - './src/table.css'
   - './src/pager.css'
