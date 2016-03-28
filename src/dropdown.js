@@ -2,13 +2,13 @@ $(document).on('click', function (e){
   var target = $(e.target);
 
   if (target.is('.dropdown-trigger') || target.parent().is('.dropdown-trigger')) {
-    var list = target.closest('.dropdown').find('.dropdown-list');
+    var list = target.closest('.dropdown').find('.dropdown-content');
 
     e.preventDefault();
 
-    $('.dropdown-list').not(list).hide();
+    $('.dropdown-content').not(list).hide();
     list.toggle();
   } else {
-    $('.dropdown-list').hide();
+    $('.dropdown-content').hide();
   }
 });

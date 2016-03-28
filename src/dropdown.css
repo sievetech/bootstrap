@@ -15,7 +15,7 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
 
 ```html_example
 <div class="dropdown">
-  <div class="dropdown-list">
+  <div class="dropdown-content">
     <ul class="list list-vertical">
       <li><a href="#">Item 1</a></li>
       <li><a href="#">Item 2</a></li>
@@ -29,7 +29,7 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
 ```html_example
 <div class="dropdown dropdown-left">
   <button class="button button-default dropdown-trigger">Button <i class="icon-down-dir"></i></button>
-  <div class="dropdown-list">
+  <div class="dropdown-content">
     <ul class="list list-vertical">
       <li><a href="#">Item 1</a></li>
       <li><a href="#">Item 2</a></li>
@@ -44,7 +44,7 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
   display: inline-block;
   vertical-align: middle;
 }
-.dropdown .dropdown-list {
+.dropdown .dropdown-content {
   position: absolute;
   display: none;
   top: 100%;
@@ -63,22 +63,22 @@ Os dropdowns podem ser aplicados em múltiplos cenários: menus, botões, etc.
   -moz-border-radius: 0.4rem;
   border-radius: 0.4rem;
 }
-.dropdown .dropdown-list .list {
+.dropdown .dropdown-content .list {
   width: 100%;
 }
-.dropdown .dropdown-list .list a {
+.dropdown .dropdown-content .list a {
   display: block;
   padding: 1.2rem;
   color: #666;
 }
-.dropdown .dropdown-list .list a:hover {
+.dropdown .dropdown-content .list a:hover {
   color: #666;
   background-color: #eee;
   cursor: pointer;
 }
-.dropdown-left .dropdown-list {
+.dropdown-left .dropdown-content {
   left: 0;
 }
-.dropdown-right .dropdown-list {
+.dropdown-right .dropdown-content {
   right: 0;
 }
