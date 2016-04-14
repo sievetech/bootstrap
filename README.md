@@ -40,9 +40,11 @@ Comandos grunt para agilizar o nosso trabalho
 * grunt work: server + open + build + watch
 
 
-## Todo
+## TODO
 
-* Colocar no bootstrap.sieve.com.br
+* Testar gerador de fontes:
+  * grunt-webfont (https://github.com/sapegin/grunt-webfont)
+  * grunticon (https://github.com/filamentgroup/grunticon)
 * Bootstrap usando o bootstrap (hologram-sieve-theme)
 * Usar jekyll? Oferece mais possibilidades
 * Task scss-lint
