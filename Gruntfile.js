@@ -159,7 +159,12 @@ module.exports = function(grunt) {
             dest: 'src/fonts/b2icons/font',
             destCss: 'src/fonts/b2icons/css',
             options: {
-                font: 'b2icons'
+                font: 'b2icons',
+                autoHint: false,
+                relativeFontPath: './src/fonts/b2icons/font',
+                baseClass: 'icon-',
+                classPrefix: 'icon-',
+                mixinPrefix: 'icon-'
             }
         }
     }

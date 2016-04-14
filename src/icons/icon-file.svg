@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-file</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon-file" sketch:type="MSArtboardGroup" fill="#000000">
+            <g id="file60" sketch:type="MSLayerGroup" transform="translate(12.000000, 8.000000)">
+                <g id="Document" sketch:type="MSShapeGroup">
+                    <path d="M16,0 L2,0 C0.896,0 0,0.896 0,2 L0,30 C0,31.105 0.896,32 2,32 L22,32 C23.104,32 24,31.104 24,30 L24,8 L16,0 L16,0 Z M21,29 L3,29 L3,3 L15,3 L15,9 L21,9 L21,29 L21,29 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
