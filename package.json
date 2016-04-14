@@ -2,6 +2,11 @@
   "name": "bootstrap",
   "version": "0.0.1",
   "description": "Bootstrap Oficial da Sieve",
+  "scripts": {
+    "build": "grunt build",
+    "deploy": "grunt deploy",
+    "font": "grunt webfont"
+  },
   "devDependencies": {
     "grunt": "^0.4.4",
     "grunt-concurrent": "^2.1.0",

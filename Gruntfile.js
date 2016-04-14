@@ -151,6 +151,17 @@ module.exports = function(grunt) {
         files: ['src/**/*.less', 'demo/**/*', 'config.yml', 'Gruntfile.js'],
         tasks: ['build']
       }
+    },
+
+    webfont: {
+        icons: {
+            src: 'src/icons/*.svg',
+            dest: 'src/fonts/b2icons/font',
+            destCss: 'src/fonts/b2icons/css',
+            options: {
+                font: 'b2icons'
+            }
+        }
     }
   });
 
