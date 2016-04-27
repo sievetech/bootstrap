@@ -85,57 +85,60 @@ O box é um grid comum para se implementar funcionalidades autosuficientes.
 */
 
 .box {
+  display: flex;
+  margin-bottom: 3rem;
+  flex-flow: column nowrap;
+  height: 100%;
+  overflow: hidden;
+  .rounded(.4rem);
+
+  > header {
+    position: relative;
     display: flex;
-    margin-bottom: 3rem;
-    flex-flow: column nowrap;
-    height: 100%;
-    overflow: hidden;
-    .rounded(.4rem);
+    background-color: #ddd;
+    border-bottom: .1rem solid #e5e5e5;
 
-    > header {
-        display: flex;
-        background-color: #ddd;
-        border-bottom: .1rem solid #e5e5e5;
-
-        h3 {
-            margin: 0;
-            padding: 0;
-            flex: 1 0;
-            text-overflow:ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-            padding: 1.3rem 1.2rem;
-            color: #6d6d6d;
-            font-size: 2rem;
-            font-family: "Roboto Light", sans-serif;
-        }
-
-        > .list-actions {
-            border-left: .1rem solid #e5e5e5;
-
-            a {
-              display: block;
-              color: #6d6d6d;
-              font-size: 1.6rem;
-              padding: 1.6rem;
-
-              &:hover {
-                  background-color: #ccc !important;
-              }
-            }
-        }
+    h3 {
+      margin: 0;
+      padding: 0;
+      flex: 1 0;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 1.3rem 1.2rem;
+      color: #6d6d6d;
+      font-size: 2rem;
+      font-family: "Roboto Light", sans-serif;
     }
 
-    > section {
-        flex: 1 0;
-    }
+    > .list-actions {
+      border-left: .1rem solid #e5e5e5;
 
-    > footer {
-        max-height: 10rem;
+      a {
+        display: block;
+        color: #6d6d6d;
+        font-size: 1.6rem;
+        padding: 1.6rem;
 
-        p {
-          margin: 1rem;
-          font-size: 1rem;
+        &:hover {
+          background-color: #ccc !important;
         }
+      }
     }
+  }
+
+  > section {
+    position: relative;
+    flex: 1 0;
+  }
+
+  > footer {
+    position: relative;
+    max-height: 10rem;
+
+    p {
+      margin: 1rem;
+      font-size: 1rem;
+    }
+  }
 }
